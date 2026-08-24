@@ -1,6 +1,9 @@
 /* YIHOT: public-source-only information triage. Every rendered item keeps a citation. */
 const ALLOWED_SOURCE_IDS = new Set(["reliefweb", "un-news", "un-official"]);
 const ALLOWED_SOURCE_HOSTS = new Set(["reliefweb.int", "news.un.org", "www.un.org", "un.org"]);
+// 公开部署后端（腾讯云 CloudBase 云函数）地址。留空时走本地同源 /api/*，
+// 并依次回退到 /api/feeds 与 data/feeds.json（GitHub Pages 烘焙数据）。
+const YIHOT_API_BASE = "";
 const DEMO_ITEMS = [
   { id: "demo-1", topic: "灾害救援", title: "沿海强降雨预警：多个社区开放临时安置点", summary: "公开通告提到志愿者登记、饮用水和儿童用品需求，公益团队可先核验本地联系人与服务时间。", source: "地方应急公开通告（演示）", sourceType: "政府公开页面", url: "https://www.gov.cn/", published: "2026-08-23T08:30:00+08:00", action: true, score: 86, heat: 94, reports: 4, recommendation: "先核对地区、更新时间和安置点联系方式，再决定是否转入组织流程。" },
   { id: "demo-2", topic: "资金", title: "社区小额公益项目开放新一轮申报", summary: "申报窗口、预算上限和材料清单已公布，适合加入组织内部提醒队列。", source: "公益项目公开页面（演示）", sourceType: "公开申报", url: "https://www.gov.cn/", published: "2026-08-22T16:00:00+08:00", action: true, score: 79, heat: 82, reports: 3, recommendation: "打开原文确认截止时间和适用地区，避免把公开征集误作获资承诺。" },
@@ -22,7 +25,7 @@ const VIEW_META = {
 };
 const TOPIC_DESCRIPTIONS = { 灾害救援: "预警、安置、物资和灾害响应的公开更新。", 政策: "政策、标准、征求意见和公共治理页面。", 资金: "公开申报、资助计划、结项与资金说明。", 志愿者: "志愿岗位、培训、服务站和招募公告。", 公共服务: "面向社区的服务工具、指南和资源。" };
 const REFRESH_INTERVAL_MS = 60 * 1000;
-const STREAM_URL = "/api/stream";
+const STREAM_URL = YIHOT_API_BASE ? "" : "/api/stream";
 const MAX_LIVE_ITEMS = 240;
 const state = { items: [...DEMO_ITEMS], filter: "all", sourceFilter: "all", query: "", range: "48h", actionOnly: false, currentView: "featured", dailyDate: null, queue: loadStoredCompat("yihot-queue", "civic-radar-queue", []), starred: loadStoredCompat("yihot-starred", "civic-radar-starred", []), live: false, hasLiveData: false, autoRefresh: loadStoredCompat("yihot-auto-refresh", "civic-radar-auto-refresh", true) !== false, refreshIntervalMs: REFRESH_INTERVAL_MS, timer: null, countdownTimer: null, stream: null, streamState: "idle", streamRetryTimer: null, streamRetryDelayMs: 5000, pendingRefresh: false, nextRefreshAt: null, lastSyncAt: null, lastGoodAt: null, sourceStatuses: [], sourceErrorCount: 0, pendingNewIds: [], refreshInFlight: false, lastError: "" };
 const $ = (id) => document.getElementById(id);
@@ -51,7 +54,7 @@ async function translateVisibleItems() {
   if (!unique.length) { render({ preserveViewport: true }); return; }
   translateInFlight = true;
   try {
-    const response = await fetch("/api/translate", { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ texts: unique }) });
+    const response = await fetch(`${YIHOT_API_BASE}/api/translate`, { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify({ texts: unique }) });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const payload = await response.json();
     const translations = Array.isArray(payload?.translations) ? payload.translations : [];
@@ -66,10 +69,12 @@ async function translateVisibleItems() {
 const applyFeedPayloadBase = applyFeedPayload;
 applyFeedPayload = function (payload, origin = "poll") { const result = applyFeedPayloadBase(payload, origin); void translateVisibleItems(); return result; };
 async function fetchFeedPayload() {
-  try { const live = await fetch("/api/feeds", { cache: "no-store" }); if (live.ok) return await live.json(); } catch { /* static hosting: fall back to baked data */ }
-  const baked = await fetch("data/feeds.json", { cache: "no-store" });
-  if (!baked.ok) throw new Error(`HTTP ${baked.status}`);
-  return baked.json();
+  const endpoints = YIHOT_API_BASE ? [`${YIHOT_API_BASE}/api/feeds`, "/api/feeds", "data/feeds.json"] : ["/api/feeds", "data/feeds.json"];
+  let lastError = null;
+  for (const url of endpoints) {
+    try { const response = await fetch(url, { cache: "no-store" }); if (!response.ok) throw new Error(`HTTP ${response.status}`); return await response.json(); } catch (error) { lastError = error; }
+  }
+  throw lastError || new Error("no feed endpoint available");
 }
 function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g, (c) => ({ "&":"&amp;", "<":"&lt;", ">":"&gt;", "\"":"&quot;", "'":"&#39;" }[c])); }
 function safeHref(value, fallback = "https://www.gov.cn/") { try { const url = new URL(String(value || fallback), window.location.href); return ["https:", "http:"].includes(url.protocol) ? url.href : fallback; } catch { return fallback; } }

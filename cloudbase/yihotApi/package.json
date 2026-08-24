@@ -1,0 +1,7 @@
+{
+  "name": "yihotApi",
+  "version": "1.0.0",
+  "description": "YIHOT 公益信息雷达后端云函数（腾讯云开发 CloudBase，零依赖）",
+  "main": "index.js",
+  "dependencies": {}
+}

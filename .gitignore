@@ -1,5 +1,6 @@
 logs/
 node_modules/
+cloudbase/yihotApi/feeds.json
 .env
 .env.*
 !.env.example

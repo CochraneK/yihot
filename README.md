@@ -40,6 +40,8 @@ npm run smoke
 
 成本：Pages 托管和公开仓库的 Actions 都免费；翻译按 token 计费且只处理新条目（当前量每月约几元）。密钥只存在于 Secrets，`api.txt` 之类凭据永远不要提交。
 
+想要**分钟级实时**而不是每小时烘焙：用腾讯云 CloudBase 承接后端（与 CRIS 项目同一套基建），前端自动轮询云函数、三级兜底（云函数 → 本地 /api → 烘焙数据）。完整步骤见 [cloudbase/DEPLOY.md](cloudbase/DEPLOY.md)。
+
 ## 低维护商业化
 
 - 组织版：¥199/月，10 个公开来源、15 分钟刷新、内部复核队列和 JSON 导出。
