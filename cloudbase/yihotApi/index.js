@@ -15,12 +15,14 @@ const TIMEOUT_MS = Number(process.env.YIHOT_TIMEOUT_MS) || 10_000;
 const MAX_BYTES = 700_000;
 const MAX_REDIRECTS = 3;
 const REFRESH_INTERVAL_MS = Math.max(15_000, Number(process.env.YIHOT_REFRESH_MS) || 60_000);
+// 预翻译在刷新内的时间预算：函数超时 60s，留足抓取与响应余量
+const TRANSLATE_BUDGET_MS = Math.max(10_000, Number(process.env.YIHOT_TRANSLATE_BUDGET_MS) || 40_000);
 const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) YIHOT/1.0 RSS-Reader";
 // 云函数运行在腾讯云（大陆出口）。这里只放从大陆出口实测可达的公开源；
 // reliefweb / news.un.org 在大陆出口被拦（202 挑战 / 404），故云端不启用，
 // 它们仍保留在 GitHub Actions 烘焙与本地服务里（那些网络可达）。
-const ALLOWED_SOURCE_IDS = new Set(["chinanews", "caritas", "who-news", "oxfam", "greenpeace", "sspai", "ifrc", "unocha"]);
-const ALLOWED_SOURCE_HOSTS = new Set(["www.chinanews.com.cn", "chinanews.com.cn", "www.caritas.org", "caritas.org", "www.who.int", "who.int", "www.oxfam.org", "oxfam.org", "www.greenpeace.org", "greenpeace.org", "sspai.com", "www.ifrc.org", "ifrc.org", "www.unocha.org", "unocha.org"]);
+const ALLOWED_SOURCE_IDS = new Set(["chinanews", "caritas", "who-news", "oxfam", "greenpeace", "sspai", "ifrc", "unocha", "care"]);
+const ALLOWED_SOURCE_HOSTS = new Set(["www.chinanews.com.cn", "chinanews.com.cn", "www.caritas.org", "caritas.org", "www.who.int", "who.int", "www.oxfam.org", "oxfam.org", "www.greenpeace.org", "greenpeace.org", "sspai.com", "www.ifrc.org", "ifrc.org", "www.unocha.org", "unocha.org", "care.org", "www.care.org"]);
 const TRANSLATE_DISABLED = /^(0|off|false)$/i.test(process.env.YIHOT_TRANSLATE || "");
 const TRANSLATE_BASE_URL = (process.env.YIHOT_TRANSLATE_BASE_URL || "").replace(/\/+$/, "");
 const TRANSLATE_MODEL = process.env.YIHOT_TRANSLATE_MODEL || "moonshot-v1-8k";
@@ -28,6 +30,9 @@ const TRANSLATE_API_KEY = process.env.YIHOT_TRANSLATE_API_KEY || "";
 const ALLOWED_ORIGINS = new Set(["https://cochranek.github.io", "http://127.0.0.1:8766", "http://localhost:8766", "http://127.0.0.1:8790", "http://localhost:8790"]);
 
 const translationCache = new Map();
+const translatedXmlByHash = new Map(); // contentHash -> 已翻译 XML，避免同内容反复翻译
+const CJK_RE = /[\u3400-\u9fff\uf900-\ufaff]/;
+let lastTranslateStats = null;
 let cache = null;
 let lastRefreshError = null;
 let refreshPromise = null;
@@ -147,9 +152,10 @@ async function refreshFeeds({ force = false } = {}) {
       }
     }));
     const fingerprint = settled.map(sourceFingerprint).join("|");
+    const translatedSources = await translateSettledSources(settled, startedMs + TRANSLATE_BUDGET_MS);
     const version = cache && cache.fingerprint === fingerprint ? cache.version : (cache?.version || 0) + 1;
     const refreshedAt = new Date().toISOString();
-    const snapshot = { version, fingerprint, refreshedAtMs: Date.now(), refreshedAt, refreshStartedAt: startedAt, refreshFinishedAt: refreshedAt, refreshDurationMs: Date.now() - startedMs, nextRefreshAt: new Date(Date.now() + REFRESH_INTERVAL_MS).toISOString(), sources: settled };
+    const snapshot = { version, fingerprint, refreshedAtMs: Date.now(), refreshedAt, refreshStartedAt: startedAt, refreshFinishedAt: refreshedAt, refreshDurationMs: Date.now() - startedMs, nextRefreshAt: new Date(Date.now() + REFRESH_INTERVAL_MS).toISOString(), sources: translatedSources };
     snapshot.etag = responseEtag(snapshot); cache = snapshot; lastRefreshError = null;
     return snapshot;
   })().catch((error) => { lastRefreshError = { message: String(error?.message || error).slice(0, 300), at: new Date().toISOString() }; if (cache) return cache; throw error; }).finally(() => { refreshPromise = null; });
@@ -166,7 +172,7 @@ async function snapshotForRequest(force = false) {
 
 function healthPayload() {
   const sources = (cache?.sources || []).map(sourceMeta);
-  return { ok: !lastRefreshError && (!sources.length || sources.some((source) => source.status === "ok")), service: "yihot", mode: "cloudbase-public-source", version: cache?.version || 0, serverTime: new Date().toISOString(), refreshedAt: cache?.refreshedAt || null, nextRefreshAt: cache?.nextRefreshAt || null, refreshIntervalMs: REFRESH_INTERVAL_MS, refreshInProgress: Boolean(refreshPromise), lastRefreshError, sources, summary: { total: sources.length, ok: sources.filter((source) => source.status === "ok").length, error: sources.filter((source) => source.status === "error").length, stale: sources.filter((source) => source.stale).length }, translate: TRANSLATE_DISABLED || !TRANSLATE_BASE_URL ? "off" : "on" };
+  return { ok: !lastRefreshError && (!sources.length || sources.some((source) => source.status === "ok")), service: "yihot", mode: "cloudbase-public-source", version: cache?.version || 0, serverTime: new Date().toISOString(), refreshedAt: cache?.refreshedAt || null, nextRefreshAt: cache?.nextRefreshAt || null, refreshIntervalMs: REFRESH_INTERVAL_MS, refreshInProgress: Boolean(refreshPromise), lastRefreshError, sources, summary: { total: sources.length, ok: sources.filter((source) => source.status === "ok").length, error: sources.filter((source) => source.status === "error").length, stale: sources.filter((source) => source.stale).length }, translate: TRANSLATE_DISABLED || !TRANSLATE_BASE_URL ? "off" : "on", translateStats: lastTranslateStats };
 }
 
 function feedsPayload(snapshot) {
@@ -208,27 +214,107 @@ async function translateChunk(chunk) {
   const controller = new AbortController(); const timer = setTimeout(() => controller.abort(), 30_000);
   try {
     const response = await fetch(`${TRANSLATE_BASE_URL}/chat/completions`, { method: "POST", headers, signal: controller.signal, body: JSON.stringify({ model: TRANSLATE_MODEL, temperature: 0, messages: [
-      { role: "system", content: "你是新闻翻译引擎。用户会给你一个 JSON 数组，把每个元素逐条翻译成简体中文，保留专有名词与数字。只输出 JSON 数组，元素数量和顺序与输入完全一致，不要输出任何其他内容。" },
-      { role: "user", content: JSON.stringify(chunk) },
+      { role: "system", content: "你是新闻翻译引擎。用户会给你多行文本（每行一条）。把每一行翻译成简体中文，保留专有名词与数字。输出必须也是每行一条，与输入逐行对应、行数一致；不要编号、不要引号包裹、不要输出任何其他内容。" },
+      { role: "user", content: chunk.join("\n") },
     ] }) });
     if (!response.ok) throw new Error(`translate upstream HTTP ${response.status}`);
     const payload = await response.json();
     const content = String(payload?.choices?.[0]?.message?.content || "").trim().replace(/^```(?:json)?\s*|\s*```$/g, "").trim();
-    const parsed = JSON.parse(content);
-    if (!Array.isArray(parsed) || parsed.length !== chunk.length) throw new Error("translate shape mismatch");
-    return parsed.map((value) => String(value ?? "").trim());
+    // 容错解析：优先按行切分；若行数不符再尝试 JSON 数组（含中文引号修复）
+    let lines = content.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+    if (lines.length !== chunk.length) {
+      try {
+        const parsed = JSON.parse(content.replace(/[\u201C\u201D]/g, "\""));
+        if (Array.isArray(parsed) && parsed.length === chunk.length) lines = parsed.map((value) => String(value ?? "").trim());
+      } catch { /* keep line-based attempt below */ }
+    }
+    if (lines.length !== chunk.length) throw new Error(`translate shape mismatch (${lines.length}/${chunk.length})`);
+    // 去掉模型偶尔加的列表前缀（如 “1. ” / “- ”），但保留以数字开头的正常译文（如 “2026年…”）
+    return lines.map((value) => String(value).replace(/^(?:\d+\s*[.、)）:：]|[-*•])\s*/, "").trim());
   } finally { clearTimeout(timer); }
 }
 
 async function translateTexts(texts) {
   if (TRANSLATE_DISABLED || !TRANSLATE_BASE_URL) return texts;
   const pending = [...new Set(texts.filter((text) => !translationCache.has(text)))];
-  for (let i = 0; i < pending.length; i += 20) {
-    const chunk = pending.slice(i, i + 20);
-    try { const translated = await translateChunk(chunk); chunk.forEach((text, index) => translationCache.set(text, translated[index] || text)); }
+  const SEND_MAX = 900;
+  for (let i = 0; i < pending.length; i += 10) {
+    const chunkFull = pending.slice(i, i + 10);
+    const chunkSend = chunkFull.map((text) => (text.length > SEND_MAX ? text.slice(0, SEND_MAX) : text));
+    try { const translated = await translateChunk(chunkSend); chunkFull.forEach((full, index) => translationCache.set(full, translated[index] || full)); }
     catch (error) { console.error("YIHOT translate failed:", error.message); }
   }
   return texts.map((text) => translationCache.get(text) ?? text);
+}
+
+// ── 服务端预翻译：抓取时把英文条目的标题/摘要译成中文，前端直接展示 ──
+// 只动 item/entry 块；频道级标题不动。译文以 CDATA 回写，翻译结果按内容哈希缓存，
+// 未译完的源不缓存、下个刷新周期续翻（translationCache 按句缓存，重试只翻剩余英文）。
+function extractXmlText(body) {
+  let text = String(body || "").trim();
+  const cdata = text.match(/^<!\[CDATA\[([\s\S]*)\]\]>$/);
+  if (cdata) text = cdata[1];
+  text = text.replace(/<[^>]+>/g, " ");
+  text = text.replace(/&amp;/g, "&").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, "\"").replace(/&#0?39;|&apos;/g, "'").replace(/&nbsp;/g, " ");
+  text = text.replace(/&#(\d+);/g, (match, code) => { try { return String.fromCodePoint(Number(code)); } catch { return " "; } });
+  return text.replace(/\s+/g, " ").trim();
+}
+function needsTranslation(text) { return Boolean(text) && !CJK_RE.test(text) && /[A-Za-z]/.test(text); }
+function translateItemBlock(block, zhMap) {
+  return block.replace(/<(title|description|summary)(\s[^>]*)?>([\s\S]*?)<\/\1>/g, (match, tag, attrs, body) => {
+    const zh = zhMap.get(extractXmlText(body));
+    if (!zh) return match;
+    const safe = String(zh).replace(/\]\]>/g, "]]]]><![CDATA[>");
+    return `<${tag}${attrs || ""}><![CDATA[${safe}]]></${tag}>`;
+  });
+}
+async function translateSettledSources(settled, deadlineMs) {
+  if (TRANSLATE_DISABLED || !TRANSLATE_BASE_URL) return settled;
+  const stats = { sources: 0, cacheHits: 0, pendingTexts: 0, translatedTexts: 0, remaining: 0, deadlineHit: false, error: null, at: new Date().toISOString() };
+  const work = [];
+  const out = settled.map((source) => {
+    if (source.status !== "ok" || !source.xml) return source;
+    stats.sources += 1;
+    if (translatedXmlByHash.has(source.contentHash)) { stats.cacheHits += 1; return { ...source, xml: translatedXmlByHash.get(source.contentHash) }; }
+    const itemBlocks = [...source.xml.matchAll(/<item[\s>][\s\S]*?<\/item>/g)];
+    const blocks = itemBlocks.length ? itemBlocks : [...source.xml.matchAll(/<entry[\s>][\s\S]*?<\/entry>/g)];
+    const texts = [];
+    for (const block of blocks) for (const field of block[0].matchAll(/<(title|description|summary)(\s[^>]*)?>([\s\S]*?)<\/\1>/g)) {
+      const text = extractXmlText(field[3]);
+      if (needsTranslation(text)) texts.push(text);
+    }
+    if (!texts.length) { translatedXmlByHash.set(source.contentHash, source.xml); return source; }
+    const next = { ...source };
+    work.push({ source: next, texts });
+    return next;
+  });
+  const pending = [...new Set(work.flatMap(({ texts }) => texts).filter((text) => !translationCache.has(text)))];
+  stats.pendingTexts = pending.length;
+  // 每批 10 条、单条截断到 400 字符：前端摘要本就只展示 ~400 字符，截短可显著加快翻译；
+  // moonshot-v1-8k 较慢（约 13s/批），靠多轮刷新收敛，未译完的下轮续翻
+  const SEND_MAX = 400;
+  for (let i = 0; i < pending.length; i += 10) {
+    if (Date.now() > deadlineMs) { stats.deadlineHit = true; break; }
+    const chunkFull = pending.slice(i, i + 10);
+    const chunkSend = chunkFull.map((text) => (text.length > SEND_MAX ? text.slice(0, SEND_MAX) : text));
+    try {
+      const translated = await translateChunk(chunkSend);
+      chunkFull.forEach((full, index) => translationCache.set(full, translated[index] || full));
+      stats.translatedTexts += chunkFull.length;
+    } catch (error) { if (!stats.error) stats.error = String(error?.message || error).slice(0, 160); console.error("YIHOT pre-translate failed:", error.message); /* 单批失败不中断，跳过继续下一批 */ }
+  }
+  for (const { source, texts } of work) {
+    const zhMap = new Map();
+    for (const text of texts) { const zh = translationCache.get(text); if (zh && zh !== text) zhMap.set(text, zh); }
+    const complete = texts.every((text) => translationCache.has(text));
+    if (!complete) stats.remaining += texts.filter((text) => !translationCache.has(text)).length;
+    const translatedXml = source.xml.replace(/<item[\s>][\s\S]*?<\/item>|<entry[\s>][\s\S]*?<\/entry>/g, (block) => translateItemBlock(block, zhMap));
+    source.xml = translatedXml;
+    if (complete) translatedXmlByHash.set(source.contentHash, translatedXml);
+  }
+  stats.cacheTexts = translationCache.size; stats.cacheXml = translatedXmlByHash.size;
+  lastTranslateStats = stats;
+  return out;
 }
 
 function corsOrigin(event) {
@@ -257,25 +343,30 @@ exports.main = async (event) => {
         "https://www.chinadevelopmentbrief.org.cn/feed",
         "http://www.gongyishibao.com/rss.xml",
         "https://www.naradafoundation.org/feed",
-        "https://www.undp.org/content/cpm/zh/home/rss/pressreleases.rss",
+        "https://www.cn.undp.org/content/cpm/zh/home/rss/pressreleases.rss",
+        "https://www.care.org/feed/",
+        "https://www.unicef.org/rss.xml",
+        "https://www.thenewhumanitarian.org/rss.xml",
+        "https://www.iied.org/rss.xml",
+        "https://ssir.org/feed",
+        "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "https://feeds.bbci.co.uk/news/health/rss.xml",
+        "https://feeds.bbci.co.uk/news/science-environment/rss.xml",
+        "https://www.theguardian.com/society/rss",
+        "https://www.theguardian.com/environment/rss",
+        "https://www.theguardian.com/world/rss",
+        "https://feeds.reuters.com/reuters/businessNews",
+        "https://feeds.reuters.com/reuters/healthNews",
+        "https://feeds.ap.org/rss/topnews",
+        "https://philanthropynewsdigest.org/feed",
+        "https://www.devex.com/news/feed",
+        "https://www.globalgiving.org/rss.xml",
+        "https://www.usaid.gov/feed/news",
+        "https://www.gov.uk/world/rss.xml",
+        "https://tophub.today/c/WLvVMEdbG3",
         "https://www.huxiu.com/rss/0.xml",
         "https://36kr.com/feed",
         "https://feeds.feedburner.com/zhihu/daily",
-        "https://philanthropynewsdigest.org/feed",
-        "https://www.devex.com/news/feed",
-        "https://ssir.org/feed",
-        "https://www.thenewhumanitarian.org/rss.xml",
-        "https://www.iied.org/rss.xml",
-        "https://www.usaid.gov/feed/news",
-        "https://www.gov.uk/world/rss.xml",
-        "https://feeds.bbci.co.uk/news/world/rss.xml",
-        "https://www.theguardian.com/world/rss",
-        "https://feeds.reuters.com/reuters/businessNews",
-        "https://feeds.ap.org/rss/topnews",
-        "https://www.ifrc.org/rss.xml?q=/rss.xml",
-        "https://www.unocha.org/rss.xml?q=/rss.xml",
-        "https://tophub.today/c/WLvVMEdbG3",
-        "https://www.globalgiving.org/rss.xml",
       ];
       const results = await Promise.all(PROBE_URLS.map(async (u) => {
         const t0 = Date.now();

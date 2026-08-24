@@ -1,7 +1,7 @@
 /* YIHOT: public-source-only information triage. Every rendered item keeps a citation. */
 // 客户端允许渲染的来源 = 本地/Actions 烘焙源 ∪ 腾讯云可达源（两端配置不同，取并集）。
-const ALLOWED_SOURCE_IDS = new Set(["reliefweb", "un-news", "un-official", "chinanews", "caritas", "who-news", "oxfam", "greenpeace", "sspai", "ifrc", "unocha"]);
-const ALLOWED_SOURCE_HOSTS = new Set(["reliefweb.int", "news.un.org", "www.un.org", "un.org", "www.chinanews.com.cn", "chinanews.com.cn", "www.caritas.org", "caritas.org", "www.who.int", "who.int", "www.oxfam.org", "oxfam.org", "www.greenpeace.org", "greenpeace.org", "sspai.com", "www.ifrc.org", "ifrc.org", "www.unocha.org", "unocha.org"]);
+const ALLOWED_SOURCE_IDS = new Set(["reliefweb", "un-news", "un-official", "chinanews", "caritas", "who-news", "oxfam", "greenpeace", "sspai", "ifrc", "unocha", "care"]);
+const ALLOWED_SOURCE_HOSTS = new Set(["reliefweb.int", "news.un.org", "www.un.org", "un.org", "www.chinanews.com.cn", "chinanews.com.cn", "www.caritas.org", "caritas.org", "www.who.int", "who.int", "www.oxfam.org", "oxfam.org", "www.greenpeace.org", "greenpeace.org", "sspai.com", "www.ifrc.org", "ifrc.org", "www.unocha.org", "unocha.org", "care.org", "www.care.org"]);
 // 公开部署后端（腾讯云 CloudBase 云函数）地址。留空时走本地同源 /api/*，
 // 并依次回退到 /api/feeds 与 data/feeds.json（GitHub Pages 烘焙数据）。
 const YIHOT_API_BASE = "https://cris-d6gkkzled0d106625-1421328052.ap-shanghai.app.tcloudbase.com/yihotApi";
