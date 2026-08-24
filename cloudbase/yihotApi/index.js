@@ -291,17 +291,24 @@ async function translateSettledSources(settled, deadlineMs) {
   const pending = [...new Set(work.flatMap(({ texts }) => texts).filter((text) => !translationCache.has(text)))];
   stats.pendingTexts = pending.length;
   // 每批 10 条、单条截断到 400 字符：前端摘要本就只展示 ~400 字符，截短可显著加快翻译；
-  // moonshot-v1-8k 较慢（约 13s/批），靠多轮刷新收敛，未译完的下轮续翻
+  // moonshot-v1-8k 较慢（约 13s/批），每轮最多 3 批并发，在预算内尽量多翻，未译完的下轮续翻
   const SEND_MAX = 400;
-  for (let i = 0; i < pending.length; i += 10) {
-    if (Date.now() > deadlineMs) { stats.deadlineHit = true; break; }
-    const chunkFull = pending.slice(i, i + 10);
-    const chunkSend = chunkFull.map((text) => (text.length > SEND_MAX ? text.slice(0, SEND_MAX) : text));
-    try {
-      const translated = await translateChunk(chunkSend);
-      chunkFull.forEach((full, index) => translationCache.set(full, translated[index] || full));
-      stats.translatedTexts += chunkFull.length;
-    } catch (error) { if (!stats.error) stats.error = String(error?.message || error).slice(0, 160); console.error("YIHOT pre-translate failed:", error.message); /* 单批失败不中断，跳过继续下一批 */ }
+  const CHUNK = 10;
+  const CONCURRENCY = 3;
+  for (let i = 0; i < pending.length; i += CHUNK * CONCURRENCY) {
+    if (deadlineMs - Date.now() <= 15_000) { stats.deadlineHit = true; break; }
+    const batch = [];
+    for (let j = i; j < Math.min(i + CHUNK * CONCURRENCY, pending.length); j += CHUNK) batch.push(pending.slice(j, j + CHUNK));
+    const results = await Promise.all(batch.map(async (chunkFull) => {
+      if (deadlineMs - Date.now() <= 15_000) return 0;
+      const chunkSend = chunkFull.map((text) => (text.length > SEND_MAX ? text.slice(0, SEND_MAX) : text));
+      try {
+        const translated = await translateChunk(chunkSend);
+        chunkFull.forEach((full, index) => translationCache.set(full, translated[index] || full));
+        return chunkFull.length;
+      } catch (error) { if (!stats.error) stats.error = String(error?.message || error).slice(0, 160); console.error("YIHOT pre-translate failed:", error.message); return 0; }
+    }));
+    stats.translatedTexts += results.reduce((a, b) => a + b, 0);
   }
   for (const { source, texts } of work) {
     const zhMap = new Map();
