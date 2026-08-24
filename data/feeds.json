@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787593700139,
-  "bakedAt": "2026-08-24T17:48:20.139Z",
-  "refreshedAt": "2026-08-24T17:48:20.139Z",
-  "lastSuccessAt": "2026-08-24T17:48:11.195Z",
+  "version": 1787598119258,
+  "bakedAt": "2026-08-24T19:01:59.258Z",
+  "refreshedAt": "2026-08-24T19:01:59.258Z",
+  "lastSuccessAt": "2026-08-24T19:01:50.553Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-24T17:48:10.768Z",
+      "lastSuccessAt": "2026-08-24T19:01:50.224Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,31 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-24T17:48:11.195Z",
+      "lastSuccessAt": "2026-08-24T19:01:50.553Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-a504257fd6410989",
+      "sourceId": "un-news",
+      "title": "联合国：苏丹冲突持续升级，平民苦难日益加深",
+      "summary": "联合国主管政治和建设和平事务的副秘书长迪卡洛周一向安理会通报苏丹局势时表示，自6月份上次通报以来，冲突持续升级，民众苦难日益加深，多个战线仍在交火。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142677",
+      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-6aaa08a4c7c1c0e7",
+      "sourceId": "un-news",
+      "title": "古特雷斯：全球粮食供应已成为冲突中的“附带损害”",
+      "summary": "联合国秘书长古特雷斯周一表示，霍尔木兹海峡、黑海和曼德海峡的海上交通中断加剧了饥荒危机，必须立即停止。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142676",
+      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-28b61f96348db260",
       "sourceId": "un-news",
@@ -308,26 +328,6 @@
       "title": "西岸库斯拉村围困局势有所缓解，但加沙危机加剧",
       "summary": "联合国周一表示，人道主义工作者已接触到在约旦河西岸北部库斯拉村被以色列定居者围困数日的巴勒斯坦家庭；与此同时，官员们警告称，这种对峙局面绝不能成为“新常态”。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142645",
-      "published": "Mon, 17 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-cb1995ff4e62e46a",
-      "sourceId": "un-news",
-      "title": "遏制荒漠化  保护我们“最关键的基础设施”",
-      "summary": "随着热浪日益致命，火灾和灾害肆虐城市，海平面上升正吞噬着陆地。然而，土地退化这一环境危机仍被危险地忽视。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142644",
-      "published": "Mon, 17 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-1002f7c64cbfe3f9",
-      "sourceId": "un-news",
-      "title": "刚果（金）当前埃博拉疫情成为该国史上最致命的一次",
-      "summary": "世界卫生组织周一表示，刚果民主共和国（刚果（金））本迪布焦型病毒埃博拉疫情现已成为该国历史上致死人数最多的一次。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142643",
       "published": "Mon, 17 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
