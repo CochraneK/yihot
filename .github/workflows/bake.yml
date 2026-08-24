@@ -1,0 +1,32 @@
+name: bake-feeds
+
+# Hourly bake: fetch allowlist RSS sources, translate English items to
+# Simplified Chinese, and commit data/feeds.json. GitHub Pages serves the
+# static site from the repo root, so the page always reads fresh baked data.
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  bake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Bake feed data
+        run: node bake.mjs
+        env:
+          YIHOT_TRANSLATE_BASE_URL: ${{ secrets.YIHOT_TRANSLATE_BASE_URL }}
+          YIHOT_TRANSLATE_API_KEY: ${{ secrets.YIHOT_TRANSLATE_API_KEY }}
+          YIHOT_TRANSLATE_MODEL: ${{ vars.YIHOT_TRANSLATE_MODEL || 'moonshot-v1-8k' }}
+      - name: Commit baked data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: baked feed data"
+          file_pattern: "data/feeds.json"

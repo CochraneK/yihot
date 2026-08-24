@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="YIHOT：只聚合可引用的公开来源，帮助公益组织发现值得复核的变化。">
+  <title>YIHOT · 公益信息雷达</title>
+  <link rel="canonical" href="/yihot/index.html">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="主导航">
+      <a class="brand" href="#featured" data-view-link="featured">
+        <span class="brand-mark" aria-hidden="true">◈</span>
+        <span class="brand-copy"><strong>YIHOT</strong><small>公益公开情报</small></span>
+        <span class="brand-beta">BETA</span>
+      </a>
+      <nav class="main-nav">
+        <p class="nav-label">内容</p>
+        <button class="nav-item active" data-view="featured" type="button"><span class="nav-icon">✦</span><span>精选</span><b id="nav-featured-count">0</b></button>
+        <button class="nav-item" data-view="all" type="button"><span class="nav-icon">▤</span><span>全部动态</span><b id="nav-all-count">0</b></button>
+        <button class="nav-item" data-view="hot" type="button"><span class="nav-icon">↗</span><span>热点榜</span><b>48h</b></button>
+        <button class="nav-item" data-view="daily" type="button"><span class="nav-icon">▣</span><span>公益日报</span><b>08:00</b></button>
+        <button class="nav-item" data-view="topics" type="button"><span class="nav-icon">#</span><span>主题</span><b id="nav-topic-count">0</b></button>
+        <button class="nav-item" data-view="starred" type="button"><span class="nav-icon">☆</span><span>收藏</span><b id="nav-starred-count">0</b></button>
+        <p class="nav-label nav-label-spaced">组织工作</p>
+        <button class="nav-item" data-view="queue" type="button"><span class="nav-icon">✓</span><span>复核队列</span><b id="nav-queue-count">0</b></button>
+        <button class="nav-item" data-view="sources" type="button"><span class="nav-icon">◎</span><span>来源目录</span><b id="nav-source-count">0</b></button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="sidebar-status"><span class="status-dot" id="sidebar-status-dot"></span><div><strong id="source-status">演示数据</strong><small id="sync-detail">尚未同步公开源</small></div></div>
+        <div class="sidebar-note">仅聚合 allowlist 公开源<br>规则提示不等于事实结论</div>
+      </div>
+    </aside>
+
+    <div class="page-shell">
+      <header class="topbar">
+        <button id="menu-toggle" class="menu-toggle" type="button" aria-label="打开导航" aria-expanded="false">☰</button>
+        <div class="crumb"><span>YIHOT</span><i>/</i><strong id="crumb-view">精选</strong></div>
+        <div class="top-actions">
+          <form id="search-form" class="global-search" role="search">
+            <span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="搜索标题、摘要…" autocomplete="off" aria-label="搜索标题、摘要">
+            <button type="submit">搜索</button>
+          </form>
+          <button id="theme-toggle" class="round-btn" type="button" title="切换明暗主题" aria-label="切换明暗主题">◐</button>
+          <button id="refresh-btn" class="round-btn" type="button" title="刷新公开来源" aria-label="刷新公开来源">↻</button>
+        </div>
+      </header>
+
+      <main class="main-content">
+        <section class="page-intro">
+          <div>
+            <p id="page-kicker" class="eyebrow">公开来源情报</p>
+            <h1 id="page-title">精选</h1>
+            <p id="page-subtitle" class="page-subtitle">今天值得公益团队先打开原文、再决定是否行动的公开变化。</p>
+          </div>
+          <div class="sync-box">
+            <div class="sync-live"><span class="status-dot" id="sync-status-dot"></span><span id="sync-mode">实时监测</span></div>
+            <span class="sync-label">最近同步</span>
+            <strong id="last-sync">--:--</strong>
+            <small id="sync-count">等待第一次刷新</small>
+            <div class="sync-next"><span>下次更新</span><strong id="next-refresh">--:--</strong></div>
+          </div>
+        </section>
+
+        <section class="realtime-bar" aria-label="实时更新状态">
+          <div class="realtime-primary"><span class="live-pulse" id="realtime-pulse"></span><div><strong id="realtime-label">等待实时同步</strong><small id="realtime-detail">正在准备公开源连接</small></div></div>
+          <div class="realtime-metrics"><span id="recent-update-summary">最近更新：--</span><span id="hot-sync-state">热榜：待同步</span><span id="daily-sync-state">日报：待同步</span></div>
+          <div class="realtime-actions"><button id="auto-refresh-btn" class="outline-btn" type="button" aria-pressed="false">暂停自动刷新</button><span class="refresh-interval">每 1 分钟</span></div>
+        </section>
+        <div id="new-items-banner" class="new-items-banner" role="status" aria-live="polite" hidden><span class="new-items-icon">✦</span><strong><span id="new-items-count">0</span> 条新更新</strong><span id="new-items-detail">已加入当前信息流</span><button id="show-new-items" type="button">查看最新</button><button id="dismiss-new-items" class="banner-dismiss" type="button" aria-label="稍后处理新更新">稍后</button></div>
+
+        <section class="filter-bar" aria-label="动态筛选">
+          <div class="filter-tabs" role="tablist" aria-label="主题筛选">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true" type="button">全部</button>
+            <button class="filter-tab" data-filter="灾害救援" role="tab" aria-selected="false" type="button">灾害救援</button>
+            <button class="filter-tab" data-filter="政策" role="tab" aria-selected="false" type="button">政策</button>
+            <button class="filter-tab" data-filter="资金" role="tab" aria-selected="false" type="button">资金</button>
+            <button class="filter-tab" data-filter="志愿者" role="tab" aria-selected="false" type="button">志愿者</button>
+            <button class="filter-tab" data-filter="公共服务" role="tab" aria-selected="false" type="button">公共服务</button>
+          </div>
+          <div class="filter-tools">
+            <label class="select-wrap"><span class="sr-only">时间范围</span><select id="range-select"><option value="48h">近 48 小时</option><option value="7d">近 7 天</option><option value="all">全部时间</option></select></label>
+            <label class="select-wrap"><span class="sr-only">来源筛选</span><select id="source-select"><option value="all">来源：全部</option><option value="official">来源：官方与政府</option><option value="rss">来源：RSS / Atom</option><option value="organization">来源：组织公告</option></select></label>
+            <label class="check-wrap"><input id="action-only" type="checkbox"><span>只看可行动</span></label>
+          </div>
+        </section>
+
+        <section class="summary-strip" aria-label="信息概览">
+          <div><span>公开源</span><strong id="source-count">0</strong><small>去重后的公开来源</small></div>
+          <div><span>近 24 小时</span><strong id="fresh-count">0</strong><small>按发布时间估算</small></div>
+          <div><span>待复核</span><strong id="review-count">0</strong><small>组织内部队列</small></div>
+          <div class="summary-accent"><span>行动提示</span><strong id="action-count">0</strong><small>规则筛选，不是结论</small></div>
+        </section>
+
+        <div class="content-layout">
+          <section class="primary" id="content-panel">
+            <div class="panel-head">
+              <div><p id="panel-kicker" class="eyebrow">今日精选</p><h2 id="panel-title">今日精选</h2></div>
+              <span id="result-count" class="result-count">0 条</span>
+            </div>
+
+            <div id="featured-view" class="view active-view">
+              <div id="feed-list" class="feed-list" aria-live="polite"></div>
+              <div id="empty-state" class="empty" hidden><span class="empty-mark">⌁</span><strong>暂时没有符合条件的公开更新</strong><span>试试切换主题或放宽时间范围。</span></div>
+            </div>
+
+            <div id="hot-view" class="view" hidden>
+              <div class="hot-intro"><span class="hot-word">热点雷达</span><h3>过去 48 小时，哪些公共议题正在升温？</h3><p>综合更新时间、来源数量与行动关键词计算热度提示。热度高只代表值得优先打开，不代表事实已经确认。</p></div>
+              <div id="hot-list" class="hot-list"></div>
+            </div>
+
+            <div id="daily-view" class="view" hidden>
+              <div class="daily-layout">
+                <aside class="daily-history" aria-label="日报历史"><div class="subhead"><span>日报历史</span><small>每日 08:00</small></div><div id="daily-history-list"></div></aside>
+                <article class="daily-paper"><div id="daily-paper-content"></div></article>
+              </div>
+            </div>
+
+            <div id="topics-view" class="view" hidden><div class="topics-head"><span class="hot-word">主题</span><h3>按议题浏览公开变化</h3><p>主题用于整理阅读路径，不代表对组织、个人或事件作出判断。</p></div><div id="topics-list" class="topics-list"></div></div>
+
+            <div id="starred-view" class="view" hidden><div class="topics-head"><span class="hot-word">收藏</span><h3>已收藏的公开更新</h3><p>收藏只保存在本地浏览器，方便团队稍后回到原文复核。</p></div><div id="starred-list" class="feed-list"></div><div id="starred-empty" class="empty" hidden><span class="empty-mark">☆</span><strong>还没有收藏</strong><span>在条目右上角点星号，把值得回看的公开更新留在这里。</span></div></div>
+
+            <div id="queue-view" class="view" hidden><div class="queue-head"><div><span class="hot-word">工作队列</span><h3>组织复核队列</h3><p>打开原文、核对地区与时间，再由工作人员决定是否进入内部流程。</p></div><button id="clear-queue" class="outline-btn" type="button">清空已处理</button></div><div id="queue-list" class="queue-list"></div></div>
+
+            <div id="sources-view" class="view" hidden><div class="topics-head"><span class="hot-word">来源</span><h3>来源目录</h3><p>当前版本只访问配置文件中的 HTTPS RSS/Atom 公开源，保留原文链接。</p></div><div id="sources-grid" class="sources-grid"></div></div>
+          </section>
+
+          <aside class="right-rail">
+            <section class="rail-card now-card"><div class="rail-label"><span class="live-dot"></span>NOW · 当前热点</div><div id="now-card"></div><div class="rail-divider"></div><div class="rail-stats"><span><strong id="queue-count">0</strong> 条待复核</span><span><strong id="topic-count">0</strong> 个主题</span></div></section>
+            <section class="rail-card queue-card"><div class="rail-heading"><h3>待复核队列</h3><button class="link-btn" data-view-link="queue" type="button">查看全部</button></div><div id="rail-queue-list"></div></section>
+            <section class="rail-card source-card"><div class="rail-heading"><h3>公开来源</h3><button id="export-btn" class="icon-action" type="button" title="导出当前数据" aria-label="导出当前数据">⇩</button></div><div id="rail-source-list"></div></section>
+            <section class="rail-card health-card"><div class="rail-heading"><h3>源状态摘要</h3><span id="source-health-summary" class="health-summary">待同步</span></div><div id="source-health-list"></div></section>
+            <section class="guardrail"><strong>复核边界</strong><p>此页面只提供公开来源的线索整理。不要把评分、热度或关键词当作定罪、募资真实性、学术不端或安全结论；涉及人身、捐赠和安全事件的内容必须由工作人员核验。</p></section>
+          </aside>
+        </div>
+      </main>
+
+      <footer><span>YIHOT · 本地实时工作台</span><span>数据可追溯 · 不采集个人账号信息</span><label class="poll-wrap"><input id="poll-toggle" type="checkbox"><span id="poll-label">每 1 分钟自动刷新</span></label></footer>
+    </div>
+  </div>
+  <nav class="mobile-nav" aria-label="移动导航">
+    <button data-view="featured" type="button"><span>✦</span><small>精选</small></button>
+    <button data-view="hot" type="button"><span>↗</span><small>热点</small></button>
+    <button data-view="daily" type="button"><span>▣</span><small>日报</small></button>
+    <button data-view="topics" type="button"><span>#</span><small>主题</small></button>
+    <button data-view="queue" type="button"><span>✓</span><small>复核</small><b id="mobile-queue-count">0</b></button>
+  </nav>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+[
+  {"id":"reliefweb","name":"ReliefWeb public updates","url":"https://reliefweb.int/updates/rss.xml"},
+  {"id":"un-news","name":"联合国新闻（中文）","url":"https://news.un.org/feed/subscribe/zh/news/all/rss.xml"},
+  {"id":"un-official","name":"United Nations official updates","url":"https://www.un.org/en/rss.xml"}
+]

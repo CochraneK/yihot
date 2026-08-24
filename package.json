@@ -1,0 +1,11 @@
+{
+  "name": "yihot-public-source-radar",
+  "version": "0.4.0",
+  "private": true,
+  "description": "YIHOT public-source civic information radar",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "smoke": "node test.mjs"
+  }
+}
