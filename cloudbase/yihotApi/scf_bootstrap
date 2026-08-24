@@ -1,0 +1,3 @@
+#!/bin/bash
+# CloudBase Web 函数启动器：端口/监听地址由环境变量提供（cloudbaserc.json envVariables）
+node server.mjs

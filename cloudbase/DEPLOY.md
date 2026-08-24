@@ -51,8 +51,14 @@ const YIHOT_API_BASE = "https://cris-1gabcde1234-1300000000.ap-shanghai.app.tclo
 
 ### 4. 验证
 - 浏览器直接访问 `https://<你的域名>/api/health`：应返回 JSON，`ok: true`、`translate` 状态正确。
-- 访问 `https://<你的域名>/api/feeds`：应返回三个源（reliefweb / un-news / un-official）的抓取结果，`summary.ok` ≥ 1。
+- 访问 `https://<你的域名>/api/feeds`：应返回 8 个源（chinanews / caritas / who-news / oxfam / greenpeace / sspai / ifrc / unocha）的抓取结果，`summary.ok` ≥ 6。
 - 打开 `https://cochranek.github.io/yihot/`：信息流应为实时抓取内容（侧栏"实时监测"区显示最近同步时间）。
+
+## 源可达性备忘（从腾讯云大陆出口实测）
+- 可用：中新网、国际明爱会、WHO、乐施会、绿色和平、少数派、IFRC、UN OCHA（后两者需带 `?q=/rss.xml` 后缀）。
+- 被墙/超时：BBC、Guardian、Reuters、AP、FeedBurner、ReliefWeb、联合国新闻。
+- 已失效或反爬拦截（403/404）：中国发展简报、公益时报、SSIR、USAID、gov.uk、Devex、Philanthropy News Digest、New Humanitarian、IIED、今日热榜。
+- `GET /api/probe` 可复测以上候选列表。
 
 ## 接口（与本地 8790 对齐）
 - `GET /api/health`：健康检查、各源状态、翻译配置状态

@@ -7,11 +7,15 @@ ENV_ID="${ENV_ID:?请先设置 ENV_ID（云开发环境 ID，形如 cris-1gabcde
 FUNC=yihotApi
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 
-echo "==> 0/2 同步 feeds.json 到函数目录"
-cp "$ROOT/../feeds.json" "$ROOT/yihotApi/feeds.json"
+echo "==> 0/2 检查源配置"
+if [ ! -f "$ROOT/yihotApi/feeds.json" ]; then
+  echo "!! 缺少 $ROOT/yihotApi/feeds.json（云端源清单，不进 Git）。"
+  echo "!! 请参照 DEPLOY.md 的『源清单』一节重建后再部署。"
+  exit 1
+fi
 
-echo "==> 1/2 部署云函数 $FUNC -> 环境 $ENV_ID"
-tcb fn deploy "$FUNC" --envId "$ENV_ID" --name "$FUNC" --entry "index.js" --path "$ROOT/yihotApi"
+echo "==> 1/2 部署云函数 $FUNC -> 环境 $ENV_ID（事件函数模式，勿加 --httpFn）"
+(cd "$ROOT" && tcb fn deploy "$FUNC" --force --env-id "$ENV_ID")
 
 echo "==> 2/2 完成"
 echo "请在 CloudBase 控制台完成三件事："

@@ -1,10 +1,9 @@
 /* YIHOT: public-source-only information triage. Every rendered item keeps a citation. */
-// 客户端允许渲染的来源 = 本地/Actions 烘焙源 ∪ 腾讯云可达源（两端配置不同，取并集）。
-const ALLOWED_SOURCE_IDS = new Set(["reliefweb", "un-news", "un-official", "chinanews", "caritas", "who-news", "oxfam", "greenpeace", "sspai", "ifrc", "unocha"]);
-const ALLOWED_SOURCE_HOSTS = new Set(["reliefweb.int", "news.un.org", "www.un.org", "un.org", "www.chinanews.com.cn", "chinanews.com.cn", "www.caritas.org", "caritas.org", "www.who.int", "who.int", "www.oxfam.org", "oxfam.org", "www.greenpeace.org", "greenpeace.org", "sspai.com", "www.ifrc.org", "ifrc.org", "www.unocha.org", "unocha.org"]);
+const ALLOWED_SOURCE_IDS = new Set(["reliefweb", "un-news", "un-official"]);
+const ALLOWED_SOURCE_HOSTS = new Set(["reliefweb.int", "news.un.org", "www.un.org", "un.org"]);
 // 公开部署后端（腾讯云 CloudBase 云函数）地址。留空时走本地同源 /api/*，
 // 并依次回退到 /api/feeds 与 data/feeds.json（GitHub Pages 烘焙数据）。
-const YIHOT_API_BASE = "https://cris-d6gkkzled0d106625-1421328052.ap-shanghai.app.tcloudbase.com/yihotApi";
+const YIHOT_API_BASE = "";
 const DEMO_ITEMS = [
   { id: "demo-1", topic: "灾害救援", title: "沿海强降雨预警：多个社区开放临时安置点", summary: "公开通告提到志愿者登记、饮用水和儿童用品需求，公益团队可先核验本地联系人与服务时间。", source: "地方应急公开通告（演示）", sourceType: "政府公开页面", url: "https://www.gov.cn/", published: "2026-08-23T08:30:00+08:00", action: true, score: 86, heat: 94, reports: 4, recommendation: "先核对地区、更新时间和安置点联系方式，再决定是否转入组织流程。" },
   { id: "demo-2", topic: "资金", title: "社区小额公益项目开放新一轮申报", summary: "申报窗口、预算上限和材料清单已公布，适合加入组织内部提醒队列。", source: "公益项目公开页面（演示）", sourceType: "公开申报", url: "https://www.gov.cn/", published: "2026-08-22T16:00:00+08:00", action: true, score: 79, heat: 82, reports: 3, recommendation: "打开原文确认截止时间和适用地区，避免把公开征集误作获资承诺。" },

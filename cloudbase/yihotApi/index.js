@@ -16,13 +16,16 @@ const MAX_BYTES = 700_000;
 const MAX_REDIRECTS = 3;
 const REFRESH_INTERVAL_MS = Math.max(15_000, Number(process.env.YIHOT_REFRESH_MS) || 60_000);
 const USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) YIHOT/1.0 RSS-Reader";
-const ALLOWED_SOURCE_IDS = new Set(["reliefweb", "un-news", "un-official"]);
-const ALLOWED_SOURCE_HOSTS = new Set(["reliefweb.int", "news.un.org", "www.un.org", "un.org"]);
+// 云函数运行在腾讯云（大陆出口）。这里只放从大陆出口实测可达的公开源；
+// reliefweb / news.un.org 在大陆出口被拦（202 挑战 / 404），故云端不启用，
+// 它们仍保留在 GitHub Actions 烘焙与本地服务里（那些网络可达）。
+const ALLOWED_SOURCE_IDS = new Set(["chinanews", "caritas", "who-news", "oxfam", "greenpeace", "sspai", "ifrc", "unocha"]);
+const ALLOWED_SOURCE_HOSTS = new Set(["www.chinanews.com.cn", "chinanews.com.cn", "www.caritas.org", "caritas.org", "www.who.int", "who.int", "www.oxfam.org", "oxfam.org", "www.greenpeace.org", "greenpeace.org", "sspai.com", "www.ifrc.org", "ifrc.org", "www.unocha.org", "unocha.org"]);
 const TRANSLATE_DISABLED = /^(0|off|false)$/i.test(process.env.YIHOT_TRANSLATE || "");
 const TRANSLATE_BASE_URL = (process.env.YIHOT_TRANSLATE_BASE_URL || "").replace(/\/+$/, "");
 const TRANSLATE_MODEL = process.env.YIHOT_TRANSLATE_MODEL || "moonshot-v1-8k";
 const TRANSLATE_API_KEY = process.env.YIHOT_TRANSLATE_API_KEY || "";
-const ALLOWED_ORIGINS = new Set(["https://cochranek.github.io", "http://127.0.0.1:8766", "http://localhost:8766"]);
+const ALLOWED_ORIGINS = new Set(["https://cochranek.github.io", "http://127.0.0.1:8766", "http://localhost:8766", "http://127.0.0.1:8790", "http://localhost:8790"]);
 
 const translationCache = new Map();
 let cache = null;
@@ -167,7 +170,36 @@ function healthPayload() {
 }
 
 function feedsPayload(snapshot) {
-  return { ok: true, mode: "cloudbase-public-source", version: snapshot.version, etag: snapshot.etag, serverTime: new Date().toISOString(), fetchedAt: snapshot.refreshedAt, refreshedAt: snapshot.refreshedAt, lastAttemptAt: snapshot.refreshStartedAt, lastSuccessAt: snapshot.sources.map((source) => source.lastSuccessAt).filter(Boolean).sort().at(-1) || null, nextRefreshAt: snapshot.nextRefreshAt, refreshIntervalMs: REFRESH_INTERVAL_MS, refreshInProgress: Boolean(refreshPromise), summary: { total: snapshot.sources.length, ok: snapshot.sources.filter((source) => source.status === "ok").length, error: snapshot.sources.filter((source) => source.status === "error").length, stale: snapshot.sources.filter((source) => source.stale).length }, sources: snapshot.sources };
+  // 出站裁剪：缓存保留全量 XML（用于指纹/304），只把每源前 30 条、摘要截断后的内容发给前端，降低轮询流量
+  return { ok: true, mode: "cloudbase-public-source", version: snapshot.version, etag: snapshot.etag, serverTime: new Date().toISOString(), fetchedAt: snapshot.refreshedAt, refreshedAt: snapshot.refreshedAt, lastAttemptAt: snapshot.refreshStartedAt, lastSuccessAt: snapshot.sources.map((source) => source.lastSuccessAt).filter(Boolean).sort().at(-1) || null, nextRefreshAt: snapshot.nextRefreshAt, refreshIntervalMs: REFRESH_INTERVAL_MS, refreshInProgress: Boolean(refreshPromise), summary: { total: snapshot.sources.length, ok: snapshot.sources.filter((source) => source.status === "ok").length, error: snapshot.sources.filter((source) => source.status === "error").length, stale: snapshot.sources.filter((source) => source.stale).length }, sources: snapshot.sources.map((source) => ({ ...source, xml: source.xml ? trimFeedXml(source.xml) : source.xml })) };
+}
+
+function truncateXmlText(value, max) {
+  const text = String(value || "");
+  if (text.length <= max) return text;
+  const cdata = text.match(/^<!\[CDATA\[([\s\S]*)\]\]>$/);
+  if (cdata) return `<![CDATA[${cdata[1].slice(0, max)}…]]>`;
+  let cut = text.slice(0, max);
+  const amp = cut.lastIndexOf("&");
+  if (amp !== -1 && !/&#?\w+;/.test(cut.slice(amp))) cut = cut.slice(0, amp);
+  if (cut.lastIndexOf("<") > cut.lastIndexOf(">")) cut = cut.slice(0, cut.lastIndexOf("<"));
+  return `${cut}…`;
+}
+
+function trimFeedXml(xml, maxItems = 30, maxDesc = 400) {
+  const rss = [...xml.matchAll(/<item[\s>][\s\S]*?<\/item>/g)];
+  const blocks = rss.length ? rss : [...xml.matchAll(/<entry[\s>][\s\S]*?<\/entry>/g)];
+  let out = xml;
+  if (blocks.length > maxItems) {
+    const cutAt = blocks[maxItems].index;
+    const closeAt = Math.max(xml.lastIndexOf("</channel>"), xml.lastIndexOf("</feed>"));
+    out = closeAt > cutAt ? xml.slice(0, cutAt) + xml.slice(closeAt) : xml.slice(0, cutAt);
+  }
+  // content:encoded 是 WordPress 全文副本，前端不消费，直接整段移除
+  out = out.replace(/<content:encoded[\s>][\s\S]*?<\/content:encoded>/g, "");
+  // WHO 等 feed 的 a10:content（Atom 命名空间全文）同样不被前端消费
+  out = out.replace(/<a10:content[\s>][\s\S]*?<\/a10:content>/g, "");
+  return out.replace(/<(description|summary)(\s[^>]*)?>([\s\S]*?)<\/\1>/g, (match, tag, attrs, body) => `<${tag}${attrs || ""}>${truncateXmlText(body, maxDesc)}</${tag}>`);
 }
 
 async function translateChunk(chunk) {
@@ -219,6 +251,55 @@ exports.main = async (event) => {
   if (method === "OPTIONS") return { statusCode: 204, headers: corsHeaders(origin), body: "" };
   const requestPath = String(event.path || (event.requestContext && event.requestContext.path) || "/").split("?")[0];
   try {
+    if (requestPath.endsWith("/api/probe") && method === "GET") {
+      // 固定候选列表诊断（不接受任意 URL）：从云出口看哪些公开源可达
+      const PROBE_URLS = [
+        "https://www.chinadevelopmentbrief.org.cn/feed",
+        "http://www.gongyishibao.com/rss.xml",
+        "https://www.naradafoundation.org/feed",
+        "https://www.undp.org/content/cpm/zh/home/rss/pressreleases.rss",
+        "https://www.huxiu.com/rss/0.xml",
+        "https://36kr.com/feed",
+        "https://feeds.feedburner.com/zhihu/daily",
+        "https://philanthropynewsdigest.org/feed",
+        "https://www.devex.com/news/feed",
+        "https://ssir.org/feed",
+        "https://www.thenewhumanitarian.org/rss.xml",
+        "https://www.iied.org/rss.xml",
+        "https://www.usaid.gov/feed/news",
+        "https://www.gov.uk/world/rss.xml",
+        "https://feeds.bbci.co.uk/news/world/rss.xml",
+        "https://www.theguardian.com/world/rss",
+        "https://feeds.reuters.com/reuters/businessNews",
+        "https://feeds.ap.org/rss/topnews",
+        "https://www.ifrc.org/rss.xml?q=/rss.xml",
+        "https://www.unocha.org/rss.xml?q=/rss.xml",
+        "https://tophub.today/c/WLvVMEdbG3",
+        "https://www.globalgiving.org/rss.xml",
+      ];
+      const results = await Promise.all(PROBE_URLS.map(async (u) => {
+        const t0 = Date.now();
+        try {
+          const controller = new AbortController();
+          const timer = setTimeout(() => controller.abort(), 8000);
+          const res = await fetch(new URL(u), { redirect: "manual", signal: controller.signal, headers: { "user-agent": USER_AGENT, accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, text/html;q=0.8", "accept-language": "zh-CN,zh;q=0.9,en;q=0.8" } });
+          clearTimeout(timer);
+          let size = 0; const chunks = [];
+          try {
+            const reader = res.body?.getReader();
+            if (reader) for (;;) { const { done, value } = await reader.read(); if (done) break; size += value.byteLength; if (size <= 60000) chunks.push(Buffer.from(value)); if (size > 400000) break; }
+          } catch {}
+          const head = Buffer.concat(chunks).toString("utf8");
+          const dates = [...head.matchAll(/<(?:pubDate|published|updated|dc:date)[^>]*>([^<]+)</g)].map((m) => m[1].trim());
+          let newest = null;
+          for (const d of dates) { const ts = Date.parse(d); if (Number.isFinite(ts) && (newest === null || ts > newest)) newest = ts; }
+          return { u, status: res.status, ms: Date.now() - t0, size, ct: res.headers.get("content-type"), loc: res.headers.get("location") || undefined, newest: newest ? new Date(newest).toISOString() : null, items: (head.match(/<item[\s>]/g) || []).length || (head.match(/<entry[\s>]/g) || []).length };
+        } catch (error) {
+          return { u, error: String(error?.message || error).slice(0, 120), ms: Date.now() - t0 };
+        }
+      }));
+      return respond(200, { results }, origin);
+    }
     if (requestPath.endsWith("/api/health") && method === "GET") {
       if (!cache) await snapshotForRequest(false);
       return respond(200, healthPayload(), origin);
