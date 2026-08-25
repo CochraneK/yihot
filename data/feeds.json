@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787690914227,
-  "bakedAt": "2026-08-25T20:48:34.227Z",
-  "refreshedAt": "2026-08-25T20:48:34.227Z",
-  "lastSuccessAt": "2026-08-25T20:48:24.310Z",
+  "version": 1787694359161,
+  "bakedAt": "2026-08-25T21:45:59.161Z",
+  "refreshedAt": "2026-08-25T21:45:59.161Z",
+  "lastSuccessAt": "2026-08-25T21:45:49.507Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-25T20:48:24.066Z",
+      "lastSuccessAt": "2026-08-25T21:45:49.267Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,31 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-25T20:48:24.310Z",
+      "lastSuccessAt": "2026-08-25T21:45:49.507Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-449194073f329821",
+      "sourceId": "un-news",
+      "title": "古特雷斯：必须打破武装冲突与粮食不安全之间的恶性循环",
+      "summary": "联合国秘书长古特雷斯周二在安理会关于“冲突与粮食安全”的公开辩论中表示，武装冲突、暴力与饥饿之间的联系不容否认，必须加强落实安理会第2417号决议，打破冲突与粮食不安全之间的恶性循环。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142685",
+      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-2f966138254db05a",
+      "sourceId": "un-news",
+      "title": "联合国秘书长与红十字会主席再次呼吁制定致命自主武器规则",
+      "summary": "尽管有未经证实的报道称，全自主且由人工智能引导的无人机目前已在战场上投入使用，但联合国秘书长古特雷斯与红十字国际委员会主席埃格周二再次发出紧急呼吁，要求在为时已晚之前制定更严格的全球管控措施。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142684",
+      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-b6fc725aaccfa7c0",
       "sourceId": "un-news",
@@ -309,26 +329,6 @@
       "summary": "8月19日世界人道主义日，《联合国新闻》推出人物纪录片系列《伊线》，记录扎根深野一线的女性联合国职员。第一期走近联合国难民署刚果（金）布尼亚驻地办公室助理外勤官袁希程。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142655",
       "published": "Wed, 19 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-19cdb252159aef73",
-      "sourceId": "un-news",
-      "title": "【专题报道】300公斤牛仔布的第二次生命——重新思考零废物",
-      "summary": "300公斤废弃牛仔布，能变成什么？在肯尼亚马赛马拉，达玛丽丝·露西亚正和当地年轻人及工匠一起，尝试寻找答案。这批从内罗毕运来的废弃牛仔布，将经过清洗、消毒和重新设计，最终成为新的产品。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142646",
-      "published": "Wed, 19 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-2ce8d34be0c72730",
-      "sourceId": "un-news",
-      "title": "黎巴嫩：86万流离失所者已返回家园，但人道主义危机依然严峻",
-      "summary": "联合国周二警告称，约86万因黎巴嫩南部冲突而流离失所的人已返回家园，但流离失所和人道主义危机远未结束。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142652",
-      "published": "Tue, 18 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
