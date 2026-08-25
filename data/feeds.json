@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787666836863,
-  "bakedAt": "2026-08-25T14:07:16.863Z",
-  "refreshedAt": "2026-08-25T14:07:16.863Z",
-  "lastSuccessAt": "2026-08-25T14:07:06.152Z",
+  "version": 1787670489928,
+  "bakedAt": "2026-08-25T15:08:09.928Z",
+  "refreshedAt": "2026-08-25T15:08:09.928Z",
+  "lastSuccessAt": "2026-08-25T15:07:58.778Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-25T14:07:06.023Z",
+      "lastSuccessAt": "2026-08-25T15:07:58.576Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,71 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-25T14:07:06.152Z",
+      "lastSuccessAt": "2026-08-25T15:07:58.778Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-b6fc725aaccfa7c0",
+      "sourceId": "un-news",
+      "title": "【专题报道】地中海的另一场“奥德赛”：生态宝藏何以走出危机",
+      "summary": "距荷马史诗《奥德赛》诞生已逾2500年。如今，英国导演克里斯托弗·诺兰执导的电影《奥德赛》再次将这段跨越千年的传奇旅程搬上大银幕。从神话中的惊涛骇浪，到今天真实世界里的生态危机，这片海域依然在经历一场漫长而艰难的“奥德赛”——只是这一次，主角不再是奥德修斯，而是地中海本身。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142647",
+      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-bbe3c9700b58d659",
+      "sourceId": "un-news",
+      "title": "联合国谴责南苏丹伏击事件，两名维和人员遇害",
+      "summary": "联合国秘书长发言人周一表示，古特雷斯秘书长以最强烈措辞谴责南苏丹琼莱州发生的针对联合国南苏丹特派团巡逻队的伏击事件。两名埃塞俄比亚维和人员在袭击中遇难，另有七人受伤。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142682",
+      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-3d3f725d0856aa6b",
+      "sourceId": "un-news",
+      "title": "联合国：乌克兰战争持续升级，平民伤亡和人道主义需求加剧",
+      "summary": "联合国主管政治和建设和平事务的副秘书长迪卡洛周一向安理会通报乌克兰局势时表示，战争持续造成死亡、破坏和流离失所，平民伤亡人数仍在攀升。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142681",
+      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-e9dce45b97112091",
+      "sourceId": "un-news",
+      "title": "粮农组织：释放园艺业潜力是促使农业食品体系转型、提供健康膳食的关键",
+      "summary": "粮农组织总干事屈冬玉周一在日本京都举行的2026年国际园艺大会上表示，农业必须超越仅关注生产足够数量粮食的阶段，更加重视提供健康饮食所需的多样化、营养丰富的食物。他强调，园艺业对于改善营养状况、增强生计韧性以及构建更可持续的农业食品体系具有重要作用。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142680",
+      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-fbe2bd08a44c9072",
+      "sourceId": "un-news",
+      "title": "联合国：儿童和青少年仍面临艾滋病毒防治缺口",
+      "summary": "联合国儿童基金会最新发布的2026年艾滋病毒估计数据显示，儿童和青少年继续受到全球艾滋病毒应对工作缺口的不成比例影响。国际资金减少和服务中断正带来额外风险。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142679",
+      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-c2812892d923e54d",
+      "sourceId": "un-news",
+      "title": "刚果民主共和国埃博拉疫情持续超过100天   确诊病例超过5200例",
+      "summary": "刚果民主共和国埃博拉疫情暴发已超过100天，该国周一宣布累计确诊病例超过5200例。世卫组织表示，此次疫情已成为该国蔓延速度最快的疫情，病毒传播速度已超过防控措施的推进速度，需要大幅加强应对措施。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142678",
+      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-a504257fd6410989",
       "sourceId": "un-news",
@@ -269,66 +329,6 @@
       "summary": "联合国周二警告称，约86万因黎巴嫩南部冲突而流离失所的人已返回家园，但流离失所和人道主义危机远未结束。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142652",
       "published": "Tue, 18 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-2017872858023e18",
-      "sourceId": "un-news",
-      "title": "世卫组织和儿基会：医疗机构卫生设施仍存在显著缺口",
-      "summary": "世界卫生组织和联合国儿童基金会周二发布报告显示，全球医疗机构在供水、卫生设施、个人卫生、环境清洁和医疗废物管理方面仍存在明显缺口。到2025年，85%的医疗机构拥有基本供水服务，72%拥有基本卫生服务，71%拥有基本医疗废物管理服务，但仅59%达到基本环境清洁标准，40%符合基本卫生设施服务要求。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142653",
-      "published": "Tue, 18 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-44c8c72039b731d6",
-      "sourceId": "un-news",
-      "title": "加沙地带：仅3%的耕地既可进入又未受损",
-      "summary": "联合国粮食及农业组织和联合国卫星中心周二发布最新地理空间评估报告显示，截至2026年6月24日，加沙地带仅有3%的耕地既可进入又未受损。自2025年10月以来，这类耕地面积减少25.5%。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142651",
-      "published": "Tue, 18 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-e137fe0723c81f9b",
-      "sourceId": "un-news",
-      "title": "哥伦比亚地震：联合国加大对10万人的援助力度",
-      "summary": "根据周二发布的最新情况通报，随着上周发生7.4级毁灭性地震后需求持续增加，联合国正在哥伦比亚西部加大人道主义援助力度。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142650",
-      "published": "Tue, 18 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-07cd76fec2e67fd2",
-      "sourceId": "un-news",
-      "title": "埃博拉：运送病人的摩托车骑手或成加强应对的关键",
-      "summary": "在刚果民主共和国（刚果（金））有史以来最致命的埃博拉疫情前线，世界卫生组织于周二公布了大规模推动社区参与的详细计划，此前一天，又发生了一起针对救护车的袭击事件。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142649",
-      "published": "Tue, 18 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-35d6ee1c3f6c27cd",
-      "sourceId": "un-news",
-      "title": "联合国：利比亚政治进程取得进展，但仍面临治理、安全和经济挑战",
-      "summary": "联合国秘书长利比亚问题特别代表汉娜·塔特周二在安理会表示，推动利比亚政治进程向前发展依然至关重要。近期大范围停电、公众不满情绪以及持续热浪，暴露出制度分裂、公共资源大规模挪用、投资不足和决策缺乏协调等治理问题。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142648",
-      "published": "Tue, 18 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-ec9509636b8dac16",
-      "sourceId": "un-news",
-      "title": "西岸库斯拉村围困局势有所缓解，但加沙危机加剧",
-      "summary": "联合国周一表示，人道主义工作者已接触到在约旦河西岸北部库斯拉村被以色列定居者围困数日的巴勒斯坦家庭；与此同时，官员们警告称，这种对峙局面绝不能成为“新常态”。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142645",
-      "published": "Mon, 17 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
