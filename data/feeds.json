@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787772008077,
-  "bakedAt": "2026-08-26T19:20:08.077Z",
-  "refreshedAt": "2026-08-26T19:20:08.077Z",
-  "lastSuccessAt": "2026-08-26T19:19:59.216Z",
+  "version": 1787787460913,
+  "bakedAt": "2026-08-26T23:37:40.913Z",
+  "refreshedAt": "2026-08-26T23:37:40.913Z",
+  "lastSuccessAt": "2026-08-26T23:37:31.622Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T19:19:58.980Z",
+      "lastSuccessAt": "2026-08-26T23:37:31.401Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T19:19:59.216Z",
+      "lastSuccessAt": "2026-08-26T23:37:31.622Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-a3b89286a6b15e99",
+      "sourceId": "un-news",
+      "title": "非洲的新宏伟目标：更多卫生工作者，更强大的卫生体系",
+      "summary": "面对到2035年预计将出现超过600万名卫生专业人员短缺的局面，非洲各国正加紧努力以加强其卫生力量，周三在埃塞俄比亚亚的斯亚贝巴举行的卫生部长会议上，各国宣布了一项为期十年的新计划。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142693",
+      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-3e8fe43e7896d634",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "几内亚比绍半数疑似猴痘病例为儿童",
       "summary": "在几内亚比绍报告的46例疑似猴痘病例中，15岁以下儿童占一半。面对该国首次猴痘疫情，联合国儿童基金会正在加强对公共卫生部的支持。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142663",
-      "published": "Thu, 20 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-4c366659d5ff10df",
-      "sourceId": "un-news",
-      "title": "刚果（金）获赠7万剂埃博拉疫苗，本迪布焦病毒疫情持续蔓延",
-      "summary": "刚果民主共和国（刚果（金））将从联合国国际疫苗协调小组获得7万剂针对扎伊尔型病毒的埃尔维博疫苗，用于保护一线社区免受埃博拉病毒病的侵害。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142662",
       "published": "Thu, 20 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
