@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787759745396,
-  "bakedAt": "2026-08-26T15:55:45.396Z",
-  "refreshedAt": "2026-08-26T15:55:45.396Z",
-  "lastSuccessAt": "2026-08-26T15:55:35.016Z",
+  "version": 1787766664085,
+  "bakedAt": "2026-08-26T17:51:04.085Z",
+  "refreshedAt": "2026-08-26T17:51:04.085Z",
+  "lastSuccessAt": "2026-08-26T17:50:54.270Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T15:55:34.827Z",
+      "lastSuccessAt": "2026-08-26T17:50:54.082Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,31 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T15:55:35.016Z",
+      "lastSuccessAt": "2026-08-26T17:50:54.270Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-15f76de337b46eed",
+      "sourceId": "un-news",
+      "title": "粮农组织呼吁利用科学技术弥合数字鸿沟、城乡差距和性别差距",
+      "summary": "粮农组织总干事屈冬玉周二在第11届亚太经合组织粮食安全部长级会议上表示，亚太地区必须将科学、技术和人工智能置于农业食品系统转型工作的核心位置，同时确保创新有助于弥合而非扩大数字鸿沟、农村鸿沟和性别鸿沟。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142691",
+      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-56ceffef136df2cc",
+      "sourceId": "un-news",
+      "title": "联合国：加沙停火依然脆弱，必须推进解除武装、恢复治理和重建",
+      "summary": "联合国中东和平进程代理特别协调员阿拉克巴罗夫周三向安理会通报中东局势时表示，尽管关于执行安理会第2803号决议和《结束加沙冲突综合计划》的谈判仍在继续，但加沙停火依然脆弱，以色列对加沙的袭击仍在持续，约旦河西岸局势也在迅速恶化。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142690",
+      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-d851ad1f79abed9e",
       "sourceId": "un-news",
@@ -309,26 +329,6 @@
       "summary": "联合国南苏丹人权委员会周四在最新咨询意见中警告称，南苏丹正迈向独立以来首次全国大选，但实现和平、可信并推动民主变革所需的政治、安全和人权保障措施基本缺失。如果缺乏巩固民主、防止国家分裂的战略，选举可能助长冲突重燃，并加剧暴行犯罪风险。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142661",
       "published": "Thu, 20 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-8933f3c6202d5b33",
-      "sourceId": "un-news",
-      "title": "赞比亚：大选后政治对手遭逮捕和拘留引发担忧",
-      "summary": "在赞比亚总统希奇莱马成功连任第二个五年任期后，联合国人权事务高级专员对该国据报发生的政治对手遭逮捕和拘留事件表示关切。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142660",
-      "published": "Wed, 19 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-ab6be3baf29d10bf",
-      "sourceId": "un-news",
-      "title": "苏丹：战事和洪灾加剧，20万人新近流离失所",
-      "summary": "国际移民组织周三表示，尽管有大量民众返回喀土穆，但随着冲突升级和破坏性季节性洪灾加剧，苏丹正面临日益加剧的流离失所和人道主义压力。全球供应链延误，尤其是经由红海和霍尔木兹海峡的运输延误，进一步阻碍了人道主义援助的通行。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142659",
-      "published": "Wed, 19 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
