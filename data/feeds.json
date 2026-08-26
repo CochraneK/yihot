@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787750307827,
-  "bakedAt": "2026-08-26T13:18:27.827Z",
-  "refreshedAt": "2026-08-26T13:18:27.827Z",
-  "lastSuccessAt": "2026-08-26T13:18:15.038Z",
+  "version": 1787759745396,
+  "bakedAt": "2026-08-26T15:55:45.396Z",
+  "refreshedAt": "2026-08-26T15:55:45.396Z",
+  "lastSuccessAt": "2026-08-26T15:55:35.016Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T13:18:14.806Z",
+      "lastSuccessAt": "2026-08-26T15:55:34.827Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,51 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T13:18:15.038Z",
+      "lastSuccessAt": "2026-08-26T15:55:35.016Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-d851ad1f79abed9e",
+      "sourceId": "un-news",
+      "title": "联合国：缅甸罗兴亚人及其他群体持续遭受严重人权侵犯",
+      "summary": "在缅甸罗兴亚人大规模逃离该国寻求庇护9周年之际，联合国秘书长古特雷斯呼吁全球重新关注罗兴亚人的困境并采取行动。与此同时，联合国人权事务高级专员办公室发布的最新报告指出，缅甸人权状况，特别是少数民族群体的人权状况，已跌至新低。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142688",
+      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-2fdcc81b4747b5a6",
+      "sourceId": "un-news",
+      "title": "古特雷斯谴责海地黑帮袭击事件",
+      "summary": "联合国秘书长古特雷斯周二通过发言人发表声明，谴责最近发生在海地太子港郊区肯斯科夫市镇的黑帮袭击事件。据报道，8月23日夜间发生的袭击造成至少47人死亡，其中包括22名据称在寻求庇护的教堂院内遭处决的人员。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142689",
+      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-5f7c987cfbd7a2c8",
+      "sourceId": "un-news",
+      "title": "古特雷斯谴责以色列当局未经授权进入近东救济工程处设施",
+      "summary": "联合国秘书长发言人杜加里克周二发表声明说，古特雷斯最强烈谴责以色列当局包括安全部队当天非法进入并滞留在被占领的东耶路撒冷的联合国近东救济工程处卡兰迪亚培训中心，并在场所内进行未经授权的施工。当时，近东救济工程处工作人员正在该中心内。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142687",
+      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-c0bbc872e89d50fc",
+      "sourceId": "un-news",
+      "title": "【世界交汇点】对话刘克凡——在联合国做新闻的26年",
+      "summary": "今年是联合国电台成立80周年。从磁带装进“外交公文包”寄送世界各地，到六种语言实时上网直播，联合国的声音是如何一路走到今天的？今天，联合国全球传播部新闻媒体司副司长刘克凡做客《世界交汇点》，和我们聊聊他在联合国的26年生涯，以及在这样的媒体巨变中，联合国应该怎么做新闻、做什么样的新闻。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142686",
+      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-449194073f329821",
       "sourceId": "un-news",
@@ -288,46 +328,6 @@
       "title": "苏丹：战事和洪灾加剧，20万人新近流离失所",
       "summary": "国际移民组织周三表示，尽管有大量民众返回喀土穆，但随着冲突升级和破坏性季节性洪灾加剧，苏丹正面临日益加剧的流离失所和人道主义压力。全球供应链延误，尤其是经由红海和霍尔木兹海峡的运输延误，进一步阻碍了人道主义援助的通行。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142659",
-      "published": "Wed, 19 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-e73c9030be9821e2",
-      "sourceId": "un-news",
-      "title": "人权高专办：以色列政府部长最新言论已逾越人性底线",
-      "summary": "联合国人权事务高级专员办事处周三表示，以色列国家安全部长本-格维尔最近发表的言论，鼓吹并煽动暴力，其性质已构成暴行罪，再次表明以色列政府高级官员对国际人道法、国际人权法以及基本人道准则的极度蔑视。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142658",
-      "published": "Wed, 19 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-0e6f01736cfda202",
-      "sourceId": "un-news",
-      "title": "古特雷斯：确保世界各地人道主义工作者得到保护、支持并永远被铭记",
-      "summary": "联合国秘书长古特雷斯周三在联合国巴格达总部遭炸弹袭击23周年纪念仪式上发表讲话，缅怀在2003年巴格达联合国总部爆炸事件中遇难的22名联合国工作人员，以及众多伤者、遇难者家属和亲人，并向所有在那一天生活从此改变的人们表达缅怀。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142657",
-      "published": "Wed, 19 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-b69e5a84d7d35121",
-      "sourceId": "un-news",
-      "title": "国际刑事法院强烈反对美国新的制裁指令",
-      "summary": "国际刑事法院周三发表声明，对美国政府宣布对该院院长赤根智子法官（日本）以及检察官办公室高级审判律师塞耶（塞内加尔）实施新的制裁指定表示强烈谴责。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142656",
-      "published": "Wed, 19 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-b0ea11ff3cc5c81b",
-      "sourceId": "un-news",
-      "title": "世界人道主义日 | 【特写】伊线：她在埃博拉疫情风暴中心 帮助流离失所者重建生活",
-      "summary": "8月19日世界人道主义日，《联合国新闻》推出人物纪录片系列《伊线》，记录扎根深野一线的女性联合国职员。第一期走近联合国难民署刚果（金）布尼亚驻地办公室助理外勤官袁希程。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142655",
       "published": "Wed, 19 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
