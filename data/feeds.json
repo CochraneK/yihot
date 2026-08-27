@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787787460913,
-  "bakedAt": "2026-08-26T23:37:40.913Z",
-  "refreshedAt": "2026-08-26T23:37:40.913Z",
-  "lastSuccessAt": "2026-08-26T23:37:31.622Z",
+  "version": 1787824412042,
+  "bakedAt": "2026-08-27T09:53:32.042Z",
+  "refreshedAt": "2026-08-27T09:53:32.042Z",
+  "lastSuccessAt": "2026-08-27T09:53:18.063Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T23:37:31.401Z",
+      "lastSuccessAt": "2026-08-27T09:53:17.714Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,31 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-26T23:37:31.622Z",
+      "lastSuccessAt": "2026-08-27T09:53:18.063Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-c87ccde74abc86e2",
+      "sourceId": "un-news",
+      "title": "古特雷斯：联合国维和行动必须适应新的现实",
+      "summary": "联合国秘书长古特雷斯周三在联合国大会关于联合国维和行动审查的讲话中表示，联合国维和行动是维护国际和平与安全不可或缺的工具，但面对不断变化的冲突形势，必须适应新的现实。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142695",
+      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-2c6894f4e79f25b4",
+      "sourceId": "un-news",
+      "title": "儿基会就巴基斯坦医院火灾导致14名新生儿死亡表示悲痛",
+      "summary": "联合国儿童基金会驻巴基斯坦代表艾恩赛德周三发表声明，对当天伊斯兰堡巴基斯坦医学科学研究所医院发生火灾、造成至少14名新生儿不幸遇难深感悲痛。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142694",
+      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-a3b89286a6b15e99",
       "sourceId": "un-news",
@@ -308,26 +328,6 @@
       "title": "中东：加沙94%居民需要住所，以色列在黎巴嫩加大破坏力度",
       "summary": "联合国机构和维和人员周四警告称，随着以色列在加沙地带持续开火和发动空袭，该地区210万居民中有94%需要住所。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142665",
-      "published": "Thu, 20 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-8090b5a642235589",
-      "sourceId": "un-news",
-      "title": "俄罗斯导弹袭击再次导致乌克兰17人死亡，古特雷斯呼吁停火",
-      "summary": "据当地当局报告，周四，俄罗斯弹道导弹袭击导致乌克兰首都基辅及周边地区17人死亡，40多人受伤。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142664",
-      "published": "Thu, 20 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-754172f71eac7d4d",
-      "sourceId": "un-news",
-      "title": "几内亚比绍半数疑似猴痘病例为儿童",
-      "summary": "在几内亚比绍报告的46例疑似猴痘病例中，15岁以下儿童占一半。面对该国首次猴痘疫情，联合国儿童基金会正在加强对公共卫生部的支持。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142663",
       "published": "Thu, 20 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
