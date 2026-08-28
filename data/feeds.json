@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787894795310,
-  "bakedAt": "2026-08-28T05:26:35.310Z",
-  "refreshedAt": "2026-08-28T05:26:35.310Z",
-  "lastSuccessAt": "2026-08-28T05:26:05.307Z",
+  "version": 1787942739554,
+  "bakedAt": "2026-08-28T18:45:39.554Z",
+  "refreshedAt": "2026-08-28T18:45:39.554Z",
+  "lastSuccessAt": "2026-08-28T18:45:29.551Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,19 +19,88 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-28T05:26:04.144Z",
+      "lastSuccessAt": "2026-08-28T18:45:29.551Z",
       "itemCount": 30
     },
     {
       "id": "un-official",
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
-      "status": "ok",
-      "lastSuccessAt": "2026-08-28T05:26:05.307Z",
-      "itemCount": 10
+      "status": "error",
+      "error": "This operation was aborted"
     }
   ],
   "items": [
+    {
+      "id": "un-news-66dbd2b8270ff09d",
+      "sourceId": "un-news",
+      "title": "尼泊尔洪灾影响巨大  遇难人数持续攀升",
+      "summary": "随着尼泊尔当局确认已在受灾地区打捞出538具遗体，这场致命洪灾的影响被描述为“巨大”。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142702",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-5eb5597977deccc6",
+      "sourceId": "un-news",
+      "title": "【联合国会客厅】放过孩子 好好吃饭",
+      "summary": "战争会夺走什么？对一个孩子来说，可能是学校、家庭和玩耍的时光，也可能是最简单的一顿饭。《欢迎来龙餐馆》导演文牧野做客最新一期《联合国会客厅》，从电影中的一间餐馆、一个孩子和一顿饭出发，谈论战争与儿童，也重新追问一个最朴素的问题：和平对于一个孩子来说，究竟意味着什么？",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142701",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-ab66d0e80f27dc0f",
+      "sourceId": "un-news",
+      "title": "乌干达宣布本迪布焦型埃博拉疫情结束",
+      "summary": "非洲疾病控制与预防中心和世界卫生组织周四宣布，乌干达由本迪布焦型埃博拉病毒引发的疫情已结束。自该国最后一名患者、一例输入性病例于2026年7月16日出院以来，已连续42天未出现新增确诊病例。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142700",
+      "published": "Thu, 27 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-346b9671c7409af9",
+      "sourceId": "un-news",
+      "title": "联合国：叙利亚正处于关键时刻 国际社会应支持政治过渡和人道主义复苏",
+      "summary": "秘书长叙利亚问题副特使科尔多内和代理助理秘书长兼紧急救济副协调员拉特瓦特周四向安理会通报叙利亚局势，表示叙利亚政治过渡和复苏取得进展，但仍面临安全、人道主义、问责和资源等方面的重大挑战，国际社会必须提供更多支持。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142699",
+      "published": "Thu, 27 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-f1cebba7a3f42c9f",
+      "sourceId": "un-news",
+      "title": "古特雷斯就波黑塞族前军事领导人姆拉迪奇去世发表声明",
+      "summary": "联合国秘书长古特雷斯周四通过发言人发表声明，表示注意到波黑塞族武装力量前指挥官姆拉迪奇去世，并强调针对其犯下的种族灭绝罪、危害人类罪以及违反战争法或战争惯例罪作出的司法裁决是最终裁决，相关事实已成为历史记录的一部分。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142698",
+      "published": "Thu, 27 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-1b9a182a36591400",
+      "sourceId": "un-news",
+      "title": "古特雷斯：此次疫情是有记录以来蔓延速度最快的埃博拉疫情",
+      "summary": "联合国秘书长古特雷斯周四表示，刚果民主共和国埃博拉疫情是有记录以来蔓延速度最快的埃博拉疫情，其蔓延速度和范围都超过了遏制疫情的应对措施，但疫情是可以遏制的。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142697",
+      "published": "Thu, 27 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-949448ece410ebe1",
+      "sourceId": "un-news",
+      "title": "喜马拉雅山洪灾发生一天后，震惊与毁灭仍在持续",
+      "summary": "据报道，周三山洪暴发冲袭尼泊尔和中国的城镇及村庄后，仍有数百人下落不明，救援队伍正努力抵达因灾被隔离的社区。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142696",
+      "published": "Thu, 27 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-c87ccde74abc86e2",
       "sourceId": "un-news",
@@ -261,183 +330,13 @@
       "published": "Fri, 21 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-b8b6a676d98fd2d3",
-      "sourceId": "un-news",
-      "title": "世卫组织与北京大学加强合作，共同推进卫生应急准备工作",
-      "summary": "世界卫生组织与北京大学签署一项为期两年的项目合作协议，旨在通过研究、培训和创新分析方法，加强全球卫生应急准备工作。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142670",
-      "published": "Fri, 21 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-f5787c3809c3bd2a",
-      "sourceId": "un-news",
-      "title": "古特雷斯：纪念恐怖主义受害者必须保护其尊严和权利",
-      "summary": "8月21日是纪念和悼念恐怖主义受害者国际日。联合国秘书长古特雷斯当天表示，今年的主题“缅怀与治愈”提醒人们，铭记是通向康复与重振之路。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142669",
-      "published": "Fri, 21 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-0149f9fa605c667a",
-      "sourceId": "un-news",
-      "title": "索马里儿童危机加剧，205家卫生和营养机构关闭",
-      "summary": "联合国儿童基金会周五表示，援助削减正导致索马里卫生和营养机构关闭，饮用水、教育和儿童保护服务也受到影响。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142668",
-      "published": "Fri, 21 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-a0d4b99bdbe1ad61",
-      "sourceId": "un-news",
-      "title": "救援人员警告：刚果（金）埃博拉疫情呈指数级蔓延",
-      "summary": "随着刚果（金）历史上最致命的埃博拉疫情于周五持续蔓延，联合国救援人员再次发出紧急呼吁，要求国际社会立即提供支持，因为目前用于救生工作的资金已严重短缺。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142667",
-      "published": "Fri, 21 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-8f378efcacd569da",
-      "sourceId": "un-news",
-      "title": "【子午播报】2026年8月21日",
-      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，从救灾物资到太阳能光伏板，怎么把货卖到联合国？",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142551",
-      "published": "Fri, 21 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-ad9d62def5a84261",
-      "sourceId": "un-news",
-      "title": "哥伦比亚地震：120万人亟需援助，部分社区仍无法抵达",
-      "summary": "联合国机构周四表示，在哥伦比亚西部发生强震十天后，估计有120万人需要人道主义援助，而部分社区仍仅获得少量或根本未获得援助。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142666",
-      "published": "Thu, 20 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-bce1753d10291c7d",
-      "sourceId": "un-news",
-      "title": "中东：加沙94%居民需要住所，以色列在黎巴嫩加大破坏力度",
-      "summary": "联合国机构和维和人员周四警告称，随着以色列在加沙地带持续开火和发动空袭，该地区210万居民中有94%需要住所。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142665",
-      "published": "Thu, 20 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-2339b92beab0f0b4",
-      "sourceId": "un-official",
-      "title": "Third United Nations Conference on Landlocked Developing Countries (LLDC3)",
-      "summary": "Third UN Conference on&nbsp; Landlocked Developing Countries&nbsp; Awaza, Turkmenistan&nbsp; 5-8 August&nbsp;2025&nbsp; Driving Progress through partnerships&nbsp; &nbsp; &nbsp; The United Nations General Assembly (UNGA)&nbsp;decided to convene the Third United Nations Conference on Landlocked Devel",
-      "url": "https://www.un.org/en/civil-society/third-united-nations-conference-landlocked-developing-countries-lldc3",
-      "published": "Tue, 24 Oct 2023 16:36:20 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-872998da0e34511c",
-      "sourceId": "un-official",
-      "title": "#UNGA78 - Wrap Day 4",
-      "summary": "Groups audience:&nbsp;General Assembly 78 Live BlogVideo embed a la iseek:&nbsp;",
-      "url": "https://www.un.org/en/card/209827",
-      "published": "Thu, 21 Sep 2023 22:14:42 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-1bbf101a3f23d05b",
-      "sourceId": "un-official",
-      "title": "Until we meet again",
-      "summary": "In a few days, world leaders will head back to capitals and barricades will be dismantled, but the General Assembly keeps working. Global threats don’t stop at the end of the high-level week, and neither does the search for responses. Countries continue grappling with the problems affecting us all: ",
-      "url": "https://www.un.org/en/card/209826",
-      "published": "Thu, 21 Sep 2023 21:57:19 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-1fd0b6fec28d7fa3",
-      "sourceId": "un-official",
-      "title": "last day",
-      "summary": "Groups audience:&nbsp;General Assembly 78 Live Blog",
-      "url": "https://www.un.org/en/card/209825",
-      "published": "Thu, 21 Sep 2023 21:55:21 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-891eb08382912cb2",
-      "sourceId": "un-official",
-      "title": "UN tour guides",
-      "summary": "Christian Dior designed the iconic UN tour guide uniforms in the early 1980s. Prior to that, designers included Edith Head and, for the UN’s first male tour guides, Brooks Brothers. The guides got a fashion refresh in 1985 by Harvé Benard, then changed their uniforms, courtesy of Benneton, and Mondr",
-      "url": "https://www.un.org/en/card/209823",
-      "published": "Thu, 21 Sep 2023 21:42:42 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-d92964c4733c05d3",
-      "sourceId": "un-official",
-      "title": "China",
-      "summary": "Vice-President of China, Han Zheng, said in his speech to the GA said: \"China supports all efforts that are conducive to the peaceful resolution of the Ukraine crisis, and stands ready to continue playing a constructive role for the early attainment of peace.\" Image:&nbsp;Groups audience:&nbsp;Gener",
-      "url": "https://www.un.org/en/card/209822",
-      "published": "Thu, 21 Sep 2023 21:37:47 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-0bcbcd454a05552b",
-      "sourceId": "un-official",
-      "title": "Sudan",
-      "summary": "\"Since 15 April, Sudanese people have been facing a destructive war launched by rebel RSF,\" said Abdel-Fattah Al-Burhan Abdelrahman Al-Burhan, President of the Transitional Sovereign Council of Sudan. \"We call upon the international community to designate these groups and their allies as terrorist g",
-      "url": "https://www.un.org/en/card/209816",
-      "published": "Thu, 21 Sep 2023 21:17:29 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-3ace749aa75137a6",
-      "sourceId": "un-official",
-      "title": "Johan Santana GA78",
-      "summary": "Happening now at the SDG Media Zone: Johan Santana, young innovator who codes to address SDG 3 and 10 (speaking). He expresses his desire to assist individuals with visual impairments and other disabilities. They&#039;ve developed a hands-free blind cane and smart glasses and will work on coding a w",
-      "url": "https://www.un.org/en/card/209811",
-      "published": "Thu, 21 Sep 2023 20:49:09 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-5103af018b4fc5e4",
-      "sourceId": "un-official",
-      "title": "International Seabed Authority",
-      "summary": "Michael Lodge (Secretary General, International Seabed Authority) and Emilie McGloane (Director, Peace Boat US) met at the SDG Media Zone to discuss the importance of a new historic treaty - the Treaty of the High Seas - which protects biodiversity beyond national jurisdiction (often shortened to BB",
-      "url": "https://www.un.org/en/card/209805",
-      "published": "Thu, 21 Sep 2023 20:18:59 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-official-53d9ae0b966dae22",
-      "sourceId": "un-official",
-      "title": "Renaissance Youth Center GA78",
-      "summary": "The Renaissance Youth Center choir visits the SDG Media Zone for a session on creative problem-solving and coding for the SDGs. The session explores the passion and enthusiasm of today’s youth to solve the challenges they face through creativity in STE(A)M and showcases successful outcomes when the ",
-      "url": "https://www.un.org/en/card/209800",
-      "published": "Thu, 21 Sep 2023 19:52:19 +0000",
-      "source": "United Nations official updates",
-      "sourceType": "RSS/Atom"
     }
   ],
   "summary": {
     "total": 3,
-    "ok": 2,
-    "error": 1,
-    "items": 40,
+    "ok": 1,
+    "error": 2,
+    "items": 30,
     "translated": 0
   }
 }
