@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788013861012,
-  "bakedAt": "2026-08-29T14:31:01.012Z",
-  "refreshedAt": "2026-08-29T14:31:01.012Z",
-  "lastSuccessAt": "2026-08-29T14:30:48.600Z",
+  "version": 1788028437720,
+  "bakedAt": "2026-08-29T18:33:57.720Z",
+  "refreshedAt": "2026-08-29T18:33:57.720Z",
+  "lastSuccessAt": "2026-08-29T18:33:47.629Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-29T14:30:48.347Z",
+      "lastSuccessAt": "2026-08-29T18:33:47.477Z",
       "itemCount": 30
     },
     {
@@ -27,7 +27,7 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-29T14:30:48.600Z",
+      "lastSuccessAt": "2026-08-29T18:33:47.629Z",
       "itemCount": 10
     }
   ],
@@ -346,7 +346,7 @@
       "id": "un-official-872998da0e34511c",
       "sourceId": "un-official",
       "title": "#UNGA78 - 第四天总结",
-      "summary": "群体观众：联合国大会78现场博客视频嵌入，类似于iseek：",
+      "summary": "群体观众：联合国大会78现场博客视频嵌入类似于iseek：",
       "url": "https://www.un.org/en/card/209827",
       "published": "Thu, 21 Sep 2023 22:14:42 +0000",
       "source": "United Nations official updates",
@@ -355,8 +355,8 @@
     {
       "id": "un-official-1bbf101a3f23d05b",
       "sourceId": "un-official",
-      "title": "直到我们再次相遇",
-      "summary": "几天后，世界领导人将返回首都，路障将被拆除，但大会仍在继续工作。全球威胁不会在高级别周结束时停止，寻找应对措施的努力也不会停止。各国继续努力解决影响我们所有人的问题：",
+      "title": "直到我们再次相见",
+      "summary": "几天后，世界领导人将返回首都，路障将被拆除，但大会仍在继续工作。全球威胁不会在高级别周结束时停止，寻找应对措施也不会停止。各国继续努力解决影响我们所有人的问题：",
       "url": "https://www.un.org/en/card/209826",
       "published": "Thu, 21 Sep 2023 21:57:19 +0000",
       "source": "United Nations official updates",
@@ -376,7 +376,7 @@
       "id": "un-official-891eb08382912cb2",
       "sourceId": "un-official",
       "title": "联合国导游",
-      "summary": "克里斯汀·迪奥在20世纪80年代初设计了标志性的联合国导游制服。在此之前，设计师包括伊迪丝·海德，以及为联合国首批男性导游设计的布鲁克斯兄弟。1985年，导游们由哈维·贝纳德进行了时尚更新，然后更换了贝内通和蒙德里提供的制服",
+      "summary": "克里斯汀·迪奥在20世纪80年代初设计了标志性的联合国导游制服。在此之前，设计师包括伊迪丝·海德，以及为联合国首批男性导游设计的布鲁克斯兄弟。1985年，导游们由哈维·贝纳德进行了时尚更新，然后更换了贝内通和蒙德的制服",
       "url": "https://www.un.org/en/card/209823",
       "published": "Thu, 21 Sep 2023 21:42:42 +0000",
       "source": "United Nations official updates",
@@ -406,7 +406,7 @@
       "id": "un-official-3ace749aa75137a6",
       "sourceId": "un-official",
       "title": "Johan Santana GA78",
-      "summary": "目前正在可持续发展目标媒体区进行：Johan Santana，年轻的创新者，编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了无需手操作的盲人手杖和智能眼镜，并将致力于编码一个",
+      "summary": "目前正在可持续发展目标媒体区进行：年轻的创新者Johan Santana编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了无需手操作的盲杖和智能眼镜，并将致力于编码一个",
       "url": "https://www.un.org/en/card/209811",
       "published": "Thu, 21 Sep 2023 20:49:09 +0000",
       "source": "United Nations official updates",
@@ -425,7 +425,7 @@
     {
       "id": "un-official-53d9ae0b966dae22",
       "sourceId": "un-official",
-      "title": "文艺复兴青年中心 GA78",
+      "title": "文艺复兴青年中心GA78",
       "summary": "文艺复兴青年中心合唱团访问可持续发展目标媒体区，参加关于创造性解决问题和编码以实现可持续发展目标的会议。会议探讨了当今青年通过STE（A）M的创造力解决他们面临的挑战的热情和热情，并展示了当",
       "url": "https://www.un.org/en/card/209800",
       "published": "Thu, 21 Sep 2023 19:52:19 +0000",
