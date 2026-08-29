@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1787942739554,
-  "bakedAt": "2026-08-28T18:45:39.554Z",
-  "refreshedAt": "2026-08-28T18:45:39.554Z",
-  "lastSuccessAt": "2026-08-28T18:45:29.551Z",
+  "version": 1787969630982,
+  "bakedAt": "2026-08-29T02:13:50.982Z",
+  "refreshedAt": "2026-08-29T02:13:50.982Z",
+  "lastSuccessAt": "2026-08-29T02:13:40.909Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,18 +19,79 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-28T18:45:29.551Z",
+      "lastSuccessAt": "2026-08-29T02:13:40.602Z",
       "itemCount": 30
     },
     {
       "id": "un-official",
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
-      "status": "error",
-      "error": "This operation was aborted"
+      "status": "ok",
+      "lastSuccessAt": "2026-08-29T02:13:40.909Z",
+      "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-ee48f048c0e7978c",
+      "sourceId": "un-news",
+      "title": "世卫组织：乌克兰医疗体系持续承受战争冲击",
+      "summary": "世界卫生组织驻乌克兰代表哈比希特周五表示，近期乌克兰遭遇的警报和袭击数量创下自2022年2月俄罗斯入侵以来的最高纪录。上周克里维里赫发生两次袭击，造成140人受伤，其中包括23名儿童，另有16人遇难。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142708",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-c433dcdbb45130b3",
+      "sourceId": "un-news",
+      "title": "联合国：海地暴力持续恶化 人道主义危机加剧",
+      "summary": "联合国海地综合办事处主任兼秘书长特别代表马谢乌周五向安理会表示，8月23日夜至24日凌晨发生在海地肯斯科夫的黑帮袭击造成至少47人死亡，数十人被绑架，许多人受伤和流离失所。他呼吁立即无条件释放所有被绑架者，包括妇女和儿童，并强调必须进一步加强对海地的国际安全支持。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142707",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-b9bd4c8717bf8872",
+      "sourceId": "un-news",
+      "title": "世卫组织：刚果（金）埃博拉疫情仍构成突发公共卫生事件 但未达到“大流行”门槛",
+      "summary": "世界卫生组织总干事谭德塞周五表示，根据《国际卫生条例》应急委员会建议，刚果民主共和国（刚果（金））本迪布焦型病毒埃博拉疫情仍符合“国际关注的突发公共卫生事件”标准，但不符合大流行紧急情况标准。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142706",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-3d1936b9492a3e35",
+      "sourceId": "un-news",
+      "title": "标志性公约签署65周年  难民署呼吁采取新举措防止无国籍状态",
+      "summary": "在1961年《减少无国籍状态公约》缔结65周年之际，联合国难民署呼吁重申政治承诺，确保每个人都能享有国籍权。难民署国表示，全球至少有450万人属于无国籍或国籍不明，还有数百万人受到这一问题影响但未被官方数据记录。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142705",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-2293169d04659c39",
+      "sourceId": "un-news",
+      "title": "欧洲和北美地区严重干旱和热浪加剧森林和城市自然环境压力",
+      "summary": "联合国欧洲经济委员会周五表示，该组织各成员国，尤其是欧洲和北美地区，持续的严重干旱和创纪录的夏季高温正加剧森林生态系统压力。欧洲干旱观测站数据显示，目前欧盟和英国50%的领土处于干旱状态，严重降水不足正影响土壤湿度和森林健康。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142704",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-9c10f0b7f9f96cf8",
+      "sourceId": "un-news",
+      "title": "霍尔木兹海峡通行受阻六个月 国际海事组织关注海员处境",
+      "summary": "在伊朗冲突导致霍尔木兹海峡受阻整整六个月之际，国际海事组织呼吁采取切实可行的解决方案并加强合作，以恢复航行自由；与此同时，该机构对深陷困境的海员的处境深表担忧。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142703",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-66dbd2b8270ff09d",
       "sourceId": "un-news",
@@ -272,71 +333,111 @@
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-c2812892d923e54d",
-      "sourceId": "un-news",
-      "title": "刚果民主共和国埃博拉疫情持续超过100天   确诊病例超过5200例",
-      "summary": "刚果民主共和国埃博拉疫情暴发已超过100天，该国周一宣布累计确诊病例超过5200例。世卫组织表示，此次疫情已成为该国蔓延速度最快的疫情，病毒传播速度已超过防控措施的推进速度，需要大幅加强应对措施。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142678",
-      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
+      "id": "un-official-2339b92beab0f0b4",
+      "sourceId": "un-official",
+      "title": "第三次联合国内陆发展中国家会议（LLDC3）",
+      "summary": "第三次联合国内陆发展中国家会议 阿瓦扎，土库曼斯坦 2025年8月5-8日 通过伙伴关系推动进步 联合国大会（UNGA）决定召开第三次联合国内陆发展中国家会议",
+      "url": "https://www.un.org/en/civil-society/third-united-nations-conference-landlocked-developing-countries-lldc3",
+      "published": "Tue, 24 Oct 2023 16:36:20 +0000",
+      "source": "United Nations official updates",
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-a504257fd6410989",
-      "sourceId": "un-news",
-      "title": "联合国：苏丹冲突持续升级，平民苦难日益加深",
-      "summary": "联合国主管政治和建设和平事务的副秘书长迪卡洛周一向安理会通报苏丹局势时表示，自6月份上次通报以来，冲突持续升级，民众苦难日益加深，多个战线仍在交火。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142677",
-      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
+      "id": "un-official-872998da0e34511c",
+      "sourceId": "un-official",
+      "title": "#UNGA78 - 第四天总结",
+      "summary": "群体观众：联合国大会78现场博客视频嵌入类似于iseek：",
+      "url": "https://www.un.org/en/card/209827",
+      "published": "Thu, 21 Sep 2023 22:14:42 +0000",
+      "source": "United Nations official updates",
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-6aaa08a4c7c1c0e7",
-      "sourceId": "un-news",
-      "title": "古特雷斯：全球粮食供应已成为冲突中的“附带损害”",
-      "summary": "联合国秘书长古特雷斯周一表示，霍尔木兹海峡、黑海和曼德海峡的海上交通中断加剧了饥荒危机，必须立即停止。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142676",
-      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
+      "id": "un-official-1bbf101a3f23d05b",
+      "sourceId": "un-official",
+      "title": "直到我们再次相遇",
+      "summary": "几天后，世界领导人将返回首都，路障将被拆除，但大会仍在继续工作。全球威胁不会在高级别周结束时停止，寻找应对措施也不会停止。各国继续努力解决影响我们所有人的问题：",
+      "url": "https://www.un.org/en/card/209826",
+      "published": "Thu, 21 Sep 2023 21:57:19 +0000",
+      "source": "United Nations official updates",
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-28b61f96348db260",
-      "sourceId": "un-news",
-      "title": "联合国人权监测团：俄罗斯袭击乌克兰购物中心违反国际人道法",
-      "summary": "联合国乌克兰人权监测团周六表示，俄罗斯周五对乌中部第聂伯罗彼得罗夫斯克州克里维里赫市一处人流量大的购物中心发动袭击，从目前的情况来看，这一行为违反了国际人道法。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142675",
-      "published": "Sun, 23 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
+      "id": "un-official-1fd0b6fec28d7fa3",
+      "sourceId": "un-official",
+      "title": "最后一天",
+      "summary": "群体观众：联合国大会78现场博客",
+      "url": "https://www.un.org/en/card/209825",
+      "published": "Thu, 21 Sep 2023 21:55:21 +0000",
+      "source": "United Nations official updates",
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-4d2f9d2db71a4b75",
-      "sourceId": "un-news",
-      "title": "【专题报道 | 前方视野】希望告别“灾后救援”，干旱韧性指数重构全球抗旱防线",
-      "summary": "干旱不仅吞噬着农田与水资源，更威胁着全球超过18亿人的生存与生计。它也不只是单纯的“自然灾害”，而是能够演变成跨越经济、社会乃至政治领域的全球性挑战。面对越来越频繁、越来越严重的干旱，传统的“灾后救灾”模式已难以为继。究竟该如何打破这一恶性循环？一套全新的评估体系——干旱韧性指数正尝试给出答案。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142674",
-      "published": "Sat, 22 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
+      "id": "un-official-891eb08382912cb2",
+      "sourceId": "un-official",
+      "title": "联合国导游",
+      "summary": "克里斯汀·迪奥在20世纪80年代初设计了标志性的联合国导游制服。在此之前，设计师包括伊迪丝·海德，以及为联合国首批男性导游设计的布鲁克斯兄弟。1985年，导游们由哈维·贝纳德进行了时尚更新，然后更换了贝内通和蒙德里安提供的制服",
+      "url": "https://www.un.org/en/card/209823",
+      "published": "Thu, 21 Sep 2023 21:42:42 +0000",
+      "source": "United Nations official updates",
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-466ad5e39067d8b5",
-      "sourceId": "un-news",
-      "title": "【世界进行时】2026年8月21日",
-      "summary": "本期要点：刚果（金）埃博拉疫情呈指数级蔓延；国际刑事法院强烈反对美国新的制裁指令；哥伦比亚地震灾区120万人亟需援助，部分社区仍无法抵达；加沙94%的居民需要住所；几内亚比绍半数疑似猴痘病例为儿童；索马里儿童危机加剧，205家卫生和营养机构关闭；联合国纪念世界人道主义日。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142672",
-      "published": "Fri, 21 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
+      "id": "un-official-d92964c4733c05d3",
+      "sourceId": "un-official",
+      "title": "中国",
+      "summary": "中国副总统韩正，在他对大会的讲话中说：“中国支持所有有助于和平解决乌克兰危机的努力，并随时准备继续发挥建设性作用，以早日实现和平。” 图片：群体观众：联合国大会",
+      "url": "https://www.un.org/en/card/209822",
+      "published": "Thu, 21 Sep 2023 21:37:47 +0000",
+      "source": "United Nations official updates",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-official-0bcbcd454a05552b",
+      "sourceId": "un-official",
+      "title": "苏丹",
+      "summary": "苏丹过渡主权委员会主席阿卜杜勒-法塔赫·阿尔-布尔汉·阿卜杜勒-拉赫曼·阿尔-布尔汉说：“自4月15日以来，苏丹人民一直在面对由叛军RSF发动的破坏性战争。”我们呼吁国际社会将这些团体及其盟友定性为恐怖分子",
+      "url": "https://www.un.org/en/card/209816",
+      "published": "Thu, 21 Sep 2023 21:17:29 +0000",
+      "source": "United Nations official updates",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-official-3ace749aa75137a6",
+      "sourceId": "un-official",
+      "title": "Johan Santana GA78",
+      "summary": "目前正在可持续发展目标媒体区进行：Johan Santana，年轻的创新者，他编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了一种无需手的盲杖和智能眼镜，并将致力于编码一个w",
+      "url": "https://www.un.org/en/card/209811",
+      "published": "Thu, 21 Sep 2023 20:49:09 +0000",
+      "source": "United Nations official updates",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-official-5103af018b4fc5e4",
+      "sourceId": "un-official",
+      "title": "国际海底管理局",
+      "summary": "迈克尔·洛奇（国际海底管理局秘书长）和埃米莉·麦克格洛恩（和平之船美国主任）在可持续发展目标媒体区会面，讨论一项新的历史性条约——公海条约——的重要性，该条约保护国家管辖范围以外的生物多样性（通常简称为BB",
+      "url": "https://www.un.org/en/card/209805",
+      "published": "Thu, 21 Sep 2023 20:18:59 +0000",
+      "source": "United Nations official updates",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-official-53d9ae0b966dae22",
+      "sourceId": "un-official",
+      "title": "文艺复兴青年中心 GA78",
+      "summary": "文艺复兴青年中心合唱团访问可持续发展目标媒体区，参加关于创造性解决问题和编码以实现可持续发展目标的会议。该会议探讨了当今青年通过STE（A）M的创造力解决他们面临的挑战的热情和热情，并展示了当",
+      "url": "https://www.un.org/en/card/209800",
+      "published": "Thu, 21 Sep 2023 19:52:19 +0000",
+      "source": "United Nations official updates",
       "sourceType": "RSS/Atom"
     }
   ],
   "summary": {
     "total": 3,
-    "ok": 1,
-    "error": 2,
-    "items": 30,
-    "translated": 0
+    "ok": 2,
+    "error": 1,
+    "items": 40,
+    "translated": 10
   }
 }
