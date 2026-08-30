@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788039973466,
-  "bakedAt": "2026-08-29T21:46:13.466Z",
-  "refreshedAt": "2026-08-29T21:46:13.466Z",
-  "lastSuccessAt": "2026-08-29T21:46:03.790Z",
+  "version": 1788049368054,
+  "bakedAt": "2026-08-30T00:22:48.054Z",
+  "refreshedAt": "2026-08-30T00:22:48.054Z",
+  "lastSuccessAt": "2026-08-30T00:22:38.552Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-29T21:46:03.457Z",
+      "lastSuccessAt": "2026-08-30T00:22:38.419Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,31 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-29T21:46:03.790Z",
+      "lastSuccessAt": "2026-08-30T00:22:38.552Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-7a08c8917515690a",
+      "sourceId": "un-news",
+      "title": "【子午播报】2026年8月29日",
+      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，联合国全力以赴驰援中尼灾区；77年前的今天：苏联打破美国核垄断地位；《欢迎来龙餐馆》导演文牧野做客《联合国会客厅》，聊聊战争与儿童保护。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142711",
+      "published": "Sat, 29 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-71fb605e6dce192c",
+      "sourceId": "un-news",
+      "title": "【世界进行时】2026年8月28日",
+      "summary": "本期要点：古特雷斯对尼泊尔和中国严重洪灾造成的人员伤亡和破坏深感悲痛；刚果（金）本轮埃博拉疫情为有记录以来蔓延速度最快的疫情；乌干达宣布本迪布焦型埃博拉疫情结束；霍尔木兹海峡通行受阻六个月，国际海事组织关注海员处境；古特雷斯就波黑塞族前军事领导人姆拉迪奇去世发表声明；2025年24万名儿童和青少年新感染艾滋病毒；联合国谴责南苏丹伏击事件，两名维和人员遇害。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142709",
+      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-ee48f048c0e7978c",
       "sourceId": "un-news",
@@ -313,30 +333,10 @@
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-e9dce45b97112091",
-      "sourceId": "un-news",
-      "title": "粮农组织：释放园艺业潜力是促使农业食品体系转型、提供健康膳食的关键",
-      "summary": "粮农组织总干事屈冬玉周一在日本京都举行的2026年国际园艺大会上表示，农业必须超越仅关注生产足够数量粮食的阶段，更加重视提供健康饮食所需的多样化、营养丰富的食物。他强调，园艺业对于改善营养状况、增强生计韧性以及构建更可持续的农业食品体系具有重要作用。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142680",
-      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-fbe2bd08a44c9072",
-      "sourceId": "un-news",
-      "title": "联合国：儿童和青少年仍面临艾滋病毒防治缺口",
-      "summary": "联合国儿童基金会最新发布的2026年艾滋病毒估计数据显示，儿童和青少年继续受到全球艾滋病毒应对工作缺口的不成比例影响。国际资金减少和服务中断正带来额外风险。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142679",
-      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
       "id": "un-official-2339b92beab0f0b4",
       "sourceId": "un-official",
       "title": "第三次联合国内陆发展中国家会议（LLDC3）",
-      "summary": "第三次联合国内陆发展中国家会议 阿瓦扎，土库曼斯坦 2025年8月5-8日 通过伙伴关系推动进步  联合国大会（UNGA）决定召开第三次联合国内陆发展中国家会议",
+      "summary": "第三次联合国内陆发展中国家会议 阿瓦扎，土库曼斯坦 2025年8月5-8日 通过伙伴关系推动进步 联合国大会（UNGA）决定召开第三次联合国内陆发展中国家会议",
       "url": "https://www.un.org/en/civil-society/third-united-nations-conference-landlocked-developing-countries-lldc3",
       "published": "Tue, 24 Oct 2023 16:36:20 +0000",
       "source": "United Nations official updates",
@@ -346,7 +346,7 @@
       "id": "un-official-872998da0e34511c",
       "sourceId": "un-official",
       "title": "#UNGA78 - 第四天总结",
-      "summary": "群体观众：联合国大会78现场博客视频嵌入类似于iseek：",
+      "summary": "群体观众：联合国大会78现场博客视频嵌入，类似于iseek：",
       "url": "https://www.un.org/en/card/209827",
       "published": "Thu, 21 Sep 2023 22:14:42 +0000",
       "source": "United Nations official updates",
@@ -356,7 +356,7 @@
       "id": "un-official-1bbf101a3f23d05b",
       "sourceId": "un-official",
       "title": "直到我们再次相见",
-      "summary": "几天后，世界领导人将返回首都，路障将被拆除，但大会仍在继续工作。全球威胁不会在高级别周结束时停止，寻找应对措施也不会停止。各国继续努力解决影响我们所有人的问题：",
+      "summary": "几天后，世界领导人将返回首都，路障将被拆除，但大会仍在继续工作。全球威胁不会在高级别周结束时停止，寻找应对措施的努力也不会停止。各国继续努力解决影响我们所有人的问题：",
       "url": "https://www.un.org/en/card/209826",
       "published": "Thu, 21 Sep 2023 21:57:19 +0000",
       "source": "United Nations official updates",
@@ -406,7 +406,7 @@
       "id": "un-official-3ace749aa75137a6",
       "sourceId": "un-official",
       "title": "Johan Santana GA78",
-      "summary": "目前正在可持续发展目标媒体区进行：Johan Santana，年轻的创新者，编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了无需手操作的盲杖和智能眼镜，并将致力于编码一个w",
+      "summary": "目前正在可持续发展目标媒体区进行：Johan Santana，年轻的创新者，编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了无需手操作的盲杖和智能眼镜，并将致力于编码一个",
       "url": "https://www.un.org/en/card/209811",
       "published": "Thu, 21 Sep 2023 20:49:09 +0000",
       "source": "United Nations official updates",
