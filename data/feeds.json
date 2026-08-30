@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788124188303,
-  "bakedAt": "2026-08-30T21:09:48.303Z",
-  "refreshedAt": "2026-08-30T21:09:48.303Z",
-  "lastSuccessAt": "2026-08-30T21:09:39.712Z",
+  "version": 1788132737379,
+  "bakedAt": "2026-08-30T23:32:17.379Z",
+  "refreshedAt": "2026-08-30T23:32:17.379Z",
+  "lastSuccessAt": "2026-08-30T23:32:07.535Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-30T21:09:39.565Z",
+      "lastSuccessAt": "2026-08-30T23:32:07.304Z",
       "itemCount": 30
     },
     {
@@ -27,7 +27,7 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-30T21:09:39.712Z",
+      "lastSuccessAt": "2026-08-30T23:32:07.535Z",
       "itemCount": 10
     }
   ],
@@ -355,7 +355,7 @@
     {
       "id": "un-official-1bbf101a3f23d05b",
       "sourceId": "un-official",
-      "title": "直到我们再次相遇",
+      "title": "直到我们再次相见",
       "summary": "几天后，世界领导人将返回首都，路障将被拆除，但大会仍在继续工作。全球威胁不会在高级别周结束时停止，寻找应对措施的努力也不会停止。各国继续努力解决影响我们所有人的问题：",
       "url": "https://www.un.org/en/card/209826",
       "published": "Thu, 21 Sep 2023 21:57:19 +0000",
@@ -406,7 +406,7 @@
       "id": "un-official-3ace749aa75137a6",
       "sourceId": "un-official",
       "title": "Johan Santana GA78",
-      "summary": "目前正在可持续发展目标媒体区进行：年轻的创新者Johan Santana，他编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了一种无需手操作的盲杖和智能眼镜，并将致力于编码一个",
+      "summary": "目前正在可持续发展目标媒体区进行：Johan Santana，年轻的创新者，他编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了一种无需手的盲杖和智能眼镜，并将致力于编码一个w",
       "url": "https://www.un.org/en/card/209811",
       "published": "Thu, 21 Sep 2023 20:49:09 +0000",
       "source": "United Nations official updates",
@@ -425,8 +425,8 @@
     {
       "id": "un-official-53d9ae0b966dae22",
       "sourceId": "un-official",
-      "title": "文艺复兴青年中心GA78",
-      "summary": "文艺复兴青年中心合唱团访问可持续发展目标媒体区，参加关于创造性解决问题和编码以实现可持续发展目标的会议。该会议探讨了当今青年通过STE（A）M的创造力解决他们面临的挑战的热情和热情，并展示了当",
+      "title": "文艺复兴青年中心 GA78",
+      "summary": "文艺复兴青年中心合唱团访问可持续发展目标媒体区，参加关于创造性解决问题和编码以实现可持续发展目标的会议。会议探讨了当今青年通过STE（A）M的创造力解决他们面临的挑战的热情和热情，并展示了当",
       "url": "https://www.un.org/en/card/209800",
       "published": "Thu, 21 Sep 2023 19:52:19 +0000",
       "source": "United Nations official updates",
