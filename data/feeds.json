@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788184599587,
-  "bakedAt": "2026-08-31T13:56:39.587Z",
-  "refreshedAt": "2026-08-31T13:56:39.587Z",
-  "lastSuccessAt": "2026-08-31T13:56:37.840Z",
+  "version": 1788206908893,
+  "bakedAt": "2026-08-31T20:08:28.893Z",
+  "refreshedAt": "2026-08-31T20:08:28.893Z",
+  "lastSuccessAt": "2026-08-31T20:08:27.326Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-31T13:56:37.676Z",
+      "lastSuccessAt": "2026-08-31T20:08:27.192Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-31T13:56:37.840Z",
+      "lastSuccessAt": "2026-08-31T20:08:27.326Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-b918a77ffc424f7a",
+      "sourceId": "un-news",
+      "title": "风险加剧：海平面上升对人类意味着什么",
+      "summary": "目前，海平面上升的速度已超过有记录以来的任何时期。其影响已然显现，威胁也在不断加剧。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142716",
+      "published": "Mon, 31 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-27988ca66f63e7b7",
       "sourceId": "un-news",
@@ -319,16 +329,6 @@
       "summary": "距荷马史诗《奥德赛》诞生已逾2500年。如今，英国导演克里斯托弗·诺兰执导的电影《奥德赛》再次将这段跨越千年的传奇旅程搬上大银幕。从神话中的惊涛骇浪，到今天真实世界里的生态危机，这片海域依然在经历一场漫长而艰难的“奥德赛”——只是这一次，主角不再是奥德修斯，而是地中海本身。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142647",
       "published": "Tue, 25 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-bbe3c9700b58d659",
-      "sourceId": "un-news",
-      "title": "联合国谴责南苏丹伏击事件，两名维和人员遇害",
-      "summary": "联合国秘书长发言人周一表示，古特雷斯秘书长以最强烈措辞谴责南苏丹琼莱州发生的针对联合国南苏丹特派团巡逻队的伏击事件。两名埃塞俄比亚维和人员在袭击中遇难，另有七人受伤。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142682",
-      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
