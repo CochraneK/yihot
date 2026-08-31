@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788154844057,
-  "bakedAt": "2026-08-31T05:40:44.057Z",
-  "refreshedAt": "2026-08-31T05:40:44.057Z",
-  "lastSuccessAt": "2026-08-31T05:40:33.564Z",
+  "version": 1788184599587,
+  "bakedAt": "2026-08-31T13:56:39.587Z",
+  "refreshedAt": "2026-08-31T13:56:39.587Z",
+  "lastSuccessAt": "2026-08-31T13:56:37.840Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-31T05:40:33.181Z",
+      "lastSuccessAt": "2026-08-31T13:56:37.676Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-08-31T05:40:33.564Z",
+      "lastSuccessAt": "2026-08-31T13:56:37.840Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-27988ca66f63e7b7",
+      "sourceId": "un-news",
+      "title": "【专题报道 | 前方视野】《武器贸易条约》履约状况持续下滑",
+      "summary": "当今世界正面临二战结束以来最为严峻的国际安全危机。一方面是地缘政治裂痕加深、全球军事支出无节制地膨胀以及数十起武装冲突在多国蔓延；另一方面，作为约束全球常规武器流转的核心法律基石——《武器贸易条约》却正陷入履约的大幅滑坡。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142714",
+      "published": "Sun, 30 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-7a08c8917515690a",
       "sourceId": "un-news",
@@ -323,20 +333,10 @@
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-3d3f725d0856aa6b",
-      "sourceId": "un-news",
-      "title": "联合国：乌克兰战争持续升级，平民伤亡和人道主义需求加剧",
-      "summary": "联合国主管政治和建设和平事务的副秘书长迪卡洛周一向安理会通报乌克兰局势时表示，战争持续造成死亡、破坏和流离失所，平民伤亡人数仍在攀升。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142681",
-      "published": "Mon, 24 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
       "id": "un-official-2339b92beab0f0b4",
       "sourceId": "un-official",
-      "title": "第三届联合国内陆发展中国家会议（LLDC3）",
-      "summary": "第三届联合国内陆发展中国家会议 阿瓦扎，土库曼斯坦 2025年8月5-8日 通过伙伴关系推动进步 联合国大会（UNGA）决定召开第三届联合国内陆发展中国家会议",
+      "title": "Third United Nations Conference on Landlocked Developing Countries (LLDC3)",
+      "summary": "Third UN Conference on&nbsp; Landlocked Developing Countries&nbsp; Awaza, Turkmenistan&nbsp; 5-8 August&nbsp;2025&nbsp; Driving Progress through partnerships&nbsp; &nbsp; &nbsp; The United Nations General Assembly (UNGA)&nbsp;decided to convene the Third United Nations Conference on Landlocked Devel",
       "url": "https://www.un.org/en/civil-society/third-united-nations-conference-landlocked-developing-countries-lldc3",
       "published": "Tue, 24 Oct 2023 16:36:20 +0000",
       "source": "United Nations official updates",
@@ -345,8 +345,8 @@
     {
       "id": "un-official-872998da0e34511c",
       "sourceId": "un-official",
-      "title": "#UNGA78 - 第四天总结",
-      "summary": "群体观众：联合国大会78现场博客视频嵌入，类似于iseek：",
+      "title": "#UNGA78 - Wrap Day 4",
+      "summary": "Groups audience:&nbsp;General Assembly 78 Live BlogVideo embed a la iseek:&nbsp;",
       "url": "https://www.un.org/en/card/209827",
       "published": "Thu, 21 Sep 2023 22:14:42 +0000",
       "source": "United Nations official updates",
@@ -355,8 +355,8 @@
     {
       "id": "un-official-1bbf101a3f23d05b",
       "sourceId": "un-official",
-      "title": "直到我们再次相遇",
-      "summary": "几天后，世界领导人将返回首都，路障将被拆除，但大会仍在继续工作。全球威胁不会在高级别周结束时停止，寻找应对措施的努力也不会停止。各国继续努力解决影响我们所有人的问题：",
+      "title": "Until we meet again",
+      "summary": "In a few days, world leaders will head back to capitals and barricades will be dismantled, but the General Assembly keeps working. Global threats don’t stop at the end of the high-level week, and neither does the search for responses. Countries continue grappling with the problems affecting us all: ",
       "url": "https://www.un.org/en/card/209826",
       "published": "Thu, 21 Sep 2023 21:57:19 +0000",
       "source": "United Nations official updates",
@@ -365,8 +365,8 @@
     {
       "id": "un-official-1fd0b6fec28d7fa3",
       "sourceId": "un-official",
-      "title": "最后一天",
-      "summary": "群体观众：联合国大会78现场博客",
+      "title": "last day",
+      "summary": "Groups audience:&nbsp;General Assembly 78 Live Blog",
       "url": "https://www.un.org/en/card/209825",
       "published": "Thu, 21 Sep 2023 21:55:21 +0000",
       "source": "United Nations official updates",
@@ -375,8 +375,8 @@
     {
       "id": "un-official-891eb08382912cb2",
       "sourceId": "un-official",
-      "title": "联合国导游",
-      "summary": "克里斯汀·迪奥在20世纪80年代初设计了标志性的联合国导游制服。在此之前，设计师包括伊迪丝·海德，以及为联合国首批男性导游设计的布鲁克斯兄弟。1985年，导游们由哈维·贝纳德进行了时尚更新，然后更换了贝内通和蒙德里提供的制服",
+      "title": "UN tour guides",
+      "summary": "Christian Dior designed the iconic UN tour guide uniforms in the early 1980s. Prior to that, designers included Edith Head and, for the UN’s first male tour guides, Brooks Brothers. The guides got a fashion refresh in 1985 by Harvé Benard, then changed their uniforms, courtesy of Benneton, and Mondr",
       "url": "https://www.un.org/en/card/209823",
       "published": "Thu, 21 Sep 2023 21:42:42 +0000",
       "source": "United Nations official updates",
@@ -385,8 +385,8 @@
     {
       "id": "un-official-d92964c4733c05d3",
       "sourceId": "un-official",
-      "title": "中国",
-      "summary": "中国副总统韩正，在他对大会的讲话中说：“中国支持所有有助于和平解决乌克兰危机的努力，并随时准备继续发挥建设性作用，以早日实现和平。”图片：群体观众：联合国大会",
+      "title": "China",
+      "summary": "Vice-President of China, Han Zheng, said in his speech to the GA said: \"China supports all efforts that are conducive to the peaceful resolution of the Ukraine crisis, and stands ready to continue playing a constructive role for the early attainment of peace.\" Image:&nbsp;Groups audience:&nbsp;Gener",
       "url": "https://www.un.org/en/card/209822",
       "published": "Thu, 21 Sep 2023 21:37:47 +0000",
       "source": "United Nations official updates",
@@ -395,8 +395,8 @@
     {
       "id": "un-official-0bcbcd454a05552b",
       "sourceId": "un-official",
-      "title": "苏丹",
-      "summary": "苏丹过渡主权委员会主席阿卜杜勒-法塔赫·阿尔-布尔汉·阿卜杜勒-拉赫曼·阿尔-布尔汉说：“自4月15日以来，苏丹人民一直在面对由叛军RSF发动的破坏性战争。”我们呼吁国际社会将这些团体及其盟友定性为恐怖分子",
+      "title": "Sudan",
+      "summary": "\"Since 15 April, Sudanese people have been facing a destructive war launched by rebel RSF,\" said Abdel-Fattah Al-Burhan Abdelrahman Al-Burhan, President of the Transitional Sovereign Council of Sudan. \"We call upon the international community to designate these groups and their allies as terrorist g",
       "url": "https://www.un.org/en/card/209816",
       "published": "Thu, 21 Sep 2023 21:17:29 +0000",
       "source": "United Nations official updates",
@@ -406,7 +406,7 @@
       "id": "un-official-3ace749aa75137a6",
       "sourceId": "un-official",
       "title": "Johan Santana GA78",
-      "summary": "目前正在可持续发展目标媒体区进行：Johan Santana，年轻的创新者，编码以解决可持续发展目标3和10（发言）。他表达了他帮助视觉障碍者和其他残疾人的愿望。他们已经开发了无需手操作的盲杖和智能眼镜，并将致力于编码一个",
+      "summary": "Happening now at the SDG Media Zone: Johan Santana, young innovator who codes to address SDG 3 and 10 (speaking). He expresses his desire to assist individuals with visual impairments and other disabilities. They&#039;ve developed a hands-free blind cane and smart glasses and will work on coding a w",
       "url": "https://www.un.org/en/card/209811",
       "published": "Thu, 21 Sep 2023 20:49:09 +0000",
       "source": "United Nations official updates",
@@ -415,8 +415,8 @@
     {
       "id": "un-official-5103af018b4fc5e4",
       "sourceId": "un-official",
-      "title": "国际海底管理局",
-      "summary": "迈克尔·洛奇（国际海底管理局秘书长）和埃米莉·麦克格洛恩（和平之船美国主任）在可持续发展目标媒体区会面，讨论一项新的历史性条约——公海条约——的重要性，该条约保护国家管辖范围以外的生物多样性（通常简称为BB",
+      "title": "International Seabed Authority",
+      "summary": "Michael Lodge (Secretary General, International Seabed Authority) and Emilie McGloane (Director, Peace Boat US) met at the SDG Media Zone to discuss the importance of a new historic treaty - the Treaty of the High Seas - which protects biodiversity beyond national jurisdiction (often shortened to BB",
       "url": "https://www.un.org/en/card/209805",
       "published": "Thu, 21 Sep 2023 20:18:59 +0000",
       "source": "United Nations official updates",
@@ -425,8 +425,8 @@
     {
       "id": "un-official-53d9ae0b966dae22",
       "sourceId": "un-official",
-      "title": "文艺复兴青年中心 GA78",
-      "summary": "文艺复兴青年中心合唱团访问可持续发展目标媒体区，参加关于创造性解决问题和编码以实现可持续发展目标的会议。会议探讨了当今青年通过STE（A）M的创造力解决他们面临的挑战的热情和热情，并展示了当",
+      "title": "Renaissance Youth Center GA78",
+      "summary": "The Renaissance Youth Center choir visits the SDG Media Zone for a session on creative problem-solving and coding for the SDGs. The session explores the passion and enthusiasm of today’s youth to solve the challenges they face through creativity in STE(A)M and showcases successful outcomes when the ",
       "url": "https://www.un.org/en/card/209800",
       "published": "Thu, 21 Sep 2023 19:52:19 +0000",
       "source": "United Nations official updates",
@@ -438,6 +438,6 @@
     "ok": 2,
     "error": 1,
     "items": 40,
-    "translated": 10
+    "translated": 0
   }
 }
