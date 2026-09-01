@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788274536897,
-  "bakedAt": "2026-09-01T14:55:36.897Z",
-  "refreshedAt": "2026-09-01T14:55:36.897Z",
-  "lastSuccessAt": "2026-09-01T14:55:35.362Z",
+  "version": 1788287663698,
+  "bakedAt": "2026-09-01T18:34:23.698Z",
+  "refreshedAt": "2026-09-01T18:34:23.698Z",
+  "lastSuccessAt": "2026-09-01T18:34:22.325Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-01T14:55:35.042Z",
+      "lastSuccessAt": "2026-09-01T18:34:22.021Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-01T14:55:35.362Z",
+      "lastSuccessAt": "2026-09-01T18:34:22.325Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-1484f13b90e19fcf",
+      "sourceId": "un-news",
+      "title": "尼泊尔洪灾：死亡人数持续攀升，妇女和女童处境令人担忧",
+      "summary": "随着尼泊尔洪灾救援工作的持续进行，人道主义工作者正重点关注近期致命的山洪暴发对妇女和女童的影响，以及她们获得医疗保健的机会。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142722",
+      "published": "Tue, 01 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-c540e58360aa5d4e",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "古特雷斯谴责以色列当局未经授权进入近东救济工程处设施",
       "summary": "联合国秘书长发言人杜加里克周二发表声明说，古特雷斯最强烈谴责以色列当局包括安全部队当天非法进入并滞留在被占领的东耶路撒冷的联合国近东救济工程处卡兰迪亚培训中心，并在场所内进行未经授权的施工。当时，近东救济工程处工作人员正在该中心内。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142687",
-      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-c0bbc872e89d50fc",
-      "sourceId": "un-news",
-      "title": "【世界交汇点】对话刘克凡——在联合国做新闻的26年",
-      "summary": "今年是联合国电台成立80周年。从磁带装进“外交公文包”寄送世界各地，到六种语言实时上网直播，联合国的声音是如何一路走到今天的？今天，联合国全球传播部新闻媒体司副司长刘克凡做客《世界交汇点》，和我们聊聊他在联合国的26年生涯，以及在这样的媒体巨变中，联合国应该怎么做新闻、做什么样的新闻。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142686",
       "published": "Tue, 25 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
