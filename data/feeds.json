@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788257490394,
-  "bakedAt": "2026-09-01T10:11:30.394Z",
-  "refreshedAt": "2026-09-01T10:11:30.394Z",
-  "lastSuccessAt": "2026-09-01T10:11:28.914Z",
+  "version": 1788274536897,
+  "bakedAt": "2026-09-01T14:55:36.897Z",
+  "refreshedAt": "2026-09-01T14:55:36.897Z",
+  "lastSuccessAt": "2026-09-01T14:55:35.362Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-01T10:11:28.736Z",
+      "lastSuccessAt": "2026-09-01T14:55:35.042Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,41 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-01T10:11:28.914Z",
+      "lastSuccessAt": "2026-09-01T14:55:35.362Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-c540e58360aa5d4e",
+      "sourceId": "un-news",
+      "title": "尽管全球烟草产量下降，非洲产量仍在增加",
+      "summary": "世界卫生组织最新分析显示，2012年至2024年间，全球烟草产量下降近19%，而非洲产量增长近9%。同期，非洲香烟进口支出翻了一番多，从8.33亿美元增至17.7亿美元。这表明，非洲国家在生产和出口更多烟草的同时，也在花费更多资金进口成品香烟。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142719",
+      "published": "Mon, 31 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-4eb5f4ba021d147c",
+      "sourceId": "un-news",
+      "title": "超越贫困：扩大东亚及太平洋地区中产阶级面临更大挑战",
+      "summary": "世界银行周一发布署名博客文章指出，东亚及太平洋地区过去几十年实现了显著经济转型，数亿人摆脱贫困，约三分之一人口如今属于中产阶级。但在地区其他地方，中产阶级增长势头已经放缓，许多摆脱贫困的人正努力在中产阶级中站稳脚跟。文章认为，培育一个规模更大、经济上更稳健的中产阶级是一项独特且更为艰巨的挑战。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142718",
+      "published": "Mon, 31 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-62b3f0ba8b2c46b3",
+      "sourceId": "un-news",
+      "title": "尼泊尔洪灾死亡人数超过900人，救援需求持续增加",
+      "summary": "联合国秘书长发言人杜加里克周一表示，尼泊尔灾难性洪灾的确认死亡人数已激增至903人，仍有4200多人失踪。目前，救援人员和人道主义工作者正努力克服高速公路受阻的困难，力图抵达受灾最严重的地区。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142717",
+      "published": "Mon, 31 Aug 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-b918a77ffc424f7a",
       "sourceId": "un-news",
@@ -298,36 +328,6 @@
       "title": "【世界交汇点】对话刘克凡——在联合国做新闻的26年",
       "summary": "今年是联合国电台成立80周年。从磁带装进“外交公文包”寄送世界各地，到六种语言实时上网直播，联合国的声音是如何一路走到今天的？今天，联合国全球传播部新闻媒体司副司长刘克凡做客《世界交汇点》，和我们聊聊他在联合国的26年生涯，以及在这样的媒体巨变中，联合国应该怎么做新闻、做什么样的新闻。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142686",
-      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-449194073f329821",
-      "sourceId": "un-news",
-      "title": "古特雷斯：必须打破武装冲突与粮食不安全之间的恶性循环",
-      "summary": "联合国秘书长古特雷斯周二在安理会关于“冲突与粮食安全”的公开辩论中表示，武装冲突、暴力与饥饿之间的联系不容否认，必须加强落实安理会第2417号决议，打破冲突与粮食不安全之间的恶性循环。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142685",
-      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-2f966138254db05a",
-      "sourceId": "un-news",
-      "title": "联合国秘书长与红十字会主席再次呼吁制定致命自主武器规则",
-      "summary": "尽管有未经证实的报道称，全自主且由人工智能引导的无人机目前已在战场上投入使用，但联合国秘书长古特雷斯与红十字国际委员会主席埃格周二再次发出紧急呼吁，要求在为时已晚之前制定更严格的全球管控措施。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142684",
-      "published": "Tue, 25 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-b6fc725aaccfa7c0",
-      "sourceId": "un-news",
-      "title": "【专题报道】地中海的另一场“奥德赛”：生态宝藏何以走出危机",
-      "summary": "距荷马史诗《奥德赛》诞生已逾2500年。如今，英国导演克里斯托弗·诺兰执导的电影《奥德赛》再次将这段跨越千年的传奇旅程搬上大银幕。从神话中的惊涛骇浪，到今天真实世界里的生态危机，这片海域依然在经历一场漫长而艰难的“奥德赛”——只是这一次，主角不再是奥德修斯，而是地中海本身。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142647",
       "published": "Tue, 25 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
