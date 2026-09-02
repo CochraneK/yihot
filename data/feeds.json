@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788367028140,
-  "bakedAt": "2026-09-02T16:37:08.140Z",
-  "refreshedAt": "2026-09-02T16:37:08.140Z",
-  "lastSuccessAt": "2026-09-02T16:37:06.441Z",
+  "version": 1788378528496,
+  "bakedAt": "2026-09-02T19:48:48.496Z",
+  "refreshedAt": "2026-09-02T19:48:48.496Z",
+  "lastSuccessAt": "2026-09-02T19:48:47.008Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-02T16:37:06.277Z",
+      "lastSuccessAt": "2026-09-02T19:48:46.817Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,41 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-02T16:37:06.441Z",
+      "lastSuccessAt": "2026-09-02T19:48:47.008Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-0d8c97578f3f9e79",
+      "sourceId": "un-news",
+      "title": "人工智能网络对亚太地区数字基础设施提出新要求",
+      "summary": "人工智能正在重塑亚太地区数字格局，并融入网络、基础设施和日常应用，但速度、可靠性和计算能力方面长期存在的差距，可能导致一些国家“掉队”。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142730",
+      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-cc528564ecc10d2b",
+      "sourceId": "un-news",
+      "title": "气候变暖加剧森林火灾威胁，传统凉爽、降雨充沛地区也需做好准备",
+      "summary": "世界卫生组织欧洲区域办事处周三表示，随着气候变暖，森林火灾威胁正向历史上气候较凉爽、降水较充沛的地区蔓延。2026年前8个月，欧盟已有超过60万公顷土地被烧毁，远超约28万公顷的20年平均水平。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142729",
+      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-4c4111d793023339",
+      "sourceId": "un-news",
+      "title": "为人类而战：避免气候灾难意味着必须立即采取行动",
+      "summary": "根据周三发布的一份联合国报告，创纪录的热浪、致命的洪灾和极端天气反映出地球正在持续变暖，即将突破安全温度阈值；但若现在加大力度采取气候行动，仍可避免气候灾难。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142728",
+      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-168d25971ca95e09",
       "sourceId": "un-news",
@@ -298,36 +328,6 @@
       "title": "古特雷斯：联合国维和行动必须适应新的现实",
       "summary": "联合国秘书长古特雷斯周三在联合国大会关于联合国维和行动审查的讲话中表示，联合国维和行动是维护国际和平与安全不可或缺的工具，但面对不断变化的冲突形势，必须适应新的现实。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142695",
-      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-2c6894f4e79f25b4",
-      "sourceId": "un-news",
-      "title": "儿基会就巴基斯坦医院火灾导致14名新生儿死亡表示悲痛",
-      "summary": "联合国儿童基金会驻巴基斯坦代表艾恩赛德周三发表声明，对当天伊斯兰堡巴基斯坦医学科学研究所医院发生火灾、造成至少14名新生儿不幸遇难深感悲痛。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142694",
-      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-a3b89286a6b15e99",
-      "sourceId": "un-news",
-      "title": "非洲的新宏伟目标：更多卫生工作者，更强大的卫生体系",
-      "summary": "面对到2035年预计将出现超过600万名卫生专业人员短缺的局面，非洲各国正加紧努力以加强其卫生力量，周三在埃塞俄比亚亚的斯亚贝巴举行的卫生部长会议上，各国宣布了一项为期十年的新计划。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142693",
-      "published": "Wed, 26 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-3e8fe43e7896d634",
-      "sourceId": "un-news",
-      "title": "古特雷斯对尼泊尔和中国严重洪灾造成的人员伤亡和破坏深感悲痛",
-      "summary": "联合国秘书长古特雷斯对周三早些时候尼泊尔和中国发生的严重洪灾深感悲痛。这些灾难夺走了许多人的生命，造成多人失踪，并导致大范围破坏。他向遇难者家属表示哀悼，并祝愿伤者早日康复，向所有受灾民众表达声援。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142692",
       "published": "Wed, 26 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
