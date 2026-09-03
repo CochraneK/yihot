@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788452909638,
-  "bakedAt": "2026-09-03T16:28:29.638Z",
-  "refreshedAt": "2026-09-03T16:28:29.638Z",
-  "lastSuccessAt": "2026-09-03T16:28:28.348Z",
+  "version": 1788465122873,
+  "bakedAt": "2026-09-03T19:52:02.873Z",
+  "refreshedAt": "2026-09-03T19:52:02.873Z",
+  "lastSuccessAt": "2026-09-03T19:52:01.353Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-03T16:28:28.065Z",
+      "lastSuccessAt": "2026-09-03T19:52:00.697Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-03T16:28:28.348Z",
+      "lastSuccessAt": "2026-09-03T19:52:01.353Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-30f64b7714fb71d5",
+      "sourceId": "un-news",
+      "title": "厄尔尼诺现象正在加剧 可能出现数月极端高温",
+      "summary": "受太平洋海面异常升温的推动，厄尔尼诺气候现象正在加剧，且尚未达到峰值。气象预报几乎可以肯定，该现象将持续至2027年2月——预计未来数月全球大部分地区将出现异常温暖的天气。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142735",
+      "published": "Thu, 03 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-18a228ccdb46922f",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "乌干达宣布本迪布焦型埃博拉疫情结束",
       "summary": "非洲疾病控制与预防中心和世界卫生组织周四宣布，乌干达由本迪布焦型埃博拉病毒引发的疫情已结束。自该国最后一名患者、一例输入性病例于2026年7月16日出院以来，已连续42天未出现新增确诊病例。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142700",
-      "published": "Thu, 27 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-346b9671c7409af9",
-      "sourceId": "un-news",
-      "title": "联合国：叙利亚正处于关键时刻 国际社会应支持政治过渡和人道主义复苏",
-      "summary": "秘书长叙利亚问题副特使科尔多内和代理助理秘书长兼紧急救济副协调员拉特瓦特周四向安理会通报叙利亚局势，表示叙利亚政治过渡和复苏取得进展，但仍面临安全、人道主义、问责和资源等方面的重大挑战，国际社会必须提供更多支持。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142699",
       "published": "Thu, 27 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
