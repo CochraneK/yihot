@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788397691469,
-  "bakedAt": "2026-09-03T01:08:11.469Z",
-  "refreshedAt": "2026-09-03T01:08:11.469Z",
-  "lastSuccessAt": "2026-09-03T01:08:10.336Z",
+  "version": 1788414691405,
+  "bakedAt": "2026-09-03T05:51:31.405Z",
+  "refreshedAt": "2026-09-03T05:51:31.405Z",
+  "lastSuccessAt": "2026-09-03T05:51:29.945Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-03T01:08:08.458Z",
+      "lastSuccessAt": "2026-09-03T05:51:29.779Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-03T01:08:10.336Z",
+      "lastSuccessAt": "2026-09-03T05:51:29.945Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-18a228ccdb46922f",
+      "sourceId": "un-news",
+      "title": "货币基金组织：亚洲的下一个增长故事",
+      "summary": "国际货币基金组织周三发布博客文章指出，亚洲拥有全球一半以上的人口，贡献了全球经济增长、贸易和创新的很大一部分。如今，推动亚洲崛起的驱动力正在发生转变，贸易日趋碎片化，能源安全令人担忧，人口老龄化加剧，生产率增长愈发难以维持。政策制定者面临的问题是如何抓住新机遇，重振亚洲的经济增长。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142734",
+      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-3cbc36f2fe74d6f5",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "联合国：叙利亚正处于关键时刻 国际社会应支持政治过渡和人道主义复苏",
       "summary": "秘书长叙利亚问题副特使科尔多内和代理助理秘书长兼紧急救济副协调员拉特瓦特周四向安理会通报叙利亚局势，表示叙利亚政治过渡和复苏取得进展，但仍面临安全、人道主义、问责和资源等方面的重大挑战，国际社会必须提供更多支持。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142699",
-      "published": "Thu, 27 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-f1cebba7a3f42c9f",
-      "sourceId": "un-news",
-      "title": "古特雷斯就波黑塞族前军事领导人姆拉迪奇去世发表声明",
-      "summary": "联合国秘书长古特雷斯周四通过发言人发表声明，表示注意到波黑塞族武装力量前指挥官姆拉迪奇去世，并强调针对其犯下的种族灭绝罪、危害人类罪以及违反战争法或战争惯例罪作出的司法裁决是最终裁决，相关事实已成为历史记录的一部分。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142698",
       "published": "Thu, 27 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
