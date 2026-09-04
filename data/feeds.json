@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788483654192,
-  "bakedAt": "2026-09-04T01:00:54.192Z",
-  "refreshedAt": "2026-09-04T01:00:54.192Z",
-  "lastSuccessAt": "2026-09-04T01:00:52.563Z",
+  "version": 1788501404877,
+  "bakedAt": "2026-09-04T05:56:44.877Z",
+  "refreshedAt": "2026-09-04T05:56:44.877Z",
+  "lastSuccessAt": "2026-09-04T05:56:43.608Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-04T01:00:52.320Z",
+      "lastSuccessAt": "2026-09-04T05:56:43.322Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,31 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-04T01:00:52.563Z",
+      "lastSuccessAt": "2026-09-04T05:56:43.608Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-6017afdde61067f7",
+      "sourceId": "un-news",
+      "title": "【子午播报】2026年9月4日",
+      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，中国全额缴清2026年联合国会费；古特雷斯强调，为1.5℃而战就是为全人类而战；子午聚焦：欢迎加入珊瑚护卫队。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142739",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-3640d140fa52156f",
+      "sourceId": "un-news",
+      "title": "联大支持在“联合国80周年倡议”改革框架下设立新的联合国培训机构",
+      "summary": "联合国大会已批准将两个联合国学习和培训机构合并，从而成立一个旨在加强对会员国及联合国系统本身支持的新机构。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142740",
+      "published": "Thu, 03 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-4f5094d2b7a6cc35",
       "sourceId": "un-news",
@@ -308,26 +328,6 @@
       "title": "标志性公约签署65周年  难民署呼吁采取新举措防止无国籍状态",
       "summary": "在1961年《减少无国籍状态公约》缔结65周年之际，联合国难民署呼吁重申政治承诺，确保每个人都能享有国籍权。难民署国表示，全球至少有450万人属于无国籍或国籍不明，还有数百万人受到这一问题影响但未被官方数据记录。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142705",
-      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-2293169d04659c39",
-      "sourceId": "un-news",
-      "title": "欧洲和北美地区严重干旱和热浪加剧森林和城市自然环境压力",
-      "summary": "联合国欧洲经济委员会周五表示，该组织各成员国，尤其是欧洲和北美地区，持续的严重干旱和创纪录的夏季高温正加剧森林生态系统压力。欧洲干旱观测站数据显示，目前欧盟和英国50%的领土处于干旱状态，严重降水不足正影响土壤湿度和森林健康。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142704",
-      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-9c10f0b7f9f96cf8",
-      "sourceId": "un-news",
-      "title": "霍尔木兹海峡通行受阻六个月 国际海事组织关注海员处境",
-      "summary": "在伊朗冲突导致霍尔木兹海峡受阻整整六个月之际，国际海事组织呼吁采取切实可行的解决方案并加强合作，以恢复航行自由；与此同时，该机构对深陷困境的海员的处境深表担忧。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142703",
       "published": "Fri, 28 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
