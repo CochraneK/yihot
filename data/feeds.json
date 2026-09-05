@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788569988287,
-  "bakedAt": "2026-09-05T00:59:48.287Z",
-  "refreshedAt": "2026-09-05T00:59:48.287Z",
-  "lastSuccessAt": "2026-09-05T00:59:46.874Z",
+  "version": 1788587240396,
+  "bakedAt": "2026-09-05T05:47:20.396Z",
+  "refreshedAt": "2026-09-05T05:47:20.396Z",
+  "lastSuccessAt": "2026-09-05T05:47:19.192Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-05T00:59:46.645Z",
+      "lastSuccessAt": "2026-09-05T05:47:18.978Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,81 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-05T00:59:46.874Z",
+      "lastSuccessAt": "2026-09-05T05:47:19.192Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-128fc0d1f6ba6a81",
+      "sourceId": "un-news",
+      "title": "【世界进行时】2026年9月4日",
+      "summary": "本期要点：尼泊尔洪灾：联合国发起4960万美元紧急呼吁；古特雷斯对美伊再次交火深表关切；苏丹：外部支持网络助长冲突并加剧平民伤亡；人权高专办：以色列部队强制驱逐三个难民营居民行为违反国际法；叙利亚化学武器销毁工作取得重大进展；联合国大会呼吁使用能更准确反映陆地面积的世界地图；厄尔尼诺现象正在加剧，可能出现数月极端高温；旨在改善猴痘疫苗可及性的全球倡议正式启动。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142747",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-698abffeea0685db",
+      "sourceId": "un-news",
+      "title": "联合国向世界发出呼吁：别再让非洲在地图上显得那么小",
+      "summary": "联合国大会周五以压倒性多数通过决议，呼吁全球各国政府、学校和科技公司停止使用那些让非洲看起来远小于其实际面积的地图。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142746",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-9f60e7f824e8e180",
+      "sourceId": "un-news",
+      "title": "【专题报道】高峰会在即 联合国礼宾与联络处进入倒计时冲刺状态",
+      "summary": "每年九月，当全球目光聚焦联合国大会堂的讲台，注视着各国领导人依次发表演说时，很少有人会想到此前在幕后所做的大量协调与准备工作：如何确保高级别代表团能够顺利进入联合国总部？协调路线和会议安排？座次、国旗以及各种正式仪式？核准通行证到外交人员名录？ 《联合国新闻》今天就带您走进一个联合国平时不太被人提及的部门——礼宾与联络处。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142712",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-31bdf770a7f85d80",
+      "sourceId": "un-news",
+      "title": "尼泊尔洪灾：联合国发起4960万美元紧急呼吁",
+      "summary": "联合国及人道主义合作伙伴周五发起4960万美元紧急呼吁，旨在向尼泊尔北部遭受山洪和山体滑坡影响的8.4万多人提供挽救生命的援助，支持政府主导的救灾行动。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142744",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-440a09afc8491781",
+      "sourceId": "un-news",
+      "title": "粮农组织：食品价格指数8月上涨",
+      "summary": "联合国粮食及农业组织周五发布最新数据显示，2026年8月，粮农组织食品价格指数较7月上涨1.9%，较上年同期上涨2.5%。高温及其他天气相关风险引发市场对供应前景的担忧。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142743",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-e15d01b2133637b4",
+      "sourceId": "un-news",
+      "title": "联合国：以色列部队强制驱逐三个难民营居民行为违反国际法",
+      "summary": "联合国人权事务高级专员办公室周五发布报告指出，以色列安全部队于2025年1月和2月强行驱逐约旦河西岸杰宁、努尔沙姆斯和图尔卡姆三个难民营的全部巴勒斯坦居民，并阻止他们返回，此举违反国际法。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142742",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-491ca5ac8d5e4843",
+      "sourceId": "un-news",
+      "title": "人道主义仓库屡遭袭击，危及乌克兰至关重要的医疗援助",
+      "summary": "世界卫生组织周五表示，昨晚发生的一起新空袭破坏了该组织在基辅地区用于储存人道主义医疗物资的主要仓库之一。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142741",
+      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-6017afdde61067f7",
       "sourceId": "un-news",
@@ -259,76 +329,6 @@
       "summary": "目前，海平面上升的速度已超过有记录以来的任何时期。其影响已然显现，威胁也在不断加剧。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142716",
       "published": "Mon, 31 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-27988ca66f63e7b7",
-      "sourceId": "un-news",
-      "title": "【专题报道 | 前方视野】《武器贸易条约》履约状况持续下滑",
-      "summary": "当今世界正面临二战结束以来最为严峻的国际安全危机。一方面是地缘政治裂痕加深、全球军事支出无节制地膨胀以及数十起武装冲突在多国蔓延；另一方面，作为约束全球常规武器流转的核心法律基石——《武器贸易条约》却正陷入履约的大幅滑坡。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142714",
-      "published": "Sun, 30 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-7a08c8917515690a",
-      "sourceId": "un-news",
-      "title": "【子午播报】2026年8月29日",
-      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，联合国全力以赴驰援中尼灾区；77年前的今天：苏联打破美国核垄断地位；《欢迎来龙餐馆》导演文牧野做客《联合国会客厅》，聊聊战争与儿童保护。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142711",
-      "published": "Sat, 29 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-71fb605e6dce192c",
-      "sourceId": "un-news",
-      "title": "【世界进行时】2026年8月28日",
-      "summary": "本期要点：古特雷斯对尼泊尔和中国严重洪灾造成的人员伤亡和破坏深感悲痛；刚果（金）本轮埃博拉疫情为有记录以来蔓延速度最快的疫情；乌干达宣布本迪布焦型埃博拉疫情结束；霍尔木兹海峡通行受阻六个月，国际海事组织关注海员处境；古特雷斯就波黑塞族前军事领导人姆拉迪奇去世发表声明；2025年24万名儿童和青少年新感染艾滋病毒；联合国谴责南苏丹伏击事件，两名维和人员遇害。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142709",
-      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-ee48f048c0e7978c",
-      "sourceId": "un-news",
-      "title": "世卫组织：乌克兰医疗体系持续承受战争冲击",
-      "summary": "世界卫生组织驻乌克兰代表哈比希特周五表示，近期乌克兰遭遇的警报和袭击数量创下自2022年2月俄罗斯入侵以来的最高纪录。上周克里维里赫发生两次袭击，造成140人受伤，其中包括23名儿童，另有16人遇难。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142708",
-      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-c433dcdbb45130b3",
-      "sourceId": "un-news",
-      "title": "联合国：海地暴力持续恶化 人道主义危机加剧",
-      "summary": "联合国海地综合办事处主任兼秘书长特别代表马谢乌周五向安理会表示，8月23日夜至24日凌晨发生在海地肯斯科夫的黑帮袭击造成至少47人死亡，数十人被绑架，许多人受伤和流离失所。他呼吁立即无条件释放所有被绑架者，包括妇女和儿童，并强调必须进一步加强对海地的国际安全支持。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142707",
-      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-b9bd4c8717bf8872",
-      "sourceId": "un-news",
-      "title": "世卫组织：刚果（金）埃博拉疫情仍构成突发公共卫生事件 但未达到“大流行”门槛",
-      "summary": "世界卫生组织总干事谭德塞周五表示，根据《国际卫生条例》应急委员会建议，刚果民主共和国（刚果（金））本迪布焦型病毒埃博拉疫情仍符合“国际关注的突发公共卫生事件”标准，但不符合大流行紧急情况标准。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142706",
-      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-3d1936b9492a3e35",
-      "sourceId": "un-news",
-      "title": "标志性公约签署65周年  难民署呼吁采取新举措防止无国籍状态",
-      "summary": "在1961年《减少无国籍状态公约》缔结65周年之际，联合国难民署呼吁重申政治承诺，确保每个人都能享有国籍权。难民署国表示，全球至少有450万人属于无国籍或国籍不明，还有数百万人受到这一问题影响但未被官方数据记录。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142705",
-      "published": "Fri, 28 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
