@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788729911222,
-  "bakedAt": "2026-09-06T21:25:11.222Z",
-  "refreshedAt": "2026-09-06T21:25:11.222Z",
-  "lastSuccessAt": "2026-09-06T21:25:09.959Z",
+  "version": 1788739045185,
+  "bakedAt": "2026-09-06T23:57:25.185Z",
+  "refreshedAt": "2026-09-06T23:57:25.185Z",
+  "lastSuccessAt": "2026-09-06T23:57:23.950Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-06T21:25:09.512Z",
+      "lastSuccessAt": "2026-09-06T23:57:23.230Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-06T21:25:09.959Z",
+      "lastSuccessAt": "2026-09-06T23:57:23.950Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-ebe911473603a53b",
+      "sourceId": "un-news",
+      "title": "【专题报道 | 前方视野】海平面上升已成“系统性威胁”：人类该如何应对？",
+      "summary": "海平面上升已不再是对遥远未来的预测，而是一场正在发生的系统性危机——它不仅直接威胁沿海基础设施与居民生存，更深刻冲击着全球粮食安全、国家主权与国际法体系。面对本世纪内不可避免的海平面上升趋势与巨大的适应资金缺口，人类急需在加速减排的同时，从法理保障与资金落实上寻找突破口。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142750",
+      "published": "Sun, 06 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-128fc0d1f6ba6a81",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "尼泊尔洪灾死亡人数超过900人，救援需求持续增加",
       "summary": "联合国秘书长发言人杜加里克周一表示，尼泊尔灾难性洪灾的确认死亡人数已激增至903人，仍有4200多人失踪。目前，救援人员和人道主义工作者正努力克服高速公路受阻的困难，力图抵达受灾最严重的地区。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142717",
-      "published": "Mon, 31 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-b918a77ffc424f7a",
-      "sourceId": "un-news",
-      "title": "风险加剧：海平面上升对人类意味着什么",
-      "summary": "目前，海平面上升的速度已超过有记录以来的任何时期。其影响已然显现，威胁也在不断加剧。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142716",
       "published": "Mon, 31 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
