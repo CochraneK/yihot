@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788823907266,
-  "bakedAt": "2026-09-07T23:31:47.266Z",
-  "refreshedAt": "2026-09-07T23:31:47.266Z",
-  "lastSuccessAt": "2026-09-07T23:31:45.750Z",
+  "version": 1788842521871,
+  "bakedAt": "2026-09-08T04:42:01.871Z",
+  "refreshedAt": "2026-09-08T04:42:01.871Z",
+  "lastSuccessAt": "2026-09-08T04:42:00.583Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-07T23:31:45.609Z",
+      "lastSuccessAt": "2026-09-08T04:42:00.379Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-07T23:31:45.750Z",
+      "lastSuccessAt": "2026-09-08T04:42:00.583Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-17494b46579d505e",
+      "sourceId": "un-news",
+      "title": "古特雷斯呼吁塔利班撤销对阿富汗妇女的禁令",
+      "summary": "古特雷斯秘书长周日通过发言人发表声明，对塔利班继续对阿富汗妇女和女童实施歧视性政策深表关切。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142751",
+      "published": "Sun, 06 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-ebe911473603a53b",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "超越贫困：扩大东亚及太平洋地区中产阶级面临更大挑战",
       "summary": "世界银行周一发布署名博客文章指出，东亚及太平洋地区过去几十年实现了显著经济转型，数亿人摆脱贫困，约三分之一人口如今属于中产阶级。但在地区其他地方，中产阶级增长势头已经放缓，许多摆脱贫困的人正努力在中产阶级中站稳脚跟。文章认为，培育一个规模更大、经济上更稳健的中产阶级是一项独特且更为艰巨的挑战。",
       "url": "https://news.un.org/feed/view/zh/story/2026/08/1142718",
-      "published": "Mon, 31 Aug 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-62b3f0ba8b2c46b3",
-      "sourceId": "un-news",
-      "title": "尼泊尔洪灾死亡人数超过900人，救援需求持续增加",
-      "summary": "联合国秘书长发言人杜加里克周一表示，尼泊尔灾难性洪灾的确认死亡人数已激增至903人，仍有4200多人失踪。目前，救援人员和人道主义工作者正努力克服高速公路受阻的困难，力图抵达受灾最严重的地区。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/08/1142717",
       "published": "Mon, 31 Aug 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
