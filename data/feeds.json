@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788913064516,
-  "bakedAt": "2026-09-09T00:17:44.516Z",
-  "refreshedAt": "2026-09-09T00:17:44.516Z",
-  "lastSuccessAt": "2026-09-09T00:17:43.021Z",
+  "version": 1788933659035,
+  "bakedAt": "2026-09-09T06:00:59.035Z",
+  "refreshedAt": "2026-09-09T06:00:59.035Z",
+  "lastSuccessAt": "2026-09-09T06:00:57.241Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-09T00:17:42.867Z",
+      "lastSuccessAt": "2026-09-09T06:00:57.096Z",
       "itemCount": 30
     },
     {
@@ -27,7 +27,7 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-09T00:17:43.021Z",
+      "lastSuccessAt": "2026-09-09T06:00:57.241Z",
       "itemCount": 10
     }
   ],
