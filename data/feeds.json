@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788904395983,
-  "bakedAt": "2026-09-08T21:53:15.983Z",
-  "refreshedAt": "2026-09-08T21:53:15.983Z",
-  "lastSuccessAt": "2026-09-08T21:53:14.930Z",
+  "version": 1788913064516,
+  "bakedAt": "2026-09-09T00:17:44.516Z",
+  "refreshedAt": "2026-09-09T00:17:44.516Z",
+  "lastSuccessAt": "2026-09-09T00:17:43.021Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-08T21:53:14.683Z",
+      "lastSuccessAt": "2026-09-09T00:17:42.867Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-08T21:53:14.930Z",
+      "lastSuccessAt": "2026-09-09T00:17:43.021Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-f5abcae3da001280",
+      "sourceId": "un-news",
+      "title": "世卫组织警告：吸烟会损害生育能力",
+      "summary": "世界卫生组织在周二发布的一份新报告中警告称，吸烟极有可能增加备孕难度，并强调吸烟女性的不孕风险比非吸烟者高出40%。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142758",
+      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-c4cd13f94a8e39e5",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "阿富汗数十年冲突余波未止：多数受害者仍未获得正义与救济",
       "summary": "联合国阿富汗援助团周二发布一份新报告显示，阿富汗长达数十年的武装冲突受害者继续承受严重的身体、心理、社会和经济后果，且往往无法获得司法救济、充分援助或对所受伤害的承认。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142725",
-      "published": "Tue, 01 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-902e40a0beb6a7dc",
-      "sourceId": "un-news",
-      "title": "艾滋病规划署、南部非洲发展共同体与中国携手推动南部非洲本地制药业发展",
-      "summary": "联合国艾滋病规划署、南部非洲发展共同体和全球卫生创新研究所联合南非政府、中国政府、中国制药企业以及区域和全球合作伙伴，启动一项新合作，旨在加强整个南部非洲的药品生产能力。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142724",
       "published": "Tue, 01 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
