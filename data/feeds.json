@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1788993289498,
-  "bakedAt": "2026-09-09T22:34:49.498Z",
-  "refreshedAt": "2026-09-09T22:34:49.498Z",
-  "lastSuccessAt": "2026-09-09T22:34:48.076Z",
+  "version": 1789002386818,
+  "bakedAt": "2026-09-10T01:06:26.818Z",
+  "refreshedAt": "2026-09-10T01:06:26.818Z",
+  "lastSuccessAt": "2026-09-10T01:06:25.406Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-09T22:34:47.851Z",
+      "lastSuccessAt": "2026-09-10T01:06:25.207Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,41 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-09T22:34:48.076Z",
+      "lastSuccessAt": "2026-09-10T01:06:25.406Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-38ad0a4863123e48",
+      "sourceId": "un-news",
+      "title": "遭受洪灾重创的尼泊尔呼吁气候正义",
+      "summary": "联合国驻尼泊尔最高官员周三表示，尼泊尔在近期致命洪灾后呼吁获得经济补偿，这凸显了帮助那些对气候变化贡献最小、却日益面临其最致命后果的国家的必要性。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142766",
+      "published": "Wed, 09 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-f213ae74bd427e3e",
+      "sourceId": "un-news",
+      "title": "阿富汗民众面临“令人窒息的沉默”，人权高专呼吁加大施压力度",
+      "summary": "联合国人权事务高级专员蒂尔克周三谴责阿富汗实施的一系列压迫性限制措施，特别是针对女童和妇女的措施，并呼吁重新加大力度，敦促该国事实上的当局履行国际法义务。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142764",
+      "published": "Wed, 09 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-502a4dd0b12aeffb",
+      "sourceId": "un-news",
+      "title": "保护教育免受袭击是全世界的责任",
+      "summary": "9月9日是“保护教育免受袭击国际日”。联合国教科文组织值此对全球针对学校的袭击事件持续增加表示严重关切。2025年，全球共记录到1680起针对学校的袭击事件，较上年增长33%。全球约有2.58亿儿童和青少年因各类危机而中断学业，其中9300万人完全无法上学。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142763",
+      "published": "Wed, 09 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-8ecdf5fe35161584",
       "sourceId": "un-news",
@@ -298,36 +328,6 @@
       "title": "旨在改善猴痘疫苗可及性的全球倡议正式启动",
       "summary": "由国际疫苗供应协调小组负责协调的旨在建立猴痘疫苗储备的全球倡议正式宣告启动。该倡议将建立长期机制，确保各国在应对猴痘疫情时能够获得疫苗。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142732",
-      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-385acaf7748f3fd7",
-      "sourceId": "un-news",
-      "title": "世界粮食计划署谴责苏丹食品援助卡车遭空袭",
-      "summary": "世界粮食计划署周二强烈谴责日前发生在苏丹南科尔多凡州的一起空袭事件。此次袭击摧毁了超过50吨的食品。这些物资原本足以向5800人提供为期一个月的救命援助。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142731",
-      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-0d8c97578f3f9e79",
-      "sourceId": "un-news",
-      "title": "人工智能网络对亚太地区数字基础设施提出新要求",
-      "summary": "人工智能正在重塑亚太地区数字格局，并融入网络、基础设施和日常应用，但速度、可靠性和计算能力方面长期存在的差距，可能导致一些国家“掉队”。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142730",
-      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-cc528564ecc10d2b",
-      "sourceId": "un-news",
-      "title": "气候变暖加剧森林火灾威胁，传统凉爽、降雨充沛地区也需做好准备",
-      "summary": "世界卫生组织欧洲区域办事处周三表示，随着气候变暖，森林火灾威胁正向历史上气候较凉爽、降水较充沛的地区蔓延。2026年前8个月，欧盟已有超过60万公顷土地被烧毁，远超约28万公顷的20年平均水平。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142729",
       "published": "Wed, 02 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
