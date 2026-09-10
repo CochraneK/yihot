@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789039445799,
-  "bakedAt": "2026-09-10T11:24:05.799Z",
-  "refreshedAt": "2026-09-10T11:24:05.799Z",
-  "lastSuccessAt": "2026-09-10T11:24:04.615Z",
+  "version": 1789057623834,
+  "bakedAt": "2026-09-10T16:27:03.834Z",
+  "refreshedAt": "2026-09-10T16:27:03.834Z",
+  "lastSuccessAt": "2026-09-10T16:27:02.686Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-10T11:24:04.381Z",
+      "lastSuccessAt": "2026-09-10T16:27:02.534Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-10T11:24:04.615Z",
+      "lastSuccessAt": "2026-09-10T16:27:02.686Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-002c901f22982d3c",
+      "sourceId": "un-news",
+      "title": "【专题报道】难以忘记——911事件二十五周年 三位联合国工作人员讲述亲身经历",
+      "summary": "二十五年前，联合国纽约总部的三名工作人员在9月11日这一天开始了他们一个原本平常的星期二早晨，然而却经历了一场终生难忘的巨变。在距离世贸中心仅几英里之遥的联合国大厦内，他们所经历的那些惊心动魄的时刻让他们对恐怖袭击以及联合国关注的打击恐怖主义问题有了更加深刻的理解。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142754",
+      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-8a817c3a9f6ca4e8",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "货币基金组织：亚洲的下一个增长故事",
       "summary": "国际货币基金组织周三发布博客文章指出，亚洲拥有全球一半以上的人口，贡献了全球经济增长、贸易和创新的很大一部分。如今，推动亚洲崛起的驱动力正在发生转变，贸易日趋碎片化，能源安全令人担忧，人口老龄化加剧，生产率增长愈发难以维持。政策制定者面临的问题是如何抓住新机遇，重振亚洲的经济增长。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142734",
-      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-3cbc36f2fe74d6f5",
-      "sourceId": "un-news",
-      "title": "古特雷斯对美伊再次交火深表关切",
-      "summary": "联合国秘书长发言人周三在每日新闻简报会上表示，古特雷斯秘书长对9月1日晚美国与伊朗之间再次发生交火深表关切，并对有关平民伤亡的报道深感震惊，其中包括据称袭击伊朗一场婚礼的空袭事件。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142733",
       "published": "Wed, 02 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
