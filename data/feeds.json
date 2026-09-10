@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789069471221,
-  "bakedAt": "2026-09-10T19:44:31.221Z",
-  "refreshedAt": "2026-09-10T19:44:31.221Z",
-  "lastSuccessAt": "2026-09-10T19:44:29.769Z",
+  "version": 1789079813437,
+  "bakedAt": "2026-09-10T22:36:53.437Z",
+  "refreshedAt": "2026-09-10T22:36:53.437Z",
+  "lastSuccessAt": "2026-09-10T22:36:51.543Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-10T19:44:29.627Z",
+      "lastSuccessAt": "2026-09-10T22:36:51.452Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,51 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-10T19:44:29.769Z",
+      "lastSuccessAt": "2026-09-10T22:36:51.543Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-40f046ca53aff1c7",
+      "sourceId": "un-news",
+      "title": "乌克兰：针对切尔诺贝利的无人机袭击是“在拿数百万人的安全冒险”",
+      "summary": "联合国开发计划署署长德克罗周四通过视频连线从基辅向联合国纽约总部的记者表示，针对切尔诺贝利核电站防护结构的无人机袭击本可能危及数百万人的安全。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142772",
+      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-f97a95836ef9755d",
+      "sourceId": "un-news",
+      "title": "联合国也门特使：也门重陷大规模冲突风险已演变为现实",
+      "summary": "联合国也门问题特使格伦德贝里周四向安理会作简报时表示，也门重陷自2022年停火以来大规模冲突的最大风险，已经演变为现实。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142771",
+      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-c66e2fc1c9840b5b",
+      "sourceId": "un-news",
+      "title": "“9·11”事件25周年：联合国重申反恐与维护人权共同责任",
+      "summary": "值此“9·11”恐怖袭击事件25周年之际，联合国秘书长发言人和联合国人权事务高级专员办事处分别发表声明，缅怀遇难者，向幸存者和首批救援人员致敬，并强调打击恐怖主义与维护人权是共同责任。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142770",
+      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-398cd8115261df0e",
+      "sourceId": "un-news",
+      "title": "联合国气候变化事务负责人：气候危机已成为欧洲经济安全紧急状况",
+      "summary": "联合国气候变化框架公约执行秘书斯蒂尔9月10日在布鲁塞尔欧洲议会环境、气候与食品安全委员会发表演讲时表示，气候危机现已成为整个欧洲大陆范围内的经济安全紧急状况。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142769",
+      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-002c901f22982d3c",
       "sourceId": "un-news",
@@ -289,46 +329,6 @@
       "summary": "联合国苏丹问题独立国际实况调查团周四在一份新报告中指出，外国招募和外部支持网络正在助长苏丹战争，增强交战各方军事能力，并给平民造成毁灭性后果。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142738",
       "published": "Thu, 03 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-123ba114c44ee18b",
-      "sourceId": "un-news",
-      "title": "尼泊尔洪灾后至少2.2万名儿童亟需安全饮用水和卫生支持",
-      "summary": "联合国儿童基金会周四表示，在尼泊尔山洪暴发一周多后，至少有2.2万名儿童亟需安全饮用水、卫生设施及个人卫生支持。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142737",
-      "published": "Thu, 03 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-0bd4e79ec4fce630",
-      "sourceId": "un-news",
-      "title": "联合国裁军事务高级代表：叙利亚化学武器销毁工作取得重大进展",
-      "summary": "联合国副秘书长兼裁军事务高级代表中满泉周四向安理会表示，叙利亚政府与禁止化学武器组织技术秘书处近两年来共同努力，在解决前政府化学武器计划遗留问题、申报任何剩余化学武器并在核查下予以销毁方面取得切实成果。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142736",
-      "published": "Thu, 03 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-30f64b7714fb71d5",
-      "sourceId": "un-news",
-      "title": "厄尔尼诺现象正在加剧 可能出现数月极端高温",
-      "summary": "受太平洋海面异常升温的推动，厄尔尼诺气候现象正在加剧，且尚未达到峰值。气象预报几乎可以肯定，该现象将持续至2027年2月——预计未来数月全球大部分地区将出现异常温暖的天气。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142735",
-      "published": "Thu, 03 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-18a228ccdb46922f",
-      "sourceId": "un-news",
-      "title": "货币基金组织：亚洲的下一个增长故事",
-      "summary": "国际货币基金组织周三发布博客文章指出，亚洲拥有全球一半以上的人口，贡献了全球经济增长、贸易和创新的很大一部分。如今，推动亚洲崛起的驱动力正在发生转变，贸易日趋碎片化，能源安全令人担忧，人口老龄化加剧，生产率增长愈发难以维持。政策制定者面临的问题是如何抓住新机遇，重振亚洲的经济增长。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142734",
-      "published": "Wed, 02 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
