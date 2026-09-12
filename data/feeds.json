@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789175360603,
-  "bakedAt": "2026-09-12T01:09:20.603Z",
-  "refreshedAt": "2026-09-12T01:09:20.603Z",
-  "lastSuccessAt": "2026-09-12T01:09:18.914Z",
+  "version": 1789192237383,
+  "bakedAt": "2026-09-12T05:50:37.383Z",
+  "refreshedAt": "2026-09-12T05:50:37.383Z",
+  "lastSuccessAt": "2026-09-12T05:50:36.350Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-12T01:09:18.755Z",
+      "lastSuccessAt": "2026-09-12T05:50:36.160Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,61 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-12T01:09:18.914Z",
+      "lastSuccessAt": "2026-09-12T05:50:36.350Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-cfbed3468f428876",
+      "sourceId": "un-news",
+      "title": "【世界进行时】2026年9月11日",
+      "summary": "本期要点：联大主席敲槌宣布新一届会议开幕，努力重建全球信任；黎巴嫩南部局势升级，联合国秘书长要求以色列撤军；联合国也门特使：也门重陷大规模冲突风险已演变为现实；“9·11”事件25周年：联合国重申反恐与维护人权共同责任；人工智能数据中心对全球电力系统构成日益加剧的威胁；世卫组织警告：吸烟会损害生育能力。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142779",
+      "published": "Fri, 11 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-5ab578c400d8c1ae",
+      "sourceId": "un-news",
+      "title": "首支青年难民奥运代表队将参加2026年青奥会",
+      "summary": "难民署周五发表声明，欢迎首支青年难民奥运代表队参加赛前集训，备战下个月在塞内加尔举行的2026年青年奥运会。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142777",
+      "published": "Fri, 11 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-0dafb288e53b6d17",
+      "sourceId": "un-news",
+      "title": "安理会：重振反恐斗争，应对不断演变的恐怖主义威胁",
+      "summary": "安理会周五举行关于恐怖主义行为对国际和平与安全构成威胁的通报会，主题为“‘9·11’事件25周年：重振安理会反恐斗争”。纳塔利娅·盖尔曼和联合国反恐办公室代理主管艾哈布·奥迈什在会上发言，强调国际合作、预防努力、能力建设以及尊重国际法和人权对于应对不断演变的恐怖主义威胁至关重要。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142776",
+      "published": "Fri, 11 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-db67ab3bd442b184",
+      "sourceId": "un-news",
+      "title": "地球迎来有记录以来最热的8月",
+      "summary": "根据欧盟“哥白尼”气候服务局、美国国家海洋和大气管理局以及美国国家航空航天局的月度报告，地球刚刚经历了有记录以来最热的8月。北半球经历了有史以来最热的夏季，而南半球则经历了接近纪录的高温冬季。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142775",
+      "published": "Fri, 11 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-828ad3ba4e7fc7f1",
+      "sourceId": "un-news",
+      "title": "安理会反恐执行局趋势报告：恐怖主义宣传日益成为行动基础设施",
+      "summary": "安理会反恐委员会执行局发布题为《超越信息传播：恐怖主义宣传作为行动基础设施》的最新趋势报告。报告分析了恐怖组织如何日益将宣传不仅作为沟通工具，还作为招募、激进化、融资、行动规划及治理活动不可或缺的组成部分。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142774",
+      "published": "Fri, 11 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-40f046ca53aff1c7",
       "sourceId": "un-news",
@@ -279,56 +329,6 @@
       "summary": "联合国粮食及农业组织周五发布最新数据显示，2026年8月，粮农组织食品价格指数较7月上涨1.9%，较上年同期上涨2.5%。高温及其他天气相关风险引发市场对供应前景的担忧。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142743",
       "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-e15d01b2133637b4",
-      "sourceId": "un-news",
-      "title": "联合国：以色列部队强制驱逐三个难民营居民行为违反国际法",
-      "summary": "联合国人权事务高级专员办公室周五发布报告指出，以色列安全部队于2025年1月和2月强行驱逐约旦河西岸杰宁、努尔沙姆斯和图尔卡姆三个难民营的全部巴勒斯坦居民，并阻止他们返回，此举违反国际法。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142742",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-491ca5ac8d5e4843",
-      "sourceId": "un-news",
-      "title": "人道主义仓库屡遭袭击，危及乌克兰至关重要的医疗援助",
-      "summary": "世界卫生组织周五表示，昨晚发生的一起新空袭破坏了该组织在基辅地区用于储存人道主义医疗物资的主要仓库之一。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142741",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-6017afdde61067f7",
-      "sourceId": "un-news",
-      "title": "【子午播报】2026年9月4日",
-      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，中国全额缴清2026年联合国会费；古特雷斯强调，为1.5℃而战就是为全人类而战；子午聚焦：欢迎加入珊瑚护卫队。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142739",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-3640d140fa52156f",
-      "sourceId": "un-news",
-      "title": "联大支持在“联合国80周年倡议”改革框架下设立新的联合国培训机构",
-      "summary": "联合国大会已批准将两个联合国学习和培训机构合并，从而成立一个旨在加强对会员国及联合国系统本身支持的新机构。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142740",
-      "published": "Thu, 03 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-4f5094d2b7a6cc35",
-      "sourceId": "un-news",
-      "title": "苏丹：外部支持网络助长冲突并加剧平民伤亡",
-      "summary": "联合国苏丹问题独立国际实况调查团周四在一份新报告中指出，外国招募和外部支持网络正在助长苏丹战争，增强交战各方军事能力，并给平民造成毁灭性后果。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142738",
-      "published": "Thu, 03 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
