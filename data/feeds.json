@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789261385643,
-  "bakedAt": "2026-09-13T01:03:05.643Z",
-  "refreshedAt": "2026-09-13T01:03:05.643Z",
-  "lastSuccessAt": "2026-09-13T01:03:04.430Z",
+  "version": 1789280031403,
+  "bakedAt": "2026-09-13T06:13:51.403Z",
+  "refreshedAt": "2026-09-13T06:13:51.403Z",
+  "lastSuccessAt": "2026-09-13T06:13:50.113Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-13T01:03:04.151Z",
+      "lastSuccessAt": "2026-09-13T06:13:49.755Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-13T01:03:04.430Z",
+      "lastSuccessAt": "2026-09-13T06:13:50.113Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-0f1e7979772d92f2",
+      "sourceId": "un-news",
+      "title": "也门战事升级，流离失所危机每小时都在恶化",
+      "summary": "国际移民组织周六警告称，也门的流离失所危机正以每小时为单位迅速恶化。据国际移民组织流离失所追踪矩阵团队及其合作伙伴统计，自7月份以来，已有至少7.6万人逃离家园。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142780",
+      "published": "Sat, 12 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-cfbed3468f428876",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "尼泊尔洪灾：联合国发起4960万美元紧急呼吁",
       "summary": "联合国及人道主义合作伙伴周五发起4960万美元紧急呼吁，旨在向尼泊尔北部遭受山洪和山体滑坡影响的8.4万多人提供挽救生命的援助，支持政府主导的救灾行动。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142744",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-440a09afc8491781",
-      "sourceId": "un-news",
-      "title": "粮农组织：食品价格指数8月上涨",
-      "summary": "联合国粮食及农业组织周五发布最新数据显示，2026年8月，粮农组织食品价格指数较7月上涨1.9%，较上年同期上涨2.5%。高温及其他天气相关风险引发市场对供应前景的担忧。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142743",
       "published": "Fri, 04 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
