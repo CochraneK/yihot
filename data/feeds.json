@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789316482195,
-  "bakedAt": "2026-09-13T16:21:22.195Z",
-  "refreshedAt": "2026-09-13T16:21:22.195Z",
-  "lastSuccessAt": "2026-09-13T16:21:20.200Z",
+  "version": 1789327750910,
+  "bakedAt": "2026-09-13T19:29:10.910Z",
+  "refreshedAt": "2026-09-13T19:29:10.910Z",
+  "lastSuccessAt": "2026-09-13T19:29:09.289Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-13T16:21:20.088Z",
+      "lastSuccessAt": "2026-09-13T19:29:08.659Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-13T16:21:20.200Z",
+      "lastSuccessAt": "2026-09-13T19:29:09.289Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-6fa50839a714d0c3",
+      "sourceId": "un-news",
+      "title": "古特雷斯出席金砖国家峰会，呼吁塑造包容性的全球增长",
+      "summary": "秘书长古特雷斯周日出席了于印度新德里举行的第18届金砖国家峰会，并发表讲话指出，&nbsp;必须致力于韧性、创新、合作和可持续发展，这对塑造包容性的全球增长至关重要。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142781",
+      "published": "Sun, 13 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-0f1e7979772d92f2",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "【专题报道】高峰会在即 联合国礼宾与联络处进入倒计时冲刺状态",
       "summary": "每年九月，当全球目光聚焦联合国大会堂的讲台，注视着各国领导人依次发表演说时，很少有人会想到此前在幕后所做的大量协调与准备工作：如何确保高级别代表团能够顺利进入联合国总部？协调路线和会议安排？座次、国旗以及各种正式仪式？核准通行证到外交人员名录？ 《联合国新闻》今天就带您走进一个联合国平时不太被人提及的部门——礼宾与联络处。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142712",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-31bdf770a7f85d80",
-      "sourceId": "un-news",
-      "title": "尼泊尔洪灾：联合国发起4960万美元紧急呼吁",
-      "summary": "联合国及人道主义合作伙伴周五发起4960万美元紧急呼吁，旨在向尼泊尔北部遭受山洪和山体滑坡影响的8.4万多人提供挽救生命的援助，支持政府主导的救灾行动。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142744",
       "published": "Fri, 04 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
