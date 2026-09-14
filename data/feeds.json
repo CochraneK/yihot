@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789413875898,
-  "bakedAt": "2026-09-14T19:24:35.898Z",
-  "refreshedAt": "2026-09-14T19:24:35.898Z",
-  "lastSuccessAt": "2026-09-14T19:24:34.475Z",
+  "version": 1789427393232,
+  "bakedAt": "2026-09-14T23:09:53.232Z",
+  "refreshedAt": "2026-09-14T23:09:53.232Z",
+  "lastSuccessAt": "2026-09-14T23:09:51.520Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-14T19:24:34.030Z",
+      "lastSuccessAt": "2026-09-14T23:09:51.378Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,51 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-14T19:24:34.475Z",
+      "lastSuccessAt": "2026-09-14T23:09:51.520Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-463276452781e3d1",
+      "sourceId": "un-news",
+      "title": "铀资源储备充足但需持续投资支持全球核电增长",
+      "summary": "国际原子能机构和经合组织核能署联合发布的最新报告《2026年铀资源、生产与需求》指出，全球铀行业正在响应世界各地对发展新核电装机容量日益增长的兴趣，近年来铀勘探和矿山开发支出显著增加。这些投资对于满足未来需求至关重要。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142786",
+      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-e60cd93a507840ef",
+      "sourceId": "un-news",
+      "title": "原子能机构总干事：伊朗核监督形势恶化，必须重返外交谈判渠道",
+      "summary": "国际原子能机构总干事格罗西周一在国际原子能机构大会第70届常会上表示，国际原子能机构对伊朗核计划的监督形势在2026年恶化，伊朗核材料和核设施的监督问题引发严重核扩散担忧，亟需以最高优先级解决。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142785",
+      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-b4f27088f57ca157",
+      "sourceId": "un-news",
+      "title": "人权高专呼吁采取紧急行动应对前所未有的人工智能风险",
+      "summary": "联合国人权事务高级专员蒂尔克周一呼吁各国及全球“前沿”人工智能企业采取紧急行动，确保有实质意义的人工智能治理能够跟上其加速发展的步伐，并应对其对人权构成的前所未有的风险。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142784",
+      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-a9fe470420509b00",
+      "sourceId": "un-news",
+      "title": "【专题报道 | 前方视野】填补“地球缺失的条约”：推动建立全球首个灾害保护国际条约",
+      "summary": "随着气候变化加剧、自然灾害频发，红十字与红新月国际联合会日前发起“地球缺失的条约”（Earth&#039;s Missing Treaty）全球倡议，呼吁各国致力于制定首个专门保护灾害中受影响民众的国际条约，为灾害发生前、发生时和发生后提供更有力的国际合作框架。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142782",
+      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-6fa50839a714d0c3",
       "sourceId": "un-news",
@@ -289,46 +329,6 @@
       "summary": "古特雷斯秘书长周日通过发言人发表声明，对塔利班继续对阿富汗妇女和女童实施歧视性政策深表关切。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142751",
       "published": "Sun, 06 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-ebe911473603a53b",
-      "sourceId": "un-news",
-      "title": "【专题报道 | 前方视野】海平面上升已成“系统性威胁”：人类该如何应对？",
-      "summary": "海平面上升已不再是对遥远未来的预测，而是一场正在发生的系统性危机——它不仅直接威胁沿海基础设施与居民生存，更深刻冲击着全球粮食安全、国家主权与国际法体系。面对本世纪内不可避免的海平面上升趋势与巨大的适应资金缺口，人类急需在加速减排的同时，从法理保障与资金落实上寻找突破口。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142750",
-      "published": "Sun, 06 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-128fc0d1f6ba6a81",
-      "sourceId": "un-news",
-      "title": "【世界进行时】2026年9月4日",
-      "summary": "本期要点：尼泊尔洪灾：联合国发起4960万美元紧急呼吁；古特雷斯对美伊再次交火深表关切；苏丹：外部支持网络助长冲突并加剧平民伤亡；人权高专办：以色列部队强制驱逐三个难民营居民行为违反国际法；叙利亚化学武器销毁工作取得重大进展；联合国大会呼吁使用能更准确反映陆地面积的世界地图；厄尔尼诺现象正在加剧，可能出现数月极端高温；旨在改善猴痘疫苗可及性的全球倡议正式启动。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142747",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-698abffeea0685db",
-      "sourceId": "un-news",
-      "title": "联合国向世界发出呼吁：别再让非洲在地图上显得那么小",
-      "summary": "联合国大会周五以压倒性多数通过决议，呼吁全球各国政府、学校和科技公司停止使用那些让非洲看起来远小于其实际面积的地图。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142746",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-9f60e7f824e8e180",
-      "sourceId": "un-news",
-      "title": "【专题报道】高峰会在即 联合国礼宾与联络处进入倒计时冲刺状态",
-      "summary": "每年九月，当全球目光聚焦联合国大会堂的讲台，注视着各国领导人依次发表演说时，很少有人会想到此前在幕后所做的大量协调与准备工作：如何确保高级别代表团能够顺利进入联合国总部？协调路线和会议安排？座次、国旗以及各种正式仪式？核准通行证到外交人员名录？ 《联合国新闻》今天就带您走进一个联合国平时不太被人提及的部门——礼宾与联络处。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142712",
-      "published": "Fri, 04 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
