@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789427393232,
-  "bakedAt": "2026-09-14T23:09:53.232Z",
-  "refreshedAt": "2026-09-14T23:09:53.232Z",
-  "lastSuccessAt": "2026-09-14T23:09:51.520Z",
+  "version": 1789435847303,
+  "bakedAt": "2026-09-15T01:30:47.303Z",
+  "refreshedAt": "2026-09-15T01:30:47.303Z",
+  "lastSuccessAt": "2026-09-15T01:30:45.935Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-14T23:09:51.378Z",
+      "lastSuccessAt": "2026-09-15T01:30:45.716Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-14T23:09:51.520Z",
+      "lastSuccessAt": "2026-09-15T01:30:45.935Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-168d6fbee53c7c5d",
+      "sourceId": "un-news",
+      "title": "十年间移民汇款额增长94%  2025年达到7286亿美元",
+      "summary": "国际农业发展基金周一发布的最新报告显示，2025年流向中低收入国家的移民汇款总额达到7286亿美元，是当年全球官方发展援助总额的四倍多，也超过了这些国家获得的外国直接投资总额。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142787",
+      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-463276452781e3d1",
       "sourceId": "un-news",
@@ -43,9 +53,9 @@
       "sourceType": "RSS/Atom"
     },
     {
-      "id": "un-news-e60cd93a507840ef",
+      "id": "un-news-b72c8491f4ddf921",
       "sourceId": "un-news",
-      "title": "原子能机构总干事：伊朗核监督形势恶化，必须重返外交谈判渠道",
+      "title": "原子能机构：伊朗核监督形势恶化，必须重返外交谈判渠道",
       "summary": "国际原子能机构总干事格罗西周一在国际原子能机构大会第70届常会上表示，国际原子能机构对伊朗核计划的监督形势在2026年恶化，伊朗核材料和核设施的监督问题引发严重核扩散担忧，亟需以最高优先级解决。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142785",
       "published": "Mon, 14 Sep 2026 12:00:00 +0000",
@@ -319,16 +329,6 @@
       "summary": "联合国妇女署周二发布的一份最新数据简报显示，加沙地带近四分之一的家庭由女性担任户主，估计约有8万6290户家庭。这一比例是2023年10月前的两倍，当时为九分之一。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142753",
       "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-17494b46579d505e",
-      "sourceId": "un-news",
-      "title": "古特雷斯呼吁塔利班撤销对阿富汗妇女的禁令",
-      "summary": "古特雷斯秘书长周日通过发言人发表声明，对塔利班继续对阿富汗妇女和女童实施歧视性政策深表关切。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142751",
-      "published": "Sun, 06 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
