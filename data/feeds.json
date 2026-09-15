@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789479375536,
-  "bakedAt": "2026-09-15T13:36:15.536Z",
-  "refreshedAt": "2026-09-15T13:36:15.536Z",
-  "lastSuccessAt": "2026-09-15T13:36:13.887Z",
+  "version": 1789496047671,
+  "bakedAt": "2026-09-15T18:14:07.671Z",
+  "refreshedAt": "2026-09-15T18:14:07.671Z",
+  "lastSuccessAt": "2026-09-15T18:14:05.782Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-15T13:36:13.723Z",
+      "lastSuccessAt": "2026-09-15T18:14:05.660Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,41 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-15T13:36:13.887Z",
+      "lastSuccessAt": "2026-09-15T18:14:05.782Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-331e419caf3679ff",
+      "sourceId": "un-news",
+      "title": "【子午播报】2026年9月15日",
+      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，一场直播，一杯咖啡，开启南南合作的新旅程。&nbsp;",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142790",
+      "published": "Tue, 15 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-799c2e6a4b20778a",
+      "sourceId": "un-news",
+      "title": "【专题报道】沙漠绿盾：红树林如何成为气候变化时代的天然防线",
+      "summary": "提到阿联酋首都阿布扎比，人们很难把“沙漠”和“森林”联系在一起。这里气候干旱，陆地植被有限，但沿着海岸，一片片红树林却呈现出鲜明的绿色。潮水涨落之间，红树林的根系扎入泥滩，鱼类在这里觅食、繁育，游客则划着皮艇穿行在林间水道。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142752",
+      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-e9ae62204a7bd7de",
+      "sourceId": "un-news",
+      "title": "一杯咖啡的南南之旅",
+      "summary": "一杯咖啡，可以走多远？从卢旺达的火山高地，到中国消费者的手中；从一场直播，到人与人之间的连接——一颗咖啡豆，也许正讲述着南南合作的另一种可能。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142788",
+      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-168d6fbee53c7c5d",
       "sourceId": "un-news",
@@ -298,36 +328,6 @@
       "title": "叙利亚：问责、包容和防止重演是过渡关键",
       "summary": "叙利亚问题独立国际调查委员会周二表示，全面问责、包容以及防止暴力重演是叙利亚实现成功且可持续过渡的关键。委员会赞扬叙利亚政府及其人民取得的进展，同时指出，建立尊重人权的机构并处理过去暴行的遗留问题仍面临挑战。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142757",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-54f6678e248507f5",
-      "sourceId": "un-news",
-      "title": "霍尔木兹海峡中断或加剧中小企业遭受排斥风险",
-      "summary": "联合国贸易和发展会议发布的一份报告指出，贸易中断会影响所有企业，但影响程度往往不尽相同。霍尔木兹海峡的中断也不例外。大企业能够将风险分散到不同的供应商、市场和融资渠道，而中小企业通常无法做到这一点。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142756",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-c6af44e59b7ceb0d",
-      "sourceId": "un-news",
-      "title": "【专题报道】千年岛国，一米之危——专访联合国马尔代夫驻地协调员张皓",
-      "summary": "从空中俯瞰马尔代夫，翡翠般的岛礁散落在深蓝色印度洋上，是无数旅行者心驰神往的天堂。但对联合国马尔代夫驻地协调员张皓而言，舷窗外还有另一重景象——那些美丽的小岛，大多仅高出海平面几十厘米。“你一下飞机就能看见海滩，也能看见海水就在脚下。”一年半前初抵此地时，他第一次切身感受到，气候变化并非遥远的概念，它“就在脚下”。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142713",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-455c8ebdf5f36d6d",
-      "sourceId": "un-news",
-      "title": "加沙每四个家庭中就有一个由女性担任户主",
-      "summary": "联合国妇女署周二发布的一份最新数据简报显示，加沙地带近四分之一的家庭由女性担任户主，估计约有8万6290户家庭。这一比例是2023年10月前的两倍，当时为九分之一。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142753",
       "published": "Tue, 08 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
