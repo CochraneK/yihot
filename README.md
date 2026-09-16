@@ -1,11 +1,29 @@
-# YIHOT 公益信息雷达
+<div align="center">
 
-YIHOT 是面向公益组织的公开信息聚合原型。它把灾害、政策、资金和志愿者公告放入可复核队列，每条记录保留来源 URL、发布时间和主题标签。默认页面使用明确标注的演示数据；启动本地 Node 服务后会读取 `feeds.json` 中的公开 RSS/Atom 源。
+# YIHOT · 公益信息雷达
+
+**公开来源聚合 · 热点排序 · 可复核来源 · RSS / Atom · SSE · 静态烘焙**
+
+<p>
+  <img alt="Runtime" src="https://img.shields.io/badge/runtime-Node.js-339933">
+  <img alt="Sources" src="https://img.shields.io/badge/sources-allowlist%20RSS%20%2F%20Atom-6C63FF">
+  <img alt="Updates" src="https://img.shields.io/badge/updates-SSE%20%2B%20hourly%20bake-2F80ED">
+  <img alt="Status" src="https://img.shields.io/badge/status-public--source%20prototype-F2994A">
+</p>
+
+[**Run locally**](#运行) · [**GitHub Pages bake**](#部署到-github-pages定时烘焙) · [**CloudBase deployment**](cloudbase/DEPLOY.md)
+
+</div>
+
+YIHOT 面向公益组织聚合**公开来源**中的灾害、政策、资金与志愿者信息，把条目放入可复核队列，并保留来源 URL、发布时间和主题标签。默认页面明确区分演示数据与实时 / 烘焙数据。
+
+> [!IMPORTANT]
+> 排序分、关键词命中和自动摘要只用于信息发现与复核，不代表事实认定，也不应自动生成对机构、项目或个人的公开指控、信用判断或募资结论。
 
 ## 运行
 
 ```powershell
-node .\yihot\server.mjs
+npm start
 ```
 
 打开 `http://127.0.0.1:8790/`。`GET /api/health` 是健康检查，`GET /api/feeds` 只访问 `feeds.json` 中的 HTTPS 公共源；`GET /api/stream` 提供 SSE 实时快照。服务限制来源协议、主机、响应大小和超时，避免把它变成任意 URL 代理。刷新间隔可用 `YIHOT_REFRESH_MS` 覆盖，最小 15 秒。
@@ -23,7 +41,6 @@ node .\yihot\server.mjs
 YIHOT 的规范实现全部位于本目录：`index.html`、`app.js`、`styles.css`、`feeds.json` 和 `server.mjs`。运行中的日志放在 `logs/`，不会与根目录的其他产品混在一起。
 
 ```powershell
-cd .\yihot
 npm run smoke
 ```
 
@@ -33,19 +50,26 @@ npm run smoke
 
 纯静态托管跑不了 `server.mjs`，所以用 Actions 定时烘焙：每小时抓取 + 翻译并提交 `data/feeds.json`；页面优先请求 `/api/feeds`，失败（Pages 上必然 404）自动回退读取烘焙文件，两种模式共用同一套前端。
 
-1. 把本目录推成公开仓库：`git init && git add -A && git commit -m "init"`，然后 `gh repo create yihot --public --source . --push`。
-2. Settings → Secrets and variables → Actions：添加 Secret `YIHOT_TRANSLATE_BASE_URL`（如 `https://api.moonshot.cn/v1`）和 `YIHOT_TRANSLATE_API_KEY`；模型可用 Variable `YIHOT_TRANSLATE_MODEL`（默认 `moonshot-v1-8k`）。不配 Secret 也能跑，英文条目会保留原文。
-3. Settings → Pages → Source 选 `Deploy from a branch`，分支 `main`、目录 `/`（根）。
-4. Actions 页手动跑一次 `bake-feeds` 验证，之后每小时自动执行（cron `17 * * * *`）。
+1. Settings → Secrets and variables → Actions：按需添加 Secret `YIHOT_TRANSLATE_BASE_URL` 与 `YIHOT_TRANSLATE_API_KEY`；模型可用 Variable `YIHOT_TRANSLATE_MODEL`（默认 `moonshot-v1-8k`）。不配置翻译 Secret 时，英文条目会保留原文。
+2. Settings → Pages → Source 选择 `Deploy from a branch`，使用当前默认分支 `master` 的仓库根目录 `/`。
+3. Actions 页手动运行一次 `bake-feeds` 验证；当前已提交的 `.github/workflows/bake-feeds.yml` 会在每小时第 17 分钟自动执行（cron `17 * * * *`）。
+4. Workflow 会运行 `node bake.mjs` 并仅提交更新后的 `data/feeds.json`。
 
 成本：Pages 托管和公开仓库的 Actions 都免费；翻译按 token 计费且只处理新条目（当前量每月约几元）。密钥只存在于 Secrets，`api.txt` 之类凭据永远不要提交。
 
 想要**分钟级实时**而不是每小时烘焙：用腾讯云 CloudBase 承接后端（与 CRIS 项目同一套基建），前端自动轮询云函数、三级兜底（云函数 → 本地 /api → 烘焙数据）。完整步骤见 [cloudbase/DEPLOY.md](cloudbase/DEPLOY.md)。
 
-## 低维护商业化
+## 产品化方向
 
-- 组织版：¥199/月，10 个公开来源、15 分钟刷新、内部复核队列和 JSON 导出。
-- 联盟版：¥699/月，组织自定义来源、邮件摘要、成员权限和审计日志。
-- 一次性导入服务只作为迁移选项，不把持续人工整理写进基础订阅承诺。
+若从信息雷达原型继续产品化，更值得优先补齐的是：
+
+- 组织账号与成员权限；
+- 可配置来源与刷新策略；
+- 内部复核队列、审计日志与删除请求；
+- 邮件 / 飞书等通知通道；
+- 来源可用性监控与失败告警；
+- 面向组织的导出、归档和共享能力。
+
+公开 README 不固定承诺价格；实际计费应在成本、刷新频率、数据授权与支持边界明确后单独维护。
 
 上线前应补齐组织账号、权限、持久化队列、邮件/飞书通知、源可用性监控和删除请求。不得把公开信息与私人身份数据拼接，不得自动向公众发布未经复核的指控或募资结论。源站条款、robots、版权和再分发许可需要逐一确认。
