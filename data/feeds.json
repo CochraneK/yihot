@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789558832780,
-  "bakedAt": "2026-09-16T11:40:32.780Z",
-  "refreshedAt": "2026-09-16T11:40:32.780Z",
-  "lastSuccessAt": "2026-09-16T11:40:30.986Z",
+  "version": 1789578075814,
+  "bakedAt": "2026-09-16T17:01:15.814Z",
+  "refreshedAt": "2026-09-16T17:01:15.814Z",
+  "lastSuccessAt": "2026-09-16T17:01:14.191Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-16T11:40:30.860Z",
+      "lastSuccessAt": "2026-09-16T17:01:14.103Z",
       "itemCount": 30
     },
     {
@@ -27,16 +27,66 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-16T11:40:30.986Z",
+      "lastSuccessAt": "2026-09-16T17:01:14.191Z",
       "itemCount": 10
     }
   ],
   "items": [
     {
+      "id": "un-news-eacc57b59711e6e9",
+      "sourceId": "un-news",
+      "title": "联合国：曼德海峡局势升级凸显防止也门冲突威胁国际航道的紧迫性",
+      "summary": "负责中东、欧洲、美洲、亚洲和太平洋事务的助理秘书长希阿里周二在安理会关于曼德海峡局势发展的紧急会议上表示，曼德海峡及其周边局势日益动荡，亟需防止也门冲突进一步威胁红海及这条至关重要的国际航道的安全。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142795",
+      "published": "Tue, 15 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-de1218d14d32135c",
+      "sourceId": "un-news",
+      "title": "尼泊尔逾1.7万名受洪水影响的儿童亟需心理健康和心理社会支持",
+      "summary": "联合国儿童基金会周二表示，在尼泊尔近期毁灭性洪灾中受影响的成千上万名儿童亟需心理健康和心理社会支持，以从灾难造成的痛苦和创伤中恢复过来。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142794",
+      "published": "Tue, 15 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-f32aed9f12392630",
+      "sourceId": "un-news",
+      "title": "人权高专：遭受猛烈轰炸三年后在加沙搜寻遗骸加剧了巴勒斯坦人的创伤",
+      "summary": "联合国人权事务高级专员蒂尔克周二表示，在以色列军队对加沙居民住宅实施猛烈轰炸近三年后，人们在加沙费力地从废墟中挖掘出大量遗骸，其中大多是儿童和妇女。这凸显了人们对遵守国际法问题的严重关切，并表明可能已发生包括战争罪在内的严重侵犯人权行为。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142793",
+      "published": "Tue, 15 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-c769bd82ce66a575",
+      "sourceId": "un-news",
+      "title": "人权高专：民主植根于参与、问责和对人权的尊重",
+      "summary": "联合国人权事务高级专员蒂尔克周二在奥地利议会为纪念国际民主日发表视频致辞。他表示，民主植根于自由、参与、问责以及对人权和人类尊严的尊重，但如今民主的根基正在动摇。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142792",
+      "published": "Tue, 15 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-4d4f6d6948ddc99b",
+      "sourceId": "un-news",
+      "title": "联合国调查：全球对大规模战争的担忧超过其他任何全球性风险",
+      "summary": "两年前，对于那些致力于评估全球风险的专家而言，大规模战争爆发的可能性还像是一个遥远的假设。而根据最新的《联合国全球风险报告》，如今这一风险已跃居他们最担忧事项的首位。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142791",
+      "published": "Tue, 15 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
       "id": "un-news-331e419caf3679ff",
       "sourceId": "un-news",
       "title": "【子午播报】2026年9月15日",
-      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，一场直播，一杯咖啡，开启南南合作的新旅程。&nbsp;",
+      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，一场直播，一杯咖啡，开启南南合作的新旅程。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142790",
       "published": "Tue, 15 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
@@ -279,56 +329,6 @@
       "summary": "周三，联合国秘书长古特雷斯呼吁世界各国领导人投资于和平，因为暴力、分裂和冲突正在加剧全球范围内的苦难。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142762",
       "published": "Wed, 09 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-8aad74860bb71690",
-      "sourceId": "un-news",
-      "title": "奈拜提耶局势升级之际，联合国秘书长要求以色列从黎巴嫩撤军",
-      "summary": "随着奈拜提耶及其周边地区战事加剧，联合国秘书长古特雷斯谴责了黎巴嫩南部不断增加的平民伤亡，并呼吁以色列将其部队从黎巴嫩境内撤出。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142761",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-3122f92cb25852fd",
-      "sourceId": "un-news",
-      "title": "人工智能数据中心对全球电力系统构成日益加剧的威胁",
-      "summary": "联合国欧洲经济委员会警告称，数据密集型技术（尤其是人工智能数据中心）的使用增速已超过电力基础设施的承载能力，这引发了人们对全球能源系统未来可靠性和韧性的担忧。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142760",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-9912ff9a5628aef1",
-      "sourceId": "un-news",
-      "title": "联大主席敲槌宣布新一届会议开幕，努力重建全球信任",
-      "summary": "周二，联合国大会在联合国总部敲槌宣布第81届会议开幕。新任主席、孟加拉国前外长拉赫曼承诺，在战争、人道主义危机和气候变化日益加剧的当下，将努力重建公众对该机构的信任。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142759",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-f5abcae3da001280",
-      "sourceId": "un-news",
-      "title": "世卫组织警告：吸烟会损害生育能力",
-      "summary": "世界卫生组织在周二发布的一份新报告中警告称，吸烟极有可能增加备孕难度，并强调吸烟女性的不孕风险比非吸烟者高出40%。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142758",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-c4cd13f94a8e39e5",
-      "sourceId": "un-news",
-      "title": "叙利亚：问责、包容和防止重演是过渡关键",
-      "summary": "叙利亚问题独立国际调查委员会周二表示，全面问责、包容以及防止暴力重演是叙利亚实现成功且可持续过渡的关键。委员会赞扬叙利亚政府及其人民取得的进展，同时指出，建立尊重人权的机构并处理过去暴行的遗留问题仍面临挑战。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142757",
-      "published": "Tue, 08 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
