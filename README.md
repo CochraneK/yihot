@@ -55,7 +55,7 @@ npm run smoke
 3. Actions 页手动运行一次 `bake-feeds` 验证；当前已提交的 `.github/workflows/bake-feeds.yml` 会在每小时第 17 分钟自动执行（cron `17 * * * *`）。
 4. Workflow 会运行 `node bake.mjs` 并仅提交更新后的 `data/feeds.json`。
 
-成本：Pages 托管和公开仓库的 Actions 都免费；翻译按 token 计费且只处理新条目（当前量每月约几元）。密钥只存在于 Secrets，`api.txt` 之类凭据永远不要提交。
+翻译服务可能产生按 token 计费的外部成本；实际费用取决于模型、调用量与提供商。密钥只应存在于 Secrets 或受控服务端环境，`api.txt` 之类凭据不要提交到公开仓库。
 
 想要**分钟级实时**而不是每小时烘焙：用腾讯云 CloudBase 承接后端（与 CRIS 项目同一套基建），前端自动轮询云函数、三级兜底（云函数 → 本地 /api → 烘焙数据）。完整步骤见 [cloudbase/DEPLOY.md](cloudbase/DEPLOY.md)。
 
@@ -72,4 +72,4 @@ npm run smoke
 
 公开 README 不固定承诺价格；实际计费应在成本、刷新频率、数据授权与支持边界明确后单独维护。
 
-上线前应补齐组织账号、权限、持久化队列、邮件/飞书通知、源可用性监控和删除请求。不得把公开信息与私人身份数据拼接，不得自动向公众发布未经复核的指控或募资结论。源站条款、robots、版权和再分发许可需要逐一确认。
+上线前还应逐一确认源站条款、robots、版权与再分发许可，并避免把公开信息与私人身份数据拼接。
