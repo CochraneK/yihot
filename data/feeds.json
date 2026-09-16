@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789589393459,
-  "bakedAt": "2026-09-16T20:09:53.459Z",
-  "refreshedAt": "2026-09-16T20:09:53.459Z",
-  "lastSuccessAt": "2026-09-16T20:09:52.069Z",
+  "version": 1789599491931,
+  "bakedAt": "2026-09-16T22:58:11.931Z",
+  "refreshedAt": "2026-09-16T22:58:11.931Z",
+  "lastSuccessAt": "2026-09-16T22:58:10.893Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-16T20:09:51.782Z",
+      "lastSuccessAt": "2026-09-16T22:58:10.618Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,41 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-16T20:09:52.069Z",
+      "lastSuccessAt": "2026-09-16T22:58:10.893Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-4a7a3daa635abf3c",
+      "sourceId": "un-news",
+      "title": "联合国：阿富汗“稳定”局面下多重风险正在累积",
+      "summary": "联合国秘书长阿富汗事务副特别代表乔吉特·加尼翁周三在安理会通报说，尽管阿富汗事实当局目前没有面临重大的武装或政治威胁，但多重风险正在累积，其中很大一部分源于其自身的政策。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142801",
+      "published": "Wed, 16 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-a0897c76a3881bec",
+      "sourceId": "un-news",
+      "title": "世界齐聚纽约：联合国大会高级别周的焦点何在?",
+      "summary": "每年9月下旬，来自世界各地的总统、总理、部长和外交官齐聚联合国总部，纽约由此成为全球外交的中心。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142800",
+      "published": "Wed, 16 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-28bd5a871cdf7b92",
+      "sourceId": "un-news",
+      "title": "联合国报告警告：参与捍卫人权者面临报复",
+      "summary": "根据秘书长周三发布的一份新报告，与联合国在人权领域开展合作的活动人士、律师及其他人士继续面临恐吓和报复，该报告呼吁加强保护并追究责任。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142799",
+      "published": "Wed, 16 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-79bda84fdcb75e17",
       "sourceId": "un-news",
@@ -299,36 +329,6 @@
       "summary": "联合国气候变化框架公约执行秘书斯蒂尔9月10日在布鲁塞尔欧洲议会环境、气候与食品安全委员会发表演讲时表示，气候危机现已成为整个欧洲大陆范围内的经济安全紧急状况。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142769",
       "published": "Thu, 10 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-002c901f22982d3c",
-      "sourceId": "un-news",
-      "title": "【专题报道】难以忘记——911事件二十五周年 三位联合国工作人员讲述亲身经历",
-      "summary": "二十五年前，联合国纽约总部的三名工作人员在9月11日这一天开始了他们一个原本平常的星期二早晨，然而却经历了一场终生难忘的巨变。在距离世贸中心仅几英里之遥的联合国大厦内，他们所经历的那些惊心动魄的时刻让他们对恐怖袭击以及联合国关注的打击恐怖主义问题有了更加深刻的理解。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142754",
-      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-8a817c3a9f6ca4e8",
-      "sourceId": "un-news",
-      "title": "2025年超过1.71亿名学生因气候灾害中断学业",
-      "summary": "联合国儿童基金会周三发布的一份最新分析报告显示，2025年全球有超过1.71亿名学龄儿童和青少年因气候灾害而中断学业，相当于每10名学生中就有1名。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142765",
-      "published": "Wed, 09 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-38ad0a4863123e48",
-      "sourceId": "un-news",
-      "title": "遭受洪灾重创的尼泊尔呼吁气候正义",
-      "summary": "联合国驻尼泊尔最高官员周三表示，尼泊尔在近期致命洪灾后呼吁获得经济补偿，这凸显了帮助那些对气候变化贡献最小、却日益面临其最致命后果的国家的必要性。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142766",
-      "published": "Wed, 09 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
