@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789651850282,
-  "bakedAt": "2026-09-17T13:30:50.282Z",
-  "refreshedAt": "2026-09-17T13:30:50.282Z",
-  "lastSuccessAt": "2026-09-17T13:30:49.003Z",
+  "version": 1789669014169,
+  "bakedAt": "2026-09-17T18:16:54.169Z",
+  "refreshedAt": "2026-09-17T18:16:54.169Z",
+  "lastSuccessAt": "2026-09-17T18:16:53.066Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T13:30:48.502Z",
+      "lastSuccessAt": "2026-09-17T18:16:52.777Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T13:30:49.003Z",
+      "lastSuccessAt": "2026-09-17T18:16:53.066Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-a4e02e9302b1ebb4",
+      "sourceId": "un-news",
+      "title": "世界气象组织：全球水资源储量持续下降 水循环更加不稳定",
+      "summary": "世界气象组织周四发布的《全球水资源状况报告》显示，2025年全球河流遭遇了三十多年来最干旱的年份之一。报告表明，地球淡水储量下降和冰川退缩的长期趋势仍在延续，这些趋势对未来人类和经济具有严重影响。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142806",
+      "published": "Thu, 17 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-b2f7c78f79c85c66",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "乌克兰：针对切尔诺贝利的无人机袭击是“在拿数百万人的安全冒险”",
       "summary": "联合国开发计划署署长德克罗周四通过视频连线从基辅向联合国纽约总部的记者表示，针对切尔诺贝利核电站防护结构的无人机袭击本可能危及数百万人的安全。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142772",
-      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-f97a95836ef9755d",
-      "sourceId": "un-news",
-      "title": "联合国也门特使：也门重陷大规模冲突风险已演变为现实",
-      "summary": "联合国也门问题特使格伦德贝里周四向安理会作简报时表示，也门重陷自2022年停火以来大规模冲突的最大风险，已经演变为现实。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142771",
       "published": "Thu, 10 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
