@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789630988761,
-  "bakedAt": "2026-09-17T07:43:08.761Z",
-  "refreshedAt": "2026-09-17T07:43:08.761Z",
-  "lastSuccessAt": "2026-09-17T07:43:07.824Z",
+  "version": 1789651850282,
+  "bakedAt": "2026-09-17T13:30:50.282Z",
+  "refreshedAt": "2026-09-17T13:30:50.282Z",
+  "lastSuccessAt": "2026-09-17T13:30:49.003Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T07:43:07.631Z",
+      "lastSuccessAt": "2026-09-17T13:30:48.502Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T07:43:07.824Z",
+      "lastSuccessAt": "2026-09-17T13:30:49.003Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-b2f7c78f79c85c66",
+      "sourceId": "un-news",
+      "title": "【专题报道】重建信任：孟加拉国前外长拉赫曼“执掌”新一届联大",
+      "summary": "纽约当地时间9月8日上午，联合国总部联大会堂响起新一届联大开幕的敲槌声。孟加拉国前外长哈利鲁尔·拉赫曼正式接任联合国大会第81届会议主席，开始为期一年的任期。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142773",
+      "published": "Wed, 16 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-cea43da6cef74170",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "联合国也门特使：也门重陷大规模冲突风险已演变为现实",
       "summary": "联合国也门问题特使格伦德贝里周四向安理会作简报时表示，也门重陷自2022年停火以来大规模冲突的最大风险，已经演变为现实。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142771",
-      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-c66e2fc1c9840b5b",
-      "sourceId": "un-news",
-      "title": "“9·11”事件25周年：联合国重申反恐与维护人权共同责任",
-      "summary": "在周五“9·11”恐怖袭击事件25周年之际，联合国秘书长发言人和联合国人权事务高级专员办事处分别发表声明，缅怀遇难者，向幸存者和首批救援人员致敬，并强调打击恐怖主义与维护人权是共同责任。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142770",
       "published": "Thu, 10 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
