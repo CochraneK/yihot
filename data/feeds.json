@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789608473881,
-  "bakedAt": "2026-09-17T01:27:53.881Z",
-  "refreshedAt": "2026-09-17T01:27:53.881Z",
-  "lastSuccessAt": "2026-09-17T01:27:52.113Z",
+  "version": 1789630988761,
+  "bakedAt": "2026-09-17T07:43:08.761Z",
+  "refreshedAt": "2026-09-17T07:43:08.761Z",
+  "lastSuccessAt": "2026-09-17T07:43:07.824Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T01:27:51.944Z",
+      "lastSuccessAt": "2026-09-17T07:43:07.631Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T01:27:52.113Z",
+      "lastSuccessAt": "2026-09-17T07:43:07.824Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-cea43da6cef74170",
+      "sourceId": "un-news",
+      "title": "【专题报道 | 前方视野】曼德海峡局势升级：也门冲突外溢风险对全球航运构成挑战",
+      "summary": "也门局势近日急剧升级。随着胡塞武装控制红海沿岸重要地区并向曼德海峡推进，这条连接红海与亚丁湾的国际航运要道再次成为国际社会关注焦点。安理会在四天内两次就此召开紧急会议。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142803",
+      "published": "Wed, 16 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-4a7a3daa635abf3c",
       "sourceId": "un-news",
@@ -318,16 +328,6 @@
       "title": "“9·11”事件25周年：联合国重申反恐与维护人权共同责任",
       "summary": "在周五“9·11”恐怖袭击事件25周年之际，联合国秘书长发言人和联合国人权事务高级专员办事处分别发表声明，缅怀遇难者，向幸存者和首批救援人员致敬，并强调打击恐怖主义与维护人权是共同责任。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142770",
-      "published": "Thu, 10 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-398cd8115261df0e",
-      "sourceId": "un-news",
-      "title": "联合国气候变化事务负责人：气候危机已成为欧洲经济安全紧急状况",
-      "summary": "联合国气候变化框架公约执行秘书斯蒂尔9月10日在布鲁塞尔欧洲议会环境、气候与食品安全委员会发表演讲时表示，气候危机现已成为整个欧洲大陆范围内的经济安全紧急状况。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142769",
       "published": "Thu, 10 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
