@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789730412481,
-  "bakedAt": "2026-09-18T11:20:12.481Z",
-  "refreshedAt": "2026-09-18T11:20:12.481Z",
-  "lastSuccessAt": "2026-09-18T11:20:10.611Z",
+  "version": 1789748825462,
+  "bakedAt": "2026-09-18T16:27:05.462Z",
+  "refreshedAt": "2026-09-18T16:27:05.462Z",
+  "lastSuccessAt": "2026-09-18T16:27:04.225Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-18T11:20:10.504Z",
+      "lastSuccessAt": "2026-09-18T16:27:03.998Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,41 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-18T11:20:10.611Z",
+      "lastSuccessAt": "2026-09-18T16:27:04.225Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-b074581ad83aeafc",
+      "sourceId": "un-news",
+      "title": "【专题报道】让使用清洁能源与土地修复同行",
+      "summary": "应对气候变化所需的基础设施，如果不仅能够提供清洁能源，还能帮助修复其所占用的土地，这岂不是两全其美？这是否可以成为能源转型的新路径？",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142720",
+      "published": "Fri, 18 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-209f170c1767b937",
+      "sourceId": "un-news",
+      "title": "【子午播报】2026年9月18日",
+      "summary": "纽约时间零点，北京时间12点，欢迎收看《联合国子午播报》。本期节目您将看到，古特雷斯召开任内最后一次联大记者会；65年前的今天，联合国第二任秘书长坠机身亡；子午聚焦：赫尔松上空的威胁。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142816",
+      "published": "Fri, 18 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
+    {
+      "id": "un-news-51332c42986450e3",
+      "sourceId": "un-news",
+      "title": "安理会因“自动恢复”机制争议未能延长伊朗制裁专家小组任期",
+      "summary": "安理会周四未能通过延长负责监督对伊朗制裁执行情况的专家小组任期的决议草案。成员国在相关制裁是否仍然有效的问题上存在分歧，草案因中国和俄罗斯投否决票而未获通过。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142815",
+      "published": "Thu, 17 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-fb709376cc6093b6",
       "sourceId": "un-news",
@@ -299,36 +329,6 @@
       "summary": "国际原子能机构总干事格罗西周一在国际原子能机构大会第70届常会上表示，国际原子能机构对伊朗核计划的监督形势在2026年恶化，伊朗核材料和核设施的监督问题引发严重核扩散担忧，亟需以最高优先级解决。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142785",
       "published": "Mon, 14 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-b4f27088f57ca157",
-      "sourceId": "un-news",
-      "title": "人权高专呼吁采取紧急行动应对前所未有的人工智能风险",
-      "summary": "联合国人权事务高级专员蒂尔克周一呼吁各国及全球“前沿”人工智能企业采取紧急行动，确保有实质意义的人工智能治理能够跟上其加速发展的步伐，并应对其对人权构成的前所未有的风险。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142784",
-      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-a9fe470420509b00",
-      "sourceId": "un-news",
-      "title": "【专题报道 | 前方视野】填补“地球缺失的条约”：推动建立全球首个灾害保护国际条约",
-      "summary": "随着气候变化加剧、自然灾害频发，红十字与红新月国际联合会日前发起“地球缺失的条约”（Earth&#039;s Missing Treaty）全球倡议，呼吁各国致力于制定首个专门保护灾害中受影响民众的国际条约，为灾害发生前、发生时和发生后提供更有力的国际合作框架。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142782",
-      "published": "Mon, 14 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-6fa50839a714d0c3",
-      "sourceId": "un-news",
-      "title": "古特雷斯出席金砖国家峰会，呼吁塑造包容性的全球增长",
-      "summary": "秘书长古特雷斯周日出席了于印度新德里举行的第18届金砖国家峰会，并发表讲话指出，&nbsp;必须致力于韧性、创新、合作和可持续发展，这对塑造包容性的全球增长至关重要。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142781",
-      "published": "Sun, 13 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
