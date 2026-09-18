@@ -1,10 +1,10 @@
 {
   "ok": true,
   "mode": "baked-static",
-  "version": 1789680599557,
-  "bakedAt": "2026-09-17T21:29:59.557Z",
-  "refreshedAt": "2026-09-17T21:29:59.557Z",
-  "lastSuccessAt": "2026-09-17T21:29:57.544Z",
+  "version": 1789690969637,
+  "bakedAt": "2026-09-18T00:22:49.637Z",
+  "refreshedAt": "2026-09-18T00:22:49.637Z",
+  "lastSuccessAt": "2026-09-18T00:22:48.340Z",
   "refreshIntervalMs": 0,
   "sources": [
     {
@@ -19,7 +19,7 @@
       "name": "联合国新闻（中文）",
       "url": "https://news.un.org/feed/subscribe/zh/news/all/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T21:29:57.449Z",
+      "lastSuccessAt": "2026-09-18T00:22:48.197Z",
       "itemCount": 30
     },
     {
@@ -27,11 +27,21 @@
       "name": "United Nations official updates",
       "url": "https://www.un.org/en/rss.xml",
       "status": "ok",
-      "lastSuccessAt": "2026-09-17T21:29:57.544Z",
+      "lastSuccessAt": "2026-09-18T00:22:48.340Z",
       "itemCount": 10
     }
   ],
   "items": [
+    {
+      "id": "un-news-fb709376cc6093b6",
+      "sourceId": "un-news",
+      "title": "【专题报道】“湖泊就是我们的生命”——乌干达渔民致力守护艾伯特湖",
+      "summary": "在位于乌干达西部基库贝区的恩孔多海滩，渔民们天刚亮便乘船出湖捕鱼。对生活在艾伯特湖周边的家庭而言，这片湖泊不仅提供食物和收入，也早已融入他们的日常生活。湖泊的健康状况，直接关系着当地社区的生存与未来生计。",
+      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142721",
+      "published": "Thu, 17 Sep 2026 12:00:00 +0000",
+      "source": "联合国新闻（中文）",
+      "sourceType": "RSS/Atom"
+    },
     {
       "id": "un-news-8280c39aac65355e",
       "sourceId": "un-news",
@@ -319,16 +329,6 @@
       "summary": "秘书长古特雷斯周日出席了于印度新德里举行的第18届金砖国家峰会，并发表讲话指出，&nbsp;必须致力于韧性、创新、合作和可持续发展，这对塑造包容性的全球增长至关重要。",
       "url": "https://news.un.org/feed/view/zh/story/2026/09/1142781",
       "published": "Sun, 13 Sep 2026 12:00:00 +0000",
-      "source": "联合国新闻（中文）",
-      "sourceType": "RSS/Atom"
-    },
-    {
-      "id": "un-news-0f1e7979772d92f2",
-      "sourceId": "un-news",
-      "title": "也门战事升级，流离失所危机每小时都在恶化",
-      "summary": "国际移民组织周六警告称，也门的流离失所危机正以每小时为单位迅速恶化。据国际移民组织流离失所追踪矩阵团队及其合作伙伴统计，自7月份以来，已有至少7.6万人逃离家园。",
-      "url": "https://news.un.org/feed/view/zh/story/2026/09/1142780",
-      "published": "Sat, 12 Sep 2026 12:00:00 +0000",
       "source": "联合国新闻（中文）",
       "sourceType": "RSS/Atom"
     },
